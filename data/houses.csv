@@ -1,13 +1,13 @@
 wikiKey,seatKey,lat,lng,img,clue,isGreat,firstChapter,lastChapter,firstEpisode,lastEpisode
-Night%27s_Watch,Castle_Black,,,black_flag.png,,TRUE,0,999,,
+Night%27s_Watch,Castle_Black,,,http://awoiaf.westeros.org/images/thumb/4/47/Minigdn.png/109px-Minigdn.png,,TRUE,,,,
 House_Stark,Winterfell,,,http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG,,TRUE,0,118,0,14
 House_Greyjoy,Winterfell,,,http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png,,TRUE,119,138,15,18
-House_Bolton,Dreadfort,,,http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png,,FALSE,0,195,,
+House_Bolton,Dreadfort,,,http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png,,FALSE,0,195,0,18
 House_Bolton,Dreadfort,,,http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png,,TRUE,196,307,19,41
 House_Bolton,Winterfell,,,http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png,,TRUE,308,999,42,57
 House_Bolton,Dreadfort,,,http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png,,FALSE,308,999,42,99
 House_Stark,Winterfell,,,http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG,,TRUE,999,999,58,99
-House_Tully,Riverrun,,,http://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG,,TRUE,0,137,,
+House_Tully,Riverrun,,,http://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG,,TRUE,0,137,0,99
 House_Tully,Riverrun,,,http://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG,,FALSE,138,268,99,99
 House_Baelish_of_Harrenhal,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/90px-House_Baelish.PNG,,TRUE,138,999,99,99
 House_Arryn,Eyrie,,,http://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/112px-House_Arryn.PNG,,TRUE,,,,
@@ -97,7 +97,7 @@ House_Bracken,Stone_Hedge,,,http://awoiaf.westeros.org/images/thumb/5/53/Bracken
 House_Butterwell,,16.7835,-107.285,http://awoiaf.westeros.org/images/thumb/a/a1/House_Butterwell.png/109px-House_Butterwell.png,the Riverlands,,,,,
 House_Charlton,,35.7465,-123.853,http://awoiaf.westeros.org/images/thumb/c/c1/Charlton.png/109px-Charlton.png,the Riverlands,,,,,
 House_Frey,Twins,,,http://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png,,,,,,
-House_Frey_of_Riverrun,Riverrun,,,http://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png,,,269,999,,
+House_Frey_of_Riverrun,Riverrun,,,http://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png,,,269,999,999,999
 House_Goodbrook,Goodbrook_Village,,,http://awoiaf.westeros.org/images/thumb/9/95/House_Goodbrook.PNG/103px-House_Goodbrook.PNG,,,,,,
 House_Grell,,21.4121,-133.784,http://awoiaf.westeros.org/images/thumb/b/b7/House_Grell.PNG/50px-House_Grell.PNG,the Riverlands,,,,,
 House_Hawick,Saltpans,,,http://awoiaf.westeros.org/images/thumb/0/09/Hawick.png/50px-Hawick.png,,,,,,
@@ -116,10 +116,10 @@ House_Vance_of_Atranta,,28.2656,-119.282,http://awoiaf.westeros.org/images/thumb
 House_Vance_of_Wayfarer%27s_Rest,Wayfarer%27s_Rest,,,http://awoiaf.westeros.org/images/thumb/0/01/House_Vance_of_Wayfarer%27s_rest.PNG/50px-House_Vance_of_Wayfarer%27s_rest.PNG,,,,,,
 House_Vypren,,13.0259,-134.048,http://awoiaf.westeros.org/images/thumb/b/b5/Vyprin.png/50px-Vyprin.png,the Riverlands,,,,,
 House_Wayn,,14.1365,-121.304,http://awoiaf.westeros.org/images/thumb/d/df/House_Wayn.PNG/109px-House_Wayn.PNG,the Riverlands,,,,,
-House_Darry,Darry,,,http://awoiaf.westeros.org/images/thumb/2/22/House_Darry.png/50px-House_Darry.png,,,0,999,,
-House_Harroway,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/7/77/Harroway.png/109px-Harroway.png,,,0,137,,
-House_Whent,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/6/6d/House_Whent.png/50px-House_Whent.png,,,0,79,0,0
-House_Slynt,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/e/ea/House_Slynt.PNG/110px-House_Slynt.PNG,,,57,80,0,0
+House_Darry,Darry,,,http://awoiaf.westeros.org/images/thumb/2/22/House_Darry.png/50px-House_Darry.png,,,,,,
+House_Harroway,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/7/77/Harroway.png/109px-Harroway.png,,,0,137,0,99
+House_Whent,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/6/6d/House_Whent.png/50px-House_Whent.png,,,0,79,-1,-1
+House_Slynt,Harrenhal,,,http://awoiaf.westeros.org/images/thumb/e/ea/House_Slynt.PNG/110px-House_Slynt.PNG,,,57,80,-1,-1
 House_Algood,,1.5379,-148.462,http://awoiaf.westeros.org/images/thumb/8/88/Algood.png/93px-Algood.png,the Westerlands,,,,,
 House_Banefort,Banefort,,,http://awoiaf.westeros.org/images/thumb/a/ac/Banefort.png/50px-Banefort.png,,,,,,
 House_Bettley,,2.3723,-129.565,http://awoiaf.westeros.org/images/thumb/6/6b/Bettley.png/50px-Bettley.png,the Westerlands,,,,,
@@ -132,7 +132,7 @@ House_Estren,,25.6415,-142.837,http://awoiaf.westeros.org/images/thumb/2/27/Hous
 House_Falwell,,12.5545,-141.958,http://awoiaf.westeros.org/images/thumb/f/fe/Falwell.png/109px-Falwell.png,the Westerlands,,,,,
 House_Farman,Faircastle,,,http://awoiaf.westeros.org/images/thumb/8/83/Farman.png/50px-Farman.png,,,,,,
 House_Ferren,,-1.4939,-140.024,http://awoiaf.westeros.org/images/thumb/5/52/Ferren.png/250px-Ferren.png,the Westerlands,,,,,
-House_Foote,,-0.9667,-133.433,http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/50px-House_Foote.PNG,the Westerlands,,,,,
+House_Foote,,-0.9667,-133.433,http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/100px-House_Foote.PNG,the Westerlands,,,,,
 House_Garner,,-0.8788,-150.703,http://awoiaf.westeros.org/images/thumb/b/b7/House_Garner.PNG/101px-House_Garner.PNG,the Westerlands,,,,,
 House_Hamell,,2.8113,-134.268,http://awoiaf.westeros.org/images/thumb/6/6c/Hamell.PNG/250px-Hamell.PNG,the Westerlands,,,,,
 House_Jast,,9.6224,-154.746,http://awoiaf.westeros.org/images/thumb/4/4d/House_Jast.PNG/90px-House_Jast.PNG,the Westerlands,,,,,
@@ -225,8 +225,8 @@ Nute,Lord_Hewett%27s_Town,,,http://awoiaf.westeros.org/images/thumb/5/5c/Coats_o
 House_Serry,,-22.35,-150.249,http://awoiaf.westeros.org/images/thumb/e/ed/House_Serry.PNG/50px-House_Serry.PNG,,,0,253,,
 Andrik,,-22.35,-150.249,http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png,,,254,999,,
 House_Dondarrion,Blackhaven,,,http://awoiaf.westeros.org/images/thumb/1/1d/Dondarrion.png/55px-Dondarrion.png,,,,,,
-House_Caron,Nightsong,,,http://awoiaf.westeros.org/images/thumb/6/64/House_Caron.png/105px-House_Caron.png,,,0,137,,
-House_Foote_of_Nightsong,Nightsong,,,http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/90px-House_Foote.PNG,,,138,999,,
+House_Caron,Nightsong,,,http://awoiaf.westeros.org/images/thumb/6/64/House_Caron.png/105px-House_Caron.png,,,0,137,0,99
+House_Foote_of_Nightsong,Nightsong,,,http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/100px-House_Foote.PNG,,,138,999,-1,-1
 House_Swann,Stonehelm,,,http://awoiaf.westeros.org/images/thumb/a/a9/House_Swann.PNG/50px-House_Swann.PNG,,,,,,
 House_Bolling,,-20.3858,-104.502,http://awoiaf.westeros.org/images/thumb/6/66/House_Bolling.PNG/109px-House_Bolling.PNG,the Stormlands,,,,,
 House_Buckler,Bronzegate,,,http://awoiaf.westeros.org/images/thumb/8/81/House_Buckler.png/50px-House_Buckler.png,,,,,,
@@ -261,7 +261,7 @@ House_Seaworth,,-23.8054,-83.3203,http://awoiaf.westeros.org/images/thumb/9/99/S
 House_Allyrion,Godsgrace,,,http://awoiaf.westeros.org/images/thumb/2/25/House_Allyrion.PNG/120px-House_Allyrion.PNG,,,,,,
 House_Blackmont,Blackmont,,,http://awoiaf.westeros.org/images/thumb/f/f9/Blackmont.png/120px-Blackmont.png,,,,,,
 House_Dalt,Lemonwood,,,http://awoiaf.westeros.org/images/thumb/f/fb/DaltCoA.png/50px-DaltCoA.png,,,,,,
-House_Dayne,Starfall,,,http://awoiaf.westeros.gr/images/b/b7/Dayne_coat_sigil.png,,,,,,
+House_Dayne,Starfall,,,http://awoiaf.westeros.org/images/thumb/1/15/DayneCoA.png/120px-DayneCoA.png,,,,,,
 House_Dayne_of_High_Hermitage,High_Hermitage,,,http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png,,,,,,
 House_Fowler,Skyreach,,,http://awoiaf.westeros.org/images/thumb/0/06/House_Fowler.png/90px-House_Fowler.png,,,,,,
 House_Gargalen,Salt_Shore,,,http://awoiaf.westeros.org/images/thumb/7/75/House_Gargalen.png/120px-House_Gargalen.png,,,,,,

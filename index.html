@@ -8,6 +8,7 @@
   <script src='js/angular-google-maps.min.js'></script>
   <script src="js/angular-csv-service.min.js"></script>
   <script src="js/angular-toggle-switch.min.js"></script>
+  <script src="js/q-spread.min.js"></script>
   <script src='js/ui-bootstrap-2.0.0.min.js'></script>
   <script src='js/app.js'></script>
   <script src='js/services.js'></script>
@@ -25,11 +26,11 @@
   <ui-gmap-google-map center='map.center' zoom='map.zoom' options='map.options' events='map.events' control='map.control'>
 
     <!-- Base map tiles from Ser Mountain Goat -->
-    <ui-gmap-map-type options='smgMapType'></ui-gmap-map-type>
+    <ui-gmap-map-type options='map.smgMapType'></ui-gmap-map-type>
 
     <!-- Location Markers -->
     <ui-gmap-markers
-      models='map.locations'
+      models='mapModels.towns'
       coords="'coords'"
       click='map.locationClick'
       options="'options'"
@@ -37,18 +38,18 @@
     </ui-gmap-markers>
 
     <!-- Heraldry Markers -->
-    <!-- <ui-gmap-markers
-      models='map.heraldry'
+    <ui-gmap-markers
+      models='mapModels.heraldry'
       coords="'coords'"
-      click='map.houseClick'
       options="'options'"
       visible="options.houseHeraldry"
+      click="map.heraldryClick"
       idkey="'key'">
-    </ui-gmap-markers> -->
+    </ui-gmap-markers>
 
     <!-- Region Polygons -->
     <ui-gmap-polygons
-      models="map.regions"
+      models="mapModels.regions"
       path="'path'"
       fill="'fill'"
       stroke="'stroke'"
@@ -154,9 +155,9 @@
           {{locationDetail.name}}
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
         </a>
-        <a ng-href="{{locationDetail.currentOccupant.url}}" role="button" class="list-group-item btn-clear" ng-if="locationDetail.currentOccupant">
-          <img ng-src="{{locationDetail.currentOccupant.img}}">
-          {{locationDetail.currentOccupant.name}}
+        <a ng-href="{{locationDetail.houseUrl}}" role="button" class="list-group-item btn-clear" ng-if="locationDetail.houseUrl">
+          <img ng-src="{{locationDetail.houseImg}}">
+          {{locationDetail.house}}
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
         </a>
         <a ng-href="{{locationDetail.direct}}" role="button" class="list-group-item btn-clear">
@@ -200,7 +201,7 @@
       </h1>
       <div class="list-group" ng-show="search!==''">
         <button
-          ng-repeat="result in searchResults | filter:{ search: search }"
+          ng-repeat="result in searchResults | filter:{ title: search }"
           class="list-group-item"
           ng-click="result.click()">
           <i class="glyphicon {{result.icon}}"></i>

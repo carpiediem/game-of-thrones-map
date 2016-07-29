@@ -1,4 +1,4 @@
-angular.module('quartermaester', ['ui.bootstrap', 'uiGmapgoogle-maps', 'fCsv', 'toggle-switch', 'rzModule'])
+angular.module('quartermaester', ['ui.bootstrap', 'uiGmapgoogle-maps', '$q-spread', 'fCsv', 'toggle-switch', 'rzModule'])
 
 .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
