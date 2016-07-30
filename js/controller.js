@@ -14,7 +14,8 @@ angular.module('quartermaester')
       characterPaths: true,
       houseHeraldry: false,
       geographicRegions: false,
-      politicalAllegiances: false
+      politicalAllegiances: false,
+      characters: []
     };
     $scope.map = {
       center: {
@@ -34,7 +35,8 @@ angular.module('quartermaester')
       control: {},
       smgMapType: smgMapType,
       locationClick: locationClick,
-      heraldryClick: heraldryClick
+      heraldryClick: heraldryClick,
+      characterClick: heraldryClick
     };
     $scope.mapModels = {
       towns: [],
@@ -80,7 +82,9 @@ angular.module('quartermaester')
       // Redraw map with new slider values
       $scope.mapModels.towns = $filter('qmSlider')(qmData.towns, $scope.slider);
       $scope.mapModels.heraldry = $scope.options.houseHeraldry ? $filter('qmSlider')(qmData.heraldry, $scope.slider) : [];
-      //console.log("heraldry", $scope.mapModels.heraldry);
+      $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider); //$filter('qmCharacters')(qmData.characterMarkers, $scope.options.characters, $scope.slider);
+      $scope.mapModels.paths = qmData.characterPaths;
+      console.log("qmData.characterPaths", qmData.characterPaths);
 
 
     }
@@ -94,7 +98,6 @@ angular.module('quartermaester')
     }
 
     function slideTo(input) {
-      console.log("qmData", qmData);
       var books = qmData.books.map(function(book) {return book.abbreviation;});
       var measure = ($scope.slider.show=="episodes") ? "currentEpisode" : "currentChapter";
       var sliderMax   = ($scope.slider.show=="episodes") ? $scope.episodes.length-1 : $scope.chapters.length-1;

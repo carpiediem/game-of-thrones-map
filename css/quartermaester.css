@@ -20,6 +20,10 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 2px;
+  width: 280px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #side h1 span.glyphicon {

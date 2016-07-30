@@ -53,11 +53,7 @@ angular.module('quartermaester')
 
   var csvLocation = "http://www.rslc.us/quartermaester/data/";
   return {
-    // get: getFile,
-    loadData: loadData,
-    // setHomes: setHomes,
-    // setHeraldry: setHeraldry,
-    // getCurrentOccupant: getCurrentOccupant
+    loadData: loadData
   };
 
   ///////////////////////////////
@@ -73,15 +69,16 @@ angular.module('quartermaester')
       getFile('regions.csv'),
       getFile('towns.csv'),
       getFile('borders.csv'),
-      // getFile('stops.csv'),
-      // getFile('waypoints.csv'),
-      // getFile('paths.csv')
+      getFile('stops.csv'),
+      getFile('waypoints.csv'),
+      getFile('paths.csv')
     ]).spread(parseData);
   }
 
   function parseData(books, chapters, seasons, episodes, houses, characters, regions, towns, borders, stops, waypoints, paths) {
     var qmData = {
-      borderArrays: {}
+      borderArrays: {},
+      bookLookup: {}
     };
 
 
@@ -91,6 +88,10 @@ angular.module('quartermaester')
       qmData.borderArrays[borders[i].name].push(borders[i]);
     }
 
+    for (var i=0; i<books.length; i++) {
+      qmData.bookLookup[books[i].abbreviation] = books[i];
+    }
+
     qmData.episodes   = episodes.map(episodeModel);
     qmData.chapters   = chapters.map(chapterModel);
     qmData.books      = books;
@@ -98,6 +99,7 @@ angular.module('quartermaester')
     qmData.characters = characters.map(characterModel);
     qmData.towns      = getTownMarkers(towns, houses);
     qmData.heraldry   = houses.map(heraldryMarkerModel);
+    qmData.characterMarkers = stops.map(characterMarkerModel);
 
 
     qmData.searchResults = [].concat(
@@ -107,6 +109,8 @@ angular.module('quartermaester')
       episodes.map(episodeSearchModel),
       chapters.map(chapterSearchModel)
     );
+
+    qmData.characterPaths = [];
 
 
     return qmData;
@@ -223,20 +227,18 @@ angular.module('quartermaester')
     }
 
     function characterModel(character) {
-      var output = {
+      if (character.house!="") var matchingHouse = $filter('filter')(houses, {wikiKey: character.house})[0];
+      return {
+        key: character.key,
         name: character.name,
-        url: "http://awoiaf.westeros.org/index.php/" + character.awoiaf,
-        house: ""
-      }
-      if (character.house!="") {
-        matchingHouse = $filter('filter')(houses, {wikiKey: character.house})[0];
-        output.house = {
+        url: "http://awoiaf.westeros.org/index.php/" + character.key,
+        pin: "https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=" + character.letter + "|" + character.markerColor.substring(1,7) + "|" + character.letterColor.substring(1,7),
+        house: (character.house=="") ? "" : {
           name: decodeURI(matchingHouse.wikiKey).replace(/_/g," "),
           url: "http://awoiaf.westeros.org/index.php/" + matchingHouse.wikiKey,
           img: matchingHouse.img
         }
-      }
-      return output;
+      };
     }
 
     function characterSearchModel(character) {
@@ -311,6 +313,60 @@ angular.module('quartermaester')
       };
     }
 
+    function characterMarkerModel(stop, index, fullArray) {
+      var matchingCharacter = $filter('filter')(qmData.characters, {key: stop.character})[0];
+      var coords = (stop.town=="") ? {latitude:parseFloat(stop.latitude), longitude:parseFloat(stop.longitude)} : $filter('filter')(qmData.towns, {key: stop.town})[0].coords;
+
+      var firstChapter = getChapterId(stop.firstChapter);
+      var lastChapter = (firstChapter==-1) ? -1 : 999;
+      var firstEpisode = getEpisodeId(stop.firstEpisode);
+      var lastEpisode = (firstEpisode==-1) ? -1 : 999;
+      for (var stopId=index+1; stopId<fullArray.length; stopId++) {
+        if (lastChapter!=999 && lastEpisode!=999) break;
+        if (fullArray[stopId].character != stop.character) break;
+        if (lastChapter==999 && fullArray[stopId].firstChapter!="") lastChapter = getChapterId(fullArray[stopId].firstChapter)-1;
+        if (lastEpisode==999 && fullArray[stopId].firstEpisode!="") lastEpisode = getEpisodeId(fullArray[stopId].firstEpisode)-1;
+      }
+
+      var iconUrl = matchingCharacter.pin;
+      if (stop.isLost=="TRUE") iconUrl = iconUrl.replace(/letter\&chld\=\w/, "icon&chld=glyphish_squiggle");
+      if (stop.isDead=="TRUE") iconUrl = iconUrl.replace(/letter\&chld\=\w/, "icon&chld=glyphish_skull");
+
+      return {
+        key: "stop-" + index,
+        character: {
+          name: matchingCharacter.name,
+          url:  "http://awoiaf.westeros.org/index.php/" + matchingCharacter.key
+        },
+        episode: qmData.episodes[firstEpisode],
+        chapter: qmData.chapters[firstChapter],
+        location: {
+          name: (stop.town=="") ? stop.clue : stop.town,
+          url:  (stop.town=="") ? "#" : "http://awoiaf.westeros.org/index.php/" + stop.town
+        },
+        timing: {
+          episodes: [firstEpisode, lastEpisode],
+          chapters: [firstChapter, lastChapter]
+        },
+        coords: coords,
+        options: {
+          icon: { url: iconUrl }
+        }
+      };
+    }
+
+
+
+
+
+    function getChapterId(chapterKey) {
+      //AGOT-2 to 2
+      if (chapterKey=="") return -1;
+      var reMatch = /(\w{4})\-(\d+)/.exec(chapterKey);
+      var precedingChapters = parseInt(qmData.bookLookup[ reMatch[1] ].precedingChapters, 10)
+      return precedingChapters + parseInt(reMatch[2], 10);
+    }
+
   }
 
 
@@ -330,6 +386,13 @@ angular.module('quartermaester')
 
   function getDataAttr(resp) {
     return resp.data;
+  }
+
+  function getEpisodeId(episodeKey) {
+    //S1E01 to 0
+    if (episodeKey=="") return -1;
+    var reMatch = /S(\d)E(\d\d)/.exec(episodeKey);
+    return 10*(parseInt(reMatch[1], 10)-1) + parseInt(reMatch[2], 10)-1;
   }
 
 
