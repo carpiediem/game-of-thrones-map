@@ -51,9 +51,11 @@ angular.module('quartermaester')
 
  .factory('qmCsv', function($q, $http, $filter, fCsv) {
 
-  var csvLocation = "http://www.rslc.us/quartermaester/data/";
+  var csvLocation = (window.location.protocol=="file:") ? "https://raw.githubusercontent.com/carpiediem/quartermaester/master/data/" : "data/";
   return {
-    loadData: loadData
+    loadData: loadData,
+    getEpisodeId: getEpisodeId,
+    //getChapterId: getChapterId
   };
 
   ///////////////////////////////
@@ -78,6 +80,7 @@ angular.module('quartermaester')
   function parseData(books, chapters, seasons, episodes, houses, characters, regions, towns, borders, stops, waypoints, paths) {
     var qmData = {
       borderArrays: {},
+      waypointArrays: {},
       bookLookup: {}
     };
 
@@ -86,6 +89,12 @@ angular.module('quartermaester')
       if (!(borders[i].name in qmData.borderArrays))
         qmData.borderArrays[borders[i].name] = [];
       qmData.borderArrays[borders[i].name].push(borders[i]);
+    }
+
+    for (var i=0; i<waypoints.length; i++) {
+      if (!(waypoints[i].key in qmData.waypointArrays))
+        qmData.waypointArrays[waypoints[i].key] = [];
+      qmData.waypointArrays[waypoints[i].key].push(waypoints[i]);
     }
 
     for (var i=0; i<books.length; i++) {
@@ -100,6 +109,7 @@ angular.module('quartermaester')
     qmData.towns      = getTownMarkers(towns, houses);
     qmData.heraldry   = houses.map(heraldryMarkerModel);
     qmData.characterMarkers = stops.map(characterMarkerModel);
+    qmData.characterPaths = paths.map(characterPathModel);
 
 
     qmData.searchResults = [].concat(
@@ -109,8 +119,6 @@ angular.module('quartermaester')
       episodes.map(episodeSearchModel),
       chapters.map(chapterSearchModel)
     );
-
-    qmData.characterPaths = [];
 
 
     return qmData;
@@ -232,6 +240,7 @@ angular.module('quartermaester')
         key: character.key,
         name: character.name,
         url: "http://awoiaf.westeros.org/index.php/" + character.key,
+        color: character.markerColor,
         pin: "https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=" + character.letter + "|" + character.markerColor.substring(1,7) + "|" + character.letterColor.substring(1,7),
         house: (character.house=="") ? "" : {
           name: decodeURI(matchingHouse.wikiKey).replace(/_/g," "),
@@ -335,13 +344,15 @@ angular.module('quartermaester')
       return {
         key: "stop-" + index,
         character: {
+          key: matchingCharacter.key,
           name: matchingCharacter.name,
-          url:  "http://awoiaf.westeros.org/index.php/" + matchingCharacter.key
+          url:  "http://awoiaf.westeros.org/index.php/" + matchingCharacter.key,
+          houseImg: matchingCharacter.house.img
         },
         episode: qmData.episodes[firstEpisode],
         chapter: qmData.chapters[firstChapter],
-        location: {
-          name: (stop.town=="") ? stop.clue : stop.town,
+        town: {
+          name: (stop.town=="") ? stop.clue : decodeURI(stop.town).replace(/_/g," "),
           url:  (stop.town=="") ? "#" : "http://awoiaf.westeros.org/index.php/" + stop.town
         },
         timing: {
@@ -355,7 +366,39 @@ angular.module('quartermaester')
       };
     }
 
+    function characterPathModel(path, index) {
+      var reMatch = /([\w\_]+)\-\d+/.exec(path.key);
+      var matchingCharacter = $filter('filter')(qmData.characters, {key: reMatch[1]})[0];
+      var firstChapter = getChapterId(path.firstChapter);
+      var firstEpisode = getEpisodeId(path.firstEpisode);
+      var waypoints = qmData.waypointArrays[path.key].map(waypointModel);
 
+      return {
+          key: "path-" + index,
+          character: { key: matchingCharacter.key },
+          path: waypoints,
+          stroke: {
+              color: matchingCharacter.color,
+              weight: 3
+          },
+          static: true,
+          icons: [{
+              icon: { path: 2 }, //google.maps.SymbolPath.BACKWARD_OPEN_ARROW
+              offset: '25px',
+              repeat: '100px'
+          }],
+          timing: {
+            episodes: [firstEpisode, 999],
+            chapters: [firstChapter, 999]
+          }
+      };
+    }
+
+    function waypointModel(waypoint) {
+      if (waypoint.location=="") return {latitude: parseFloat(waypoint.latitude), longitude: parseFloat(waypoint.longitude)};
+      var matchingTown = $filter('filter')(qmData.towns, {key: waypoint.location})[0];
+      return matchingTown.coords;
+    }
 
 
 
@@ -381,6 +424,9 @@ angular.module('quartermaester')
       .get(csvLocation + filename)
       .then(getDataAttr)
       .then(fCsv.toJson)
+      // .then(function(json){
+      //   // Remove \" characters from strings
+      // })
       .then(angular.fromJson)
   }
 
@@ -402,7 +448,7 @@ angular.module('quartermaester')
 
   // In the return function, we must pass in a single parameter which will be the data we will work on.
   // We have the ability to support multiple other parameters that can be passed into the filter optionally
-  return function(inputArray, slider) {
+  return function(inputArray, slider, options) {
 
     var outputArray = [];
     var currentValue = (slider.show=="episodes") ? slider.currentEpisode : slider.currentChapter;
@@ -410,6 +456,9 @@ angular.module('quartermaester')
     for (var i=0; i<inputArray.length; i++) {
       if (currentValue < inputArray[i].timing[slider.show][0]) continue;
       if (currentValue > inputArray[i].timing[slider.show][1]) continue;
+      if (typeof options !== "undefined" && typeof inputArray[i].character.key !== "undefined") {
+        if (!options.characters[ inputArray[i].character.key ]) continue;
+      }
       outputArray.push(inputArray[i]);
     }
 

@@ -67,10 +67,14 @@
     </ui-gmap-markers>
 
     <!-- Character Paths -->
-    <!-- <ui-gmap-polylines
-    models='mapModels.paths'
-    idkey="'key'">
-    </ui-gmap-polylines> -->
+    <ui-gmap-polylines
+      models='mapModels.paths'
+      path="'path'"
+      stroke="'stroke'"
+      static="'static'"
+      icons="'icons'"
+      idkey="'key'">
+    </ui-gmap-polylines>
 
   </ui-gmap-google-map>
 
@@ -195,7 +199,7 @@
           </a>
           <a ng-href="{{character.url}}" ng-class="{noimg:(character.house=='')}">{{character.name}}</a>
           <toggle-switch
-            ng-model="options.characters[$index]"
+            ng-model="options.characters[character.key]"
             on-label="Show"
             off-label="Hide"
             class="pull-right">

@@ -15,7 +15,7 @@ angular.module('quartermaester')
       houseHeraldry: false,
       geographicRegions: false,
       politicalAllegiances: false,
-      characters: []
+      characters: {}
     };
     $scope.map = {
       center: {
@@ -36,7 +36,7 @@ angular.module('quartermaester')
       smgMapType: smgMapType,
       locationClick: locationClick,
       heraldryClick: heraldryClick,
-      characterClick: heraldryClick
+      characterClick: characterClick
     };
     $scope.mapModels = {
       towns: [],
@@ -75,6 +75,10 @@ angular.module('quartermaester')
       $scope.$watch('slider',  refreshMap, true);
       $scope.$watch('options', refreshMap, true);
 
+      for (var i=0;i<qmData.characters.length; i++) {
+        $scope.options.characters[qmData.characters[i].key] = false;
+      }
+
       return true;
     }
 
@@ -82,9 +86,9 @@ angular.module('quartermaester')
       // Redraw map with new slider values
       $scope.mapModels.towns = $filter('qmSlider')(qmData.towns, $scope.slider);
       $scope.mapModels.heraldry = $scope.options.houseHeraldry ? $filter('qmSlider')(qmData.heraldry, $scope.slider) : [];
-      $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider); //$filter('qmCharacters')(qmData.characterMarkers, $scope.options.characters, $scope.slider);
-      $scope.mapModels.paths = qmData.characterPaths;
-      console.log("qmData.characterPaths", qmData.characterPaths);
+      $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
+      $scope.mapModels.paths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
+      // console.log("qmData.characterPaths", qmData.characterPaths);
 
 
     }
@@ -103,7 +107,16 @@ angular.module('quartermaester')
       var sliderMax   = ($scope.slider.show=="episodes") ? $scope.episodes.length-1 : $scope.chapters.length-1;
       switch (input) {
         case -10:
-          $scope.slider[measure] = 0;
+          if ($scope.slider[measure]==0) break;
+          if ($scope.slider.show=="episodes") $scope.slider[measure] = Math.floor(($scope.slider[measure]-1)/10)*10;
+          else {
+            for (var bookId=4; bookId>=0; bookId--) {
+              var prologue = parseInt(qmData.books[bookId].precedingChapters, 10);
+              if (prologue > $scope.slider[measure]-1) continue;
+              $scope.slider[measure] = prologue;
+              break;
+            }
+          }
           break;
         case -1:
           if ($scope.slider[measure]>0) $scope.slider[measure]--;
@@ -112,21 +125,32 @@ angular.module('quartermaester')
           if ($scope.slider[measure]<sliderMax) $scope.slider[measure]++;
           break;
         case 10:
-          $scope.slider[measure] = sliderMax;
+          if ($scope.slider[measure]==sliderMax) break;
+          if ($scope.slider.show=="episodes") $scope.slider[measure] = Math.min(sliderMax, Math.ceil(($scope.slider[measure]+2)/10)*10-1);
+          else {
+            for (var bookId=0; bookId<=4; bookId++) {
+              var epilogue = parseInt(qmData.books[bookId].precedingChapters, 10)-1;
+              if (epilogue < $scope.slider[measure]+1) continue;
+              $scope.slider[measure] = epilogue;
+              break;
+            }
+          }
           break;
         default:
           $scope.state = "slider";
           if (input.indexOf("-")<0) {
             // HBO show
             $scope.slider.show = "episodes";
-            var reMatch = /S(\d)E0?(\d+)/.exec(input);
-            $scope.slider.currentEpisode = 10*(parseInt(reMatch[1])-1) + parseInt(reMatch[2])-1;
-            break;
+            $scope.slider.currentEpisode = qmCsv.getEpisodeId(input);
+            // var reMatch = /S(\d)E0?(\d+)/.exec(input);
+            // $scope.slider.currentEpisode = 10*(parseInt(reMatch[1])-1) + parseInt(reMatch[2])-1;
+          } else {
+            $scope.slider.show = "chapters";
+            // $scope.slider.currentChapter = qmCsv.getChapterId(input);
+            var reMatch = /(\w{4})\-(\d+)/.exec(input);
+            var bookId = books.indexOf(reMatch[1]);
+            $scope.slider.currentChapter = parseInt(qmData.books[bookId].precedingChapters, 10) + parseInt(reMatch[2], 10);
           }
-          $scope.slider.show = "chapters";
-          var reMatch = /(\w{4})\-(\d+)/.exec(input);
-          var bookId = books.indexOf(reMatch[1]);
-          $scope.slider.currentChapter = parseInt(qmData.books[bookId].precedingChapters, 10) + parseInt(reMatch[2], 10);
           break;
       }
 
@@ -147,7 +171,26 @@ angular.module('quartermaester')
     }
 
     function heraldryClick(marker, eventName, model) {
-      $scope.locationDetail = model;
+      $scope.locationDetail = {
+        name: model.seat,
+        url: model.seatUrl,
+        house: model.name,
+        houseImg: model.houseImg,
+        houseUrl: model.url,
+        direct: model.direct
+      };
+      $scope.state = "location";
+    }
+
+    function characterClick(marker, eventName, model) {
+      $scope.locationDetail = {
+        name: model.town.name,
+        url: model.town.url,
+        house: model.character.name,
+        houseImg: model.character.houseImg,
+        houseUrl: model.character.url,
+        direct: ($scope.slider.show=="episodes") ? model.episode.url : model.chapter.url
+      };
       $scope.state = "location";
     }
 
