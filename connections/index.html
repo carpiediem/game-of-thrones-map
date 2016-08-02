@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connections Between the Novels of "A Song of Ice and Fire" and HBO's "Game of Thrones"</title>
+    <meta name="description" content="An intercative timeline of each chapter and epsisode that shows where the plot fits into each telling of the story and which characters appear in each version" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="ASoIaF-timelines.js"></script>
+    <style>
+    
+      #episodes td.highlight {background-color:#B0C4DE;}
+    
+      body {font-family:sans-serif; overflow-x:hidden}
+      .roundTop    {border-top-right-radius:10px;    -webkit-border-top-right-radius:10px;    border-top-left-radius:10px;    -webkit-border-top-left-radius:10px;}
+      .roundBottom {border-bottom-right-radius:10px; -webkit-border-bottom-right-radius:10px; border-bottom-left-radius:10px; -webkit-border-bottom-left-radius:10px;}
+      #focusImg {float:left; height:200px; min-width:150px; margin:0px 10px 10px 0px; background-image:url('characters.jpg'); background-position:"0px 0px"}
+      #maps img {position:absolute; top:5px; right:5px;}
+      #title, #more {margin-left:120px; margin-right:90px;}
+      #title {padding-bottom:5px; font-weight:bold; font-size:1.1em;}
+      #share {position:absolute; top:170px; right:110px;}
+      #share a {display:inline-block; width:30px; height:30px; margin:3px;}
+      #share iframe {width:80px; height:20px; border:0px;}
+      #info     {display:none !important; background-image:url('http://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF');}
+      #data     {background-image:url('data.png');}
+      #link     {display:none !important; background-image:url('link.png');}
+      #facebook {background-image:url('like.png');}
+      
+      #episodes, #chapters, #characters {clear:left; margin-top:10px; padding:5px; background:#bbb; font-weight:bold;}
+      #characters span, #episodes select, #chapters select {float:right; font-size:0.9em; font-weight:normal;}
+      #spoilerControlReadout {display:none; position:absolute; left:10px; right:10px; top:10px; height:30px; padding: 80px; background-color:pink; font-weight:bold; font-size:1.4em;}
+      
+      table {width: 100%; background:white; font-weight:normal; border-spacing:0;}
+      
+      #episodes ul, #chapters ul, #characters ul {height:100px; padding:0; margin:5px; list-style-type:none;}
+      #episodes ul li, #chapters ul li {height:100px; float:left; margin:0px; padding:0px; background:white;}
+      #episodes ul li:hover, #chapters ul li:hover, 
+      #episodes ul li.highlight, #chapters ul li.highlight {background:#55a; cursor:pointer;}
+      
+      #episodes ul li {width:3.32%;}
+      #episodes ul li:nth-child(11),
+      #episodes ul li:nth-child(21),
+      #chapters ul li:nth-child(74),
+      #chapters ul li:nth-child(144),
+      #chapters ul li:nth-child(226),
+      #chapters ul li:nth-child(272) {border-left:thin solid black;}
+      
+      #griff {display:none;}
+      #characters ul {height:130px; background-color:inherit;}
+      #characters ul ul.column {float:left; margin:0; background-color:white;}
+      #characters li {height:20px; border:thin solid black; width:180px; padding-left:25px;
+                      background-size:20px 20px; background-repeat:no-repeat; -khtml-opacity:.50; -moz-opacity:.50; -ms-filter:"alpha(opacity=50)";  filter:alpha(opacity=50);  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5); opacity:.50; }
+      #characters li:hover, #characters li.highlight {cursor:pointer;         -khtml-opacity:1;   -moz-opacity:1;   -ms-filter:"alpha(opacity=100)"; filter:alpha(opacity=100); filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);   opacity:1; }
+      
+      .spoilerBlock {position:absolute; background-image:url('steel-dark.jpg'); width:110%; height:100px; margin:-105px 5px 5px 5px ; cursor:e-resize; color:white;}
+      .spoilerBlock h2, .spoilerBlock p {margin:5px 25px;}
+      .spoilerBlock h2 span {font-size:0.4em; font-style:italic;}
+      .spoilerBlock .handle {position:absolute; top:0px; width:20px; height:100%; background-color:#333;}
+      
+      .stark        {background-image:url('http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG')}
+      .stark:hover, .stark.highlight {background-color:#808080;}
+      #daenerys     {background-image:url('http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG')}
+      #daenerys:hover, #daenerys.highlight {background-color:#333; color:white;}
+      .lannister    {background-image:url('http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/102px-House_Lannister.png')}
+      .lannister:hover, .lannister.highlight {background-color:#ffa4a4;}
+      .baratheonokl {background-image:url('http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png')}
+      .baratheonokl:hover, .baratheonokl.highlight {background-color:#DAA520;}
+      .baratheon    {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/104px-House_Baratheon.PNG')}
+      .baratheon:hover, .baratheon.highlight {background-color:#DAA520;}
+      #stannis      {background-image:url('http://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png')}
+      #stannis:hover, #stannis.highlight {background-color:#DAA520;}
+      .greyjoy      {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png')}
+      .greyjoy:hover, .greyjoy.highlight {background-color:#fffe8b;}
+      #brienne      {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/120px-House_Tarth.PNG')}
+      #brienne:hover, #brienne.highlight {background-color:#FF00FF;}
+      #davos        {background-image:url('http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png')}
+      #davos:hover, #davos.highlight {background-color:#AAAAAA;}
+      #samwell      {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png')}
+      #samwell:hover, #samwell.highlight {background-color:#3CB371;}
+      #petyr        {background-image:url('http://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/50px-House_Baelish.PNG')}
+      #petyr:hover, #petyr.highlight {background-color:#3CB371;}
+      #jorah        {background-image:url('http://awoiaf.westeros.org/images/thumb/2/2d/House_Mormont.png/40px-House_Mormont.png')}
+      #jorah:hover, #jorah.highlight {background-color:#3CB371;}
+      #barristan    {background-image:url('http://awoiaf.westeros.org/images/thumb/6/61/Selmy.png/50px-Selmy.png')}
+      #barristan:hover, #barristan.highlight {background-color:#9a471f;}
+      #lysa         {background-image:url('http://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/50px-House_Arryn.PNG')}
+      #lysa:hover, #lysa.highlight {background-color:#0368bc;}
+      #griff        {background-image:url('http://awoiaf.westeros.org/images/thumb/0/07/House_Connington.png/50px-House_Connington.png')}
+      #griff:hover, #griff.highlight {background-color:#980030; color:white;}
+      
+      #other:hover, #other.highlight {background-color:black; color:white;}
+    </style>
+    <script>
+      var totalPages = 3967;
+      var characterRowCount = 6;
+      var wikiURLs = {
+        awoiaf: "http://awoiaf.westeros.org/index.php/",
+        toth:   "http://towerofthehand.com/books/",
+        tothTV: "http://towerofthehand.com/gameofthrones/",
+        wikia:  "http://gameofthrones.wikia.com/wiki/",
+        wiki:   "http://en.wikipedia.org/wiki/",
+        imdb:   "http://www.imdb.com/title/",
+        ign:    "http://www.ign.com/wikis/game-of-thrones/",
+        hbo:    "http://www.hbo.com/#/game-of-thrones/episodes/",
+      };
+      var hboPosters = [
+        "http://awoiaf.westeros.org/images/thumb/2/2c/Season_1_Poster.jpg/250px-Season_1_Poster.jpg",
+        "http://awoiaf.westeros.org/images/thumb/3/3a/Season_2_Poster.jpg/250px-Season_2_Poster.jpg",
+        "http://www.westeros.org/GoT/Graphics/Gallery/GameOfThrones_S3_Poster-Jaime_01.jpg"
+      ];
+      
+      function removePX(string){
+        var match = /(\d+)px/.exec(string);
+        return parseInt(match[1]);
+      }
+      
+      $(function(){
+        $("#focusImg").animate({"background-position-x":"-10000px"}, 100000, "linear");
+      
+        $("#episodes ul").html(Array(episodes.length+1).join("<li></li>"));
+        for (e in episodes) {
+          $("#episodes ul li").eq(e).hover(function(){
+                                        $("li").removeClass("highlight");
+                                        $(this).addClass("highlight");
+                                        $("#title").text(episodes[$(this).index()]["title"]);
+                                        $("#more").text("Air date: "+episodes[$(this).index()]["date"]);
+                                        $("#focusImg").attr("src", hboPosters[parseInt(episodes[$(this).index()]["title"].substring(1,2))-1] ).css("background","white").stop();
+                                        //Update Link URL
+                                        $("#maps img").hide();
+                                        for (i in episodes[$(this).index()]["regions"])   $("#"+episodes[$(this).index()]["regions"][i]).show();
+                                        for (i in episodes[$(this).index()]["appearing"]) $("#"+episodes[$(this).index()]["appearing"][i]).addClass("highlight");
+                                        for (i in episodes[$(this).index()]["chapters"])  $("#chapters ul li").eq(episodes[$(this).index()]["chapters"][i]).addClass("highlight");
+                                     })
+                                    .click(function(){
+                                        var wikiChoice = $("#episodeLinks").val();
+                                        window.open(wikiURLs[wikiChoice] + episodes[$(this).index()][wikiChoice], '_blank');
+                                     });;
+        }
+        
+        $("#chapters ul").html(Array(chapters.length+1).join("<li></li>"));
+        for (c in chapters) {
+          var percentWidth = (99.7*chapters[c].pages/totalPages)+"%";
+          $("#chapters ul li").eq(c).css("width",percentWidth)
+                                    .hover(
+                                      function(){
+                                        $("li").removeClass("highlight");
+                                        $(this).addClass("highlight");
+                                        $("#title").text(chapters[$(this).index()]["title"]);
+                                        var maplink = "http://quartermaester.info/#l=" + chapters[$(this).index()]["setting"].replace(/\s/g,"_").replace(/\'/g,"%27");
+                                        $("#more").html("Setting: <a href='"+maplink+"'>"+chapters[$(this).index()]["setting"]+"</a><br/>Pages: "+chapters[$(this).index()]["pages"]);
+                                        $("#focusImg").attr("src", books[chapters[$(this).index()].book].thumbURL).css("background","white").stop();
+                                        //Update Link URL
+                                        $("#maps img").hide();
+                                        $("#"+chapters[$(this).index()].region).show();
+                                        for (i in chapters[$(this).index()]["episodes"])  $("#episodes ul li").eq(chapters[$(this).index()]["episodes"][i]).addClass("highlight");
+                                        if ($("#pov").is(':checked'))
+                                        {
+                                          //Highlight only POV character
+                                          $("#"+chapters[$(this).index()]["pov"]).addClass("highlight");
+                                        }else{
+                                          //Highlight all appearing characters
+                                          for (i in chapters[$(this).index()]["appearing"]) {
+                                            $("#"+chapters[$(this).index()]["appearing"][i]).addClass("highlight");
+                                          }
+                                        }
+                                      }
+                                    )
+                                    .click(function(){
+                                      var wikiChoice = $("#chapterLinks").val();
+                                      window.open(wikiURLs[wikiChoice] + chapters[$(this).index()][wikiChoice], '_blank');
+                                    });
+        }
+        
+        var characterLookup = {};
+        for (var i=0; i<characters.length; i+=characterRowCount) {
+          var nextHTML = '<ul class="column">';
+          for (var j=0; j<characterRowCount && i+j<characters.length; j++) {
+            characterLookup[characters[i+j].id] = characters[i+j];
+            nextHTML += '<li id="'+ characters[i+j].id + '" class="' + characters[i+j].house + '">'+ characters[i+j].name + '</li>';
+          }
+          $("#characterList").append(nextHTML+'</ul>');
+        }
+        
+        $("#characterList li").hover(
+                                function(){
+                                  $("li").removeClass("highlight");
+                                  $(this).addClass("highlight");
+                                  $("#title").text(characterLookup[$(this).attr("id")].name);
+                                  $("#more").html("Home: <a href='http://quartermaester.info/#l="+houses[characterLookup[$(this).attr("id")].house].map+"'>"+houses[characterLookup[$(this).attr("id")].house].seat+"</a>");
+                                  $("#focusImg").attr("src", houses[characterLookup[$(this).attr("id")].house].armsURL).css("background","white").stop();
+                                  //Update Link URL
+                                  $("#maps img").hide();
+                                  $("#"+houses[characterLookup[$(this).attr("id")].house].region).show();
+                                  if ($("#pov").is(':checked'))
+                                  {
+                                    //Highlight only chapters written from this characters point of view
+                                    for (i in characterLookup[$(this).attr("id")].pov)      $("#chapters ul li").eq(characterLookup[$(this).attr("id")].pov[i]     ).addClass("highlight");
+                                  }else{
+                                    //Highlight all episodes & chapters in which this character appears
+                                    for (i in characterLookup[$(this).attr("id")].episodes) $("#episodes ul li").eq(characterLookup[$(this).attr("id")].episodes[i]).addClass("highlight");
+                                    for (i in characterLookup[$(this).attr("id")].chapters) $("#chapters ul li").eq(characterLookup[$(this).attr("id")].chapters[i]).addClass("highlight");
+                                  }
+                                }
+                              )
+                              .click(function(){
+                                var wikiChoice = $("#chapterLinks").val();
+                                window.open(wikiURLs[wikiChoice] + characterLookup[$(this).attr("id")][wikiChoice], '_blank');
+                              });
+                               
+        
+        var setSliderContainment = function(){
+          //If slider has been moved by the user, shift it to its new position
+          maxSlide = removePX($("#episodes ul").css("width"))+10;
+          return $(".spoilerBlock").draggable({ axis: "x", scroll: false, containment: [13,0,maxSlide,0],
+                                                start:function(event,ui){ $("#spoilerControlReadout").fadeIn() },
+                                                stop :function(event,ui){ $("#spoilerControlReadout").fadeOut() }
+                                              });
+        };
+          setSliderContainment().css({left:maxSlide+"px"}).animate({left:"13px"}, 500)
+            .on("drag",function(event,ui){
+              var slider = $(this).parent().attr("id");
+              if (removePX($(this).css("left"))>18) {
+                $(this).hide();
+                i = $(document.elementFromPoint(removePX($(this).css("left"))+3,
+                                                (slider=="episodes" ? 250:400)
+                                               )).index();
+                $(this).show();
+                $("#spoilerControlReadout").text("Hide everything after "+
+                                                 (slider=="episodes" ? episodes[i].title : chapters[i].book.toUpperCase() + ": " + chapters[i].title)
+                                                );
+                if (slider=="chapters") {
+                  if(i>=289) $("#griff").show();
+                  else       $("#griff").hide();
+                }
+              }
+            })
+            .on("stop",function(event,ui){
+              //Update link URL
+            });
+        $(window).resize(setSliderContainment);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="details">
+      <img id="focusImg" />
+      <div id="maps">
+        <img id="beyond"     src="regions/beyond.png" />
+        <img id="crownlands" src="regions/crownlands.png" />
+        <img id="dorne"      src="regions/dorne.png" />
+        <img id="iron"       src="regions/iron.png" />
+        <img id="north"      src="regions/north.png" />
+        <img id="reach"      src="regions/reach.png" />
+        <img id="riverlands" src="regions/riverlands.png" />
+        <img id="stormlands" src="regions/stormlands.png" />
+        <img id="vale"       src="regions/vale.png" />
+        <img id="west"       src="regions/west.png" />
+      </div>
+      <div id="title">Plot, Setting, & Character Connections Between the Novels of "A Song of Ice and Fire" and HBO's "Game of Thrones"</div>
+      <div id="more">The areas below list each of the episodes in HBO's <i>Game of Thrones</i>, each chapter in George R.R. Martin's novel series <i>A Song of Ice and Fire</i> and each of the major characters.  Hovering over any of these three areas will highlight an individual episode, chapter, or character and show how they connect to the other two lists.  Hovering over an episode will show the chapters that were used as source material and the characters that appeared in that episode.  Hovering over a chapter will show the episode(s) which include events from that chapter and the characters that appeared.  If you check the box in the lower-right, only the "point-of-view" character will be shown.  Hovering over a character will display the episodes and chapters in which they appear (again, the POV checkbox will limit this feature).<br/> Before anything can be seen, you'll need to move the spoiler controls out of the way.  These are useful if you have not yet seen all the TV shows or read all the books.  Simply slide them as far as you've read and you won't be able to see any spoilers.</div>
+      <div id="spoilerControlReadout" class="roundTop roundBottom"></div>
+      <div id="share">
+        <a id="info"     href="#" title="Learn about this page"></a>
+        <a id="data"     href="https://docs.google.com/spreadsheet/ccc?key=0Ap4uvl_LaJsmdDBaRjBIWU5nMmltZUwtaHY4emkwaUE&usp=sharing" title="See all the connections in a spreadsheet"></a>
+        <a id="link"     href="http://quartermaester.info/connections" title="Link to the current view"></a>
+        <!--<a id="facebook" href="https://www.facebook.com/Quartermaester" title="Like on Facebook"></a>-->
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquartermaester.info&send=false&layout=button_count&width=200&show_faces=false&font&colorscheme=light&action=like&height=21&appId=225703514133965"></iframe>
+      </div>
+    </div>
+    <div id="episodes" class="roundTop">
+      TV Episodes
+      <select id="episodeLinks"/>
+        <option value="awoiaf">Open links in Westeros.org</option>
+        <option value="tothTV">Open links in TowerOfTheHand.com</option>
+        <option value="wikia" >Open links in Wikia.com</option>
+        <option value="wiki"  >Open links in Wikipedia.org</option>
+        <option value="imdb"  >Open links in IMDB.com</option>
+        <option value="ign"   >Open links in IGN.com</option>
+        <option value="hbo"   >Open links in HBO.com</option>
+      </select>
+      <ul></ul>
+      <div class="spoilerBlock">
+        <h2>TV Spoilers Control Slider <span class="small">Drag me to the right!</span></h2>
+        <div class="handle"></div>
+      </div>
+    </div>
+    <div id="chapters" class="roundTop">
+      Book Chapters
+      <select id="chapterLinks"/>
+        <option value="awoiaf">Open links in Westeros.org</option>
+        <option value="toth"  >Open links in TowerOfTheHand.com</option>
+      </select>
+      <ul></ul>
+      <div class="spoilerBlock">
+        <h2>Book Spoilers Control Slider <span class="small">Drag me to the right!</span></h2>
+        <div class="handle"></div>
+      </div>
+    </div>
+    <div id="characters" class="roundTop">
+      Characters
+      <span><input id="pov" type="checkbox"/>Show POV Only</span>
+      <ul id="characterList"></ul>
+    </div>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36764950-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
+</html>

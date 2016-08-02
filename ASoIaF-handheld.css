@@ -1,0 +1,31 @@
+#toggles, #infoLink, #closeButton {display:none;}
+#menuButton {display:block; z-index:10; width:29px; height:29px; position:absolute; top:5px; right:5px; background-image:url(menu.png); background-repeat:no-repeat; cursor:pointer;}
+#filter {display:none; position:absolute; top:0; bottom:0; right:0; height:100%; width:100%; overflow-y:auto;}
+.qtip {display:none !important;}
+
+h4 {margin:0px;}
+#slideDown {width:20px; height:20px; background-image:url(arrow-left-32.png); background-size:20px 20px;}
+#slideUp    {width:20px; height:20px; background-image:url(arrow-right-32.png); background-size:20px 20px;}
+#chapTitle, #epTitle {height:20px; margin-left:40px; font-size:1.2em !important;}
+
+div.ui-slider {margin:5%; width:90%;}
+span.ui-btn-inner {padding:10px 0px;}
+#filter label, span.ui-btn-text  {font-size:1.2em;}
+label.handheldMenu {display:block;}
+
+form.ui-listview-filter {width:100%; margin:0px;}
+form.ui-listview-filter input {font-size:1em;}
+ul#townSelector {width:75%; margin:0px 45px;}
+
+#handheldToggles {display:none; position:absolute; height:100%; width:100%; overflow:hidden; background:rgba(214, 162, 65, 0.9); font-family:Arial;}
+#handheldToggles ul {height:100%; overflow-y:auto; padding:0px;}
+#handheldToggles li {margin:0px;}
+
+#lightbox {position:absolute; height:auto; width:95%; min-width:0px; top:0px; left:0px; border:0px;}
+h1 {margin-bottom:0px;}
+#subtitle {display:inline; width:auto; margin:auto; padding:3px;}
+#handheldCloseButton {display:block;}
+
+#footer {width:100%; height:30px; position:fixed; bottom:15px; margin-left:-117px; z-index:1; background:transparent; border:none;}
+#banner {width:234px; height:30px; margin-left:50%; background:rgba(30,115,190, 1);}
+#banner img {width:234px;}

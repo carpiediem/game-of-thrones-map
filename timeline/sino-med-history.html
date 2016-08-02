@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script src="http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js?bundle=true" type="text/javascript"></script>
+    <script>
+      var tl;
+      function onLoad() {
+        SimileAjax.History.enabled = false;
+      
+        var medEventSource = new Timeline.DefaultEventSource();
+        var chinaEventSource = new Timeline.DefaultEventSource();
+        var bandInfos = [
+         Timeline.createBandInfo({
+             overview:       true,
+             eventSource:    medEventSource,
+             date:           Timeline.DateTime.parseGregorianDateTime("1000 BC"),
+             width:          "15%", 
+             intervalUnit:   Timeline.DateTime.MILLENNIUM, 
+             intervalPixels: 500
+         }),
+         Timeline.createBandInfo({
+             eventSource:    medEventSource,
+             date:           Timeline.DateTime.parseGregorianDateTime("1000 BC"),
+             width:          "35%", 
+             intervalUnit:   Timeline.DateTime.CENTURY, 
+             intervalPixels: 400
+         }),
+         Timeline.createBandInfo({
+             eventSource:    chinaEventSource,
+             date:           Timeline.DateTime.parseGregorianDateTime("1000 BC"),
+             width:          "35%", 
+             intervalUnit:   Timeline.DateTime.CENTURY, 
+             intervalPixels: 400
+         }),
+         Timeline.createBandInfo({
+             overview:       true,
+             eventSource:    chinaEventSource,
+             date:           Timeline.DateTime.parseGregorianDateTime("1000 BC"),
+             width:          "15%", 
+             intervalUnit:   Timeline.DateTime.MILLENNIUM, 
+             intervalPixels: 500
+         })
+        ];
+        bandInfos[0].syncWith = 1;
+        bandInfos[0].highlight = true;
+        //bandInfos[0].eventPainter.setLayout(bandInfos[1].eventPainter.getLayout());
+        
+        bandInfos[2].syncWith = 1;
+        bandInfos[3].syncWith = 2;
+        bandInfos[3].highlight = true;
+        //bandInfos[3].eventPainter.setLayout(bandInfos[2].eventPainter.getLayout());
+
+        tl = Timeline.create(document.getElementById("my-timeline"), bandInfos);
+        Timeline.loadXML("mediterranean.xml", function(xml, url) { medEventSource.loadXML(xml, url); });
+        Timeline.loadXML("china.xml",         function(xml, url) { chinaEventSource.loadXML(xml, url); });
+      }
+
+      var resizeTimerID = null;
+      function onResize() {
+         if (resizeTimerID == null) {
+             resizeTimerID = window.setTimeout(function() {
+                 resizeTimerID = null;
+                 tl.layout();
+             }, 500);
+         }
+      }
+    </script>
+    <style>
+    div.rotate {
+      max-width:20px;
+      margin-top:130px;
+      font-family: Tahoma;
+      font-weight: bold;
+      text-align:center;
+      
+      -webkit-transform: rotate(-90deg); //Safari rotation
+      -moz-transform: rotate(-90deg);    //Firefox rotation
+      -ms-transform: rotate(-90deg);     //IE rotation
+      -o-transform: rotate(-90deg);      //Opera rotation
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //IE rotation
+    }
+    </style>
+  </head>
+  <body onload="onLoad();" onresize="onResize();">
+    <table>
+      <tr>
+        <td><div class="rotate">Mediterranean</div></td>
+        <td rowspan=2 style="height: 400px; width:100%; border: 1px solid #aaa">
+          <div id="my-timeline" style="height: 400px; border: 1px solid #aaa"></div>
+          <noscript>This page uses Javascript to show you a Timeline. Please enable Javascript in your browser to see the full page. Thank you.</noscript>
+        </td>
+      </tr>
+      <tr>
+        <td><div class="rotate">China</div></td>
+      </tr>
+    </table>
+  </body>
+ </html>
