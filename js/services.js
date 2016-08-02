@@ -372,6 +372,12 @@ angular.module('quartermaester')
       var firstChapter = getChapterId(path.firstChapter);
       var firstEpisode = getEpisodeId(path.firstEpisode);
       var waypoints = qmData.waypointArrays[path.key].map(waypointModel);
+      var icons = [];
+      if (path.arrows=="TRUE") icons.push({
+          icon: { path: 2 }, //google.maps.SymbolPath.BACKWARD_OPEN_ARROW
+          offset: '25px',
+          repeat: '100px'
+      });
 
       return {
           key: "path-" + index,
@@ -382,14 +388,16 @@ angular.module('quartermaester')
               weight: 3
           },
           static: true,
-          icons: [{
-              icon: { path: 2 }, //google.maps.SymbolPath.BACKWARD_OPEN_ARROW
-              offset: '25px',
-              repeat: '100px'
-          }],
+          icons: icons,
           timing: {
-            episodes: [firstEpisode, 999],
-            chapters: [firstChapter, 999]
+            episodes: [
+              firstEpisode,
+              (firstEpisode==-1) ? -1 : 999
+            ],
+            chapters: [
+              firstChapter,
+              (firstChapter==-1) ? -1 : 999
+            ]
           }
       };
     }

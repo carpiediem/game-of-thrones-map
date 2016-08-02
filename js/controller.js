@@ -88,7 +88,7 @@ angular.module('quartermaester')
       $scope.mapModels.heraldry = $scope.options.houseHeraldry ? $filter('qmSlider')(qmData.heraldry, $scope.slider) : [];
       $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
       $scope.mapModels.paths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
-      // console.log("qmData.characterPaths", qmData.characterPaths);
+      //console.log("mapModels.paths", $scope.mapModels.paths);
 
 
     }
