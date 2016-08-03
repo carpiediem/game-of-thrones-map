@@ -1,24 +1,64 @@
 html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-container {
+  margin: 0;
   height: 100%;
 }
 
-/*.btn-clear {
-  background-color: transparent;
-  color: white !important;
-}*/
+::-webkit-scrollbar {width: 6px; height: 4px; background: transparent; }
+::-webkit-scrollbar-thumb { background-color: #f0f0f0; -webkit-border-radius: 1ex; }
+
+#navigation {
+  position: absolute;
+  top: 0;
+}
+
+#navigation .list-group {
+  margin: 0;
+}
+
+#navigation .list-group .list-group-item {
+  border-radius: 0 !important;
+  background-color: black;
+  color: #aaa;
+  border: none;
+}
+
+#navigation .list-group .list-group-item:hover {
+  color: white;
+}
+
+#navigation .list-group .list-group-item:focus {
+  outline: none;
+}
+
+#navigation .list-group .list-group-item.highlight {
+  background-color: rgb(191, 70, 39);
+  color: white;
+}
+
+#navigation .list-group .list-group-item.hlborder {
+  border-right: 2px rgb(191, 70, 39);
+}
+
 
 #side {
   position: absolute;
   top: 0;
+  left: 44px;
   background-color: rgb(191, 70, 39);
   color: white;
-  padding: 8px;
-  min-width: 300px;
+  padding: 2px 8px;
+  width: 300px;
 }
 
-#side h1 {
-  font-size: 1.5em;
-  line-height: 1.5em;
+#side.wider {
+  width: 600px;
+  max-width: calc(100% - 44px);
+}
+
+#slider-readout {
+  padding: 6px 0;
+  font-size: 1.2em;
+  line-height: 1.2em;
   margin: 2px;
   width: 280px;
   overflow: hidden;
@@ -26,13 +66,11 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   text-overflow: ellipsis;
 }
 
-#side h1 span.glyphicon {
-  cursor: pointer;
-  font-size: 1em;
-}
-
-#side h1 a {
-  color: white;
+#side h1 {
+  font-family: 'Cutive', serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 2px;
 }
 
 #side .list-group {
@@ -47,6 +85,7 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 
 #side .list-group-item {
   background-color: transparent;
+  border: none;
   color: white !important;
 }
 
@@ -72,13 +111,17 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   cursor: pointer;
 }
 
-#slider-control {
+/*#slider-control {
   margin-left: 30px;
+}*/
+
+#slider-control {
+  width: 280px;
+  margin-bottom: 10px;
 }
 
-#slider-control,
 #slider-control .btn-group {
-  width: 250px;
+  width: 280px;
 }
 
 #slider-control .btn-group-2 .btn {
@@ -97,6 +140,14 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   background-color: #286090;
 }
 
+#slider-control .rzslider .rz-pointer.rz-active:after {
+  background: rgb(191, 70, 39);
+}
+
+#slider-control .rzslider .rz-pointer:focus {
+  outline: none;
+}
+
 #slider-control .rz-bubble {
   display: none;
 }
@@ -107,14 +158,14 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 
 #slider-control .rz-bar {
   height: 20px;
-  width: 218px;
+  width: 248px;
   margin: 0 16px;
   cursor: pointer;
 }
 
 #slider-control .rz-bar span {
   position: relative;
-  width: 36px;
+  width: 16.66666%;
   text-align: center;
 }
 
@@ -137,6 +188,11 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 #slider-control .rzslider:nth-child(3) .rz-bar span:nth-child(4) {width: 13%}
 #slider-control .rzslider:nth-child(3) .rz-bar span:nth-child(5) {width: 21%}
 
+
+#characters .list-group {
+  overflow-y: scroll;
+}
+
 #characters li a.hasimg {
   display: inline-block;
   width: 18px;
@@ -144,4 +200,44 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 
 #characters li a.noimg {
   margin-left: 22px;
+}
+
+#search .input-group {
+  margin-bottom: 10px;
+}
+
+#search .list-group .list-group-item span {
+  width: 200px;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#about {
+  height: 500px;
+  padding-right: 5px;
+  overflow-y: scroll;
+}
+
+#about p,
+#about ul {
+  color: black;
+  background-color: #ddd;
+  padding: 10px;
+  margin: 0;
+}
+
+#about h1 {
+  margin-top: 20px;
+}
+
+#about h1:first-child {
+  margin-top: inherit;
+}
+
+#about ul {
+  list-style-type: circle;
+  list-style-position: inside;
 }

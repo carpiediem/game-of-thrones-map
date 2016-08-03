@@ -128,7 +128,7 @@ angular.module('quartermaester')
       var epNumber = (episode.episode.length==2) ? episode.episode : "0"+episode.episode;
       return {
         name: "S" + episode.season + "E" + epNumber + ": " + episode.title,
-        url: (episode.awoiaf=="") ? "https://en.wikipedia.org/wiki/"+episode.wikipedia : "http://awoiaf.westeros.org/index.php/"+episode.awoiaf
+        url: (episode.awoiaf=="") ? "https://en.wikipedia.org/wiki/"+episode.wikipedia.replace(/"/g,"") : "http://awoiaf.westeros.org/index.php/"+episode.awoiaf.replace(/"/g,"")
       };
     }
 
@@ -255,7 +255,7 @@ angular.module('quartermaester')
         icon: "glyphicon-user",
         key: character.key,
         title: character.name,
-        subtitle: decodeURI(character.house).replace(/_/g," "),
+        subtitle: "", //decodeURI(character.house).replace(/_/g," "),
         click: function(){showCharacter(this.key)}
       };
     }
@@ -474,4 +474,18 @@ angular.module('quartermaester')
 
   }
 
+})
+
+.directive('qmList', function ($window) {
+  return {
+    restrict: 'A',
+    link: function (scope, elem, attrs) {
+      // console.log(elem, attrs);
+      var winHeight = $window.innerHeight;
+      // var listHeight = attrs.qmList ? 41*parseInt(attrs.qmList, 10) : 0;
+      // console.log(winHeight, attrs.qmList, listHeight);
+      // if (listHeight>winHeight) elem.css('height', winHeight - 48 + 'px');
+      elem.css('height', winHeight - 50 + 'px');
+    }
+  };
 });

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport"    content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'></script>
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js'></script>
@@ -17,9 +19,11 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.css" rel="stylesheet">
   <link href="css/angular-toggle-switch.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
   <link href="css/quartermaester.css" rel="stylesheet">
 
   <title>Interactive Game of Thrones Map</title>
+  <meta name="description" content="A map of Westeros and the rest of the known world in Game of Thrones and the Song of Ice & Fire novels.  Mark how much of the TV show or novels you've seen to prevent seeing any spoilers.  See the path of major characters over time." />
 </head>
 <body ng-app="quartermaester" ng-controller="mapCtrl">
 
@@ -78,14 +82,35 @@
 
   </ui-gmap-google-map>
 
-  <div id="side" class=".col-xs-12 .col-md-3">
+  <div id="navigation">
+    <div class="list-group">
+      <button class="list-group-item btn-clear" ng-click="toState('slider-full')" ng-class="{highlight:(state=='slider-full'), hlborder:(state=='search')}">
+        <i class="glyphicon glyphicon-eye-close"></i>
+      </button>
+      <button class="list-group-item btn-clear" ng-click="toState('characters')" ng-class="{highlight:(state=='characters'),hlborder:(state=='search')}">
+        <i class="glyphicon glyphicon-user"></i>
+      </button>
+      <button class="list-group-item btn-clear" ng-click="toState('search')" ng-class="{highlight:(state=='search')}">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+      <button class="list-group-item btn-clear" ng-click="toState('options')" ng-class="{highlight:(state=='options')}">
+        <i class="glyphicon glyphicon-cog"></i>
+      </button>
+      <button class="list-group-item btn-clear" ng-click="toState('about')" ng-class="{highlight:(state=='about')}">
+        <i class="glyphicon glyphicon-question-sign"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="side" ng-class="{wider:(state=='about')}">
     <!-- <p>{{state}}</p> -->
     <div id="slider" ng-show="state.substring(0,6)=='slider'">
-      <h1>
-        <span class="glyphicon glyphicon-menu-hamburger" ng-click="toState('menu')"></span>
+      <h1 ng-show="state=='slider-full'">Spoiler Control</h1>
+      <div id="slider-readout">
+        <!-- <span class="glyphicon glyphicon-menu-hamburger" ng-click="toState('menu')"></span> -->
         <span ng-show="slider.show=='episodes'" ng-bind="episodes[slider.currentEpisode].name" title="{{episodes[slider.currentEpisode].name}}" ng-click="toState('slider-full')"></span>
         <span ng-show="slider.show=='chapters'" ng-bind="chapters[slider.currentChapter].name" title="{{chapters[slider.currentChapter].name}}" ng-click="toState('slider-full')"></span>
-      </h1>
+      </div>
       <div id="slider-control" ng-show="state=='slider-full'">
         <div class="btn-group btn-group-2" role="group">
           <button type="button" class="btn" ng-click="slider.show='episodes';" ng-class="{'btn-primary':(slider.show=='episodes'), 'btn-default':(slider.show!='episodes')}">
@@ -130,44 +155,8 @@
       </div>
     </div>
 
-    <div id="menu" ng-show="state=='menu'" class="list-group">
-      <h1>
-        <span class="glyphicon glyphicon-menu-left"  ng-click="toState('slider')"></span>
-        Quartermaester.info
-      </h1>
-      <div class="list-group">
-        <button class="list-group-item btn-clear" ng-click="toState('slider-full')">
-          <i class="glyphicon glyphicon-eye-close"></i>
-          Spoiler Control
-        </button>
-        <button class="list-group-item btn-clear" ng-click="toState('characters')">
-          <i class="glyphicon glyphicon-user"></i>
-          Characters
-        </button>
-        <button class="list-group-item btn-clear" ng-click="toState('search')">
-          <i class="glyphicon glyphicon-search"></i>
-          Search
-        </button>
-        <button class="list-group-item btn-clear" ng-click="toState('options')">
-          <i class="glyphicon glyphicon-cog"></i>
-          Options
-        </button>
-        <a href="about.html" role="button" class="list-group-item btn-clear">
-          <i class="glyphicon glyphicon-question-sign"></i>
-          About
-        </a>
-        <a href="resources.html" role="button" class="list-group-item btn-clear">
-          <i class="glyphicon glyphicon-thumbs-up"></i>
-          Other Resources
-        </a>
-      </div>
-    </div>
-
     <div id="location" ng-show="state=='location'">
-      <h1>
-        <span class="glyphicon glyphicon-menu-left"  ng-click="toState('slider')"></span>
-        Location Details
-      </h1>
+      <h1>Location Details</h1>
       <div class="list-group">
         <a ng-href="{{locationDetail.url}}" role="button" class="list-group-item btn-clear">
           <i class="glyphicon glyphicon glyphicon-map-marker"></i>
@@ -188,11 +177,8 @@
     </div>
 
     <div id="characters" ng-show="state=='characters'">
-      <h1>
-        <span class="glyphicon glyphicon-menu-left" ng-click="toState('slider')"></span>
-        Characters
-      </h1>
-      <ul class="list-group">
+      <h1>Characters</h1>
+      <ul class="list-group" qm-list="{{characters.length}}">
         <li ng-repeat="character in characters" class="list-group-item">
           <a ng-href="{{character.house.url}}" ng-if="character.house!=''" class="hasimg">
             <img ng-src="{{character.house.img}}">
@@ -209,33 +195,30 @@
     </div>
 
     <div id="search" ng-show="state=='search'">
-      <h1>
-        <span class="glyphicon glyphicon-menu-left" ng-click="toState('slider')"></span>
-        <div class="input-group pull-right" style="width:250px;">
-          <input id="searchInput" ng-model="search" type="text" class="form-control" placeholder="Search towns, houses, characters, titles">
-          <span class="input-group-addon">
-            <i class="glyphicon glyphicon-search"></i>
-          </span>
-        </div>
-      </h1>
+      <h1>Search</h1>
+      <div class="input-group">
+        <input id="searchInput" ng-model="search" type="text" class="form-control" placeholder="towns, houses, characters, titles">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-search"></i>
+        </span>
+      </div>
       <div class="list-group" ng-show="search!==''">
         <button
           ng-repeat="result in searchResults | filter:{ title: search }"
           class="list-group-item"
           ng-click="result.click()">
           <i class="glyphicon {{result.icon}}"></i>
-          {{result.title}}
-          <small>{{result.subtitle}}</small>
+          <span>
+            {{result.title}}
+            <small>{{result.subtitle}}</small>
+          </span>
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
         </button>
       </div>
     </div>
 
     <div id="options" ng-show="state=='options'">
-      <h1>
-        <span class="glyphicon glyphicon-menu-left" ng-click="toState('slider')"></span>
-        Options
-      </h1>
+      <h1>Options</h1>
       <ul class="list-group">
         <li class="list-group-item">
           Character Paths
@@ -274,6 +257,46 @@
       </ul>
 
 
+    </div>
+
+    <div id="about" ng-show="state=='about'" qmList>
+      <h1>About Quatrermaester.info</h1>
+      <p>This is a map of the world depicted in the novel series <a target="_blank" href="http://www.georgerrmartin.com/bibliography.html">A Song of Ice & Fire</a> and the TV adaptation, <a target="_blank" href="http://www.hbo.com/game-of-thrones">A Game of Thrones</a>.  The website is designed to display useful information on top of the map layer and link to additional details on the <a target="_blank" href="http://awoiaf.westeros.org">Westeros.org wiki site</a>.</p>
+      <p>If you haven't finished reading the novels or watching the shows, you can hide any details that might spoil the plot.  Simply drag the slider in the top-right corner to the last chapter or episode that you've completed.  You can move the slider with arrow buttons in order to animate the characters' paths.  Keep in mind that the slider only controls this map; any page you may open on <span style="font-style:italic;">the wiki site may contain spoilers</span>.</p>
+      <!-- <p>If you'd like to share this map with others and point them to a specific location, hold down the Ctrl button while you click on the map.  You will be given a URL that will automatically center the map on that point. (e.g. <a id="lightboxLink" href="#@Winterfell">Winterfell</a>)</p> -->
+      <p>The map layer used in this website was drawn by <a target="_blank" href="http://www.sermountaingoat.co.uk/map">theMountainGoat</a>, based on previous work by <a target="_blank" href="http://www.cartographersguild.com/finished-maps/6683-westeros-fan-project.html">Tear of the Cartographer's Guild</a>.  The map interface is based on the <a target="_blank" href="http://developers.google.com/maps/documentation/javascript/">Google Maps API</a>, with custom tiles generated by <a target="_blank" href="http://www.bartlett.ucl.ac.uk/casa/latest/software/gmap-image-cutter">GMap Image Cutter Version 1.42</a> and arrows using code from <a target="_blank" href="http://www.bdcc.co.uk/Gmaps/Services.htm">Bill Chadwick</a>.  Intellectual property of <span style="font-style:italic;">A Song of Ice and Fire</span>, this map and all locations belong to <a target="_blank" href="http://www.georgerrmartin.com">George R.R. Martin</a>.  If you find any errors in the map data, please <a target="_blank" href="http://asoiaf.westeros.org/index.php/user/55796-carpiediem/">alert me on the Westeros.org message board</a>.</p>
+      <p>You may notice that this map is contradicted, in places, by the maps shown in <a target="_blank" href="http://www.randomhouse.com/book/221316/the-lands-of-ice-and-fire-a-game-of-thrones-by-george-rr-martin/other">The Lands of Ice and Fire</a>.  Since the maps in that collection are clearly copyrighted material, I have no intention of copying them directly and I'm going to remain cautious in pulling details from them to correct this website.  You can find low-resolution versions of the official maps on <a target="_blank" href="http://www.fantasticmaps.com/the-lands-of-ice-and-fire/">the artist's website</a> or in Random House's <a target="_blank" href="https://itunes.apple.com/hk/app/george-r.-r.-martins-world/id570015223">iOS</a> & <a target="_blank" href="https://play.google.com/store/apps/details?id=com.randomhouse.woiaf">Android</a> apps.</p>
+
+      <h1>Other Resources</h1>
+      <ul>
+        <li>
+          <a target="_blank" href="http://joeltronics.github.io/got-book-show/bookshow.html">Game of Thrones episode chapter coverage</a>
+        </li>
+        <!-- <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li>
+        <li>
+          <a target="_blank" href="#">Something</a>
+        </li> -->
+        <li>
+          <a target="_blank" href="http://viewers-guide.hbo.com/game-of-thrones/season-1/episode-1/map/location/27/kings-landing">HBO Viewers' Guide</a>
+        </li>
+      </ul>
     </div>
 
   </div>
