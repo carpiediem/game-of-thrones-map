@@ -415,6 +415,7 @@ angular.module('quartermaester')
       if (chapterKey=="") return -1;
       if (chapterKey=="TWOW-?") return 344;
       var reMatch = /(\w{4})\-(\d+)/.exec(chapterKey);
+      console.log("chapterKey", chapterKey, reMatch);
       var precedingChapters = parseInt(qmData.bookLookup[ reMatch[1] ].precedingChapters, 10)
       return precedingChapters + parseInt(reMatch[2], 10);
     }
