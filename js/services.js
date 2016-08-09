@@ -51,7 +51,7 @@ angular.module('quartermaester')
 
  .factory('qmCsv', function($q, $http, $filter, fCsv) {
 
-  var csvLocation = (window.location.protocol=="file:") ? "https://raw.githubusercontent.com/carpiediem/quartermaester/master/data/" : "data/";
+  var csvLocation = (window.location.protocol=="file:") ? "https://raw.githubusercontent.com/carpiediem/carpiediem.github.io/master/quartermaester/data/" : "data/";
   return {
     loadData: loadData,
     getEpisodeId: getEpisodeId,
@@ -413,6 +413,7 @@ angular.module('quartermaester')
     function getChapterId(chapterKey) {
       //AGOT-2 to 2
       if (chapterKey=="") return -1;
+      if (chapterKey=="TWOW-?") return 344;
       var reMatch = /(\w{4})\-(\d+)/.exec(chapterKey);
       var precedingChapters = parseInt(qmData.bookLookup[ reMatch[1] ].precedingChapters, 10)
       return precedingChapters + parseInt(reMatch[2], 10);
