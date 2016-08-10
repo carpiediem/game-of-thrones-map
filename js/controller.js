@@ -52,6 +52,7 @@ angular.module('quartermaester')
     $scope.toState = toState;
     $scope.slideTo = slideTo;
     $scope.panTo = panTo;
+    $scope.resultClick = resultClick;
     $scope.refreshMap = refreshMap;
     $scope.locationDetail = null;
 
@@ -74,6 +75,7 @@ angular.module('quartermaester')
 
       $scope.$watch('slider',  refreshMap, true);
       $scope.$watch('options', refreshMap, true);
+      $scope.$watch('options.characters', panToCharacter, true);
 
       for (var i=0;i<qmData.characters.length; i++) {
         $scope.options.characters[qmData.characters[i].key] = false;
@@ -89,16 +91,30 @@ angular.module('quartermaester')
       $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
       $scope.mapModels.paths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
       //console.log("mapModels.paths", $scope.mapModels.paths);
+    }
 
+    function panToCharacter(newValue, oldValue) {
+      for (var character in newValue) {
+        if (newValue[character] && !oldValue[character]) {
+          var characterMarkers = $filter('filter')($scope.mapModels.characters, {character: {key: character}});
+          if (characterMarkers.length==0) return false;
 
+          var coords = characterMarkers[characterMarkers.length-1].coords
+          $scope.map.control.getGMap().panTo({lat: coords.latitude, lng: coords.longitude});
+          return true;
+        }
+      }
     }
 
     function toState(stateName) {
       $scope.state = stateName;
-      if (stateName=="search")
-        $timeout(function() {
-          document.getElementById("searchInput").focus();
-        });
+      if (stateName=="search") $timeout(function() {
+        document.getElementById("searchInput").focus();
+      });
+      // if (stateName=="slider-full") $timeout(function() {
+      //   console.log(document.getElementById("slide-"+$scope.slider.show).getElementsByClassName("rz-pointer"));
+      //   document.getElementById("slide-"+$scope.slider.show).getElementsByClassName("rz-pointer")[0].focus();
+      // });
     }
 
     function slideTo(input) {
@@ -128,6 +144,10 @@ angular.module('quartermaester')
           if ($scope.slider[measure]==sliderMax) break;
           if ($scope.slider.show=="episodes") $scope.slider[measure] = Math.min(sliderMax, Math.ceil(($scope.slider[measure]+2)/10)*10-1);
           else {
+            if ($scope.slider[measure] >= 270) {
+              $scope.slider[measure] = 344;
+              break;
+            }
             for (var bookId=0; bookId<=4; bookId++) {
               var epilogue = parseInt(qmData.books[bookId].precedingChapters, 10)-1;
               if (epilogue < $scope.slider[measure]+1) continue;
@@ -153,7 +173,7 @@ angular.module('quartermaester')
           }
           break;
       }
-
+      $scope.$broadcast('rzSliderForceRender');
     }
 
     function panTo(input) {
@@ -163,6 +183,61 @@ angular.module('quartermaester')
       $scope.map.control.getGMap().panTo({lat: location.coords.latitude, lng: location.coords.longitude});
       $scope.locationDetail = location;
       $scope.state = "location";
+    }
+
+    function resultClick(model) {
+      switch (model.icon) {
+        case "glyphicon-map-marker":
+          var town = $filter('filter')($scope.mapModels.towns, {key: model.key})[0];
+          $scope.map.control.getGMap().panTo({lat: town.coords.latitude, lng: town.coords.longitude});
+          $scope.locationDetail = town;
+          $scope.state = "location";
+          break;
+
+        case "glyphicon-user":
+          $scope.options.characters[model.key] = true;
+          var character = $filter('filter')($scope.characters, {key: model.key})[0];
+          var allCharacterMarkers = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
+          var matchedCharacterMarkers = $filter('filter')(allCharacterMarkers, {character: {key: model.key}});
+          $scope.locationDetail = {
+            name: "",
+            url: "",
+            house: character.name,
+            houseImg: character.house.img,
+            houseUrl: character.url,
+            direct: "#"
+          };
+          $scope.state = "location";
+          if (matchedCharacterMarkers.length==0) break;
+          var thisCharacterMarker = matchedCharacterMarkers[0];
+          $scope.map.control.getGMap().panTo({lat: thisCharacterMarker.coords.latitude, lng: thisCharacterMarker.coords.longitude});
+          $scope.locationDetail.name = thisCharacterMarker.town.name;
+          $scope.locationDetail.url  = thisCharacterMarker.town.url;
+          $scope.locationDetail.direct = ($scope.slider.show=="episodes") ? thisCharacterMarker.episode.url : thisCharacterMarker.chapter.url;
+          break;
+
+        case "glyphicon-home":
+          var house = $filter('filter')(qmData.heraldry, {seat: model.subtitle})[0];
+          $scope.map.control.getGMap().panTo({lat: house.coords.latitude, lng: house.coords.longitude});
+          $scope.locationDetail = {
+            name: house.seat,
+            url: house.seatUrl,
+            house: house.name,
+            houseImg: house.houseImg,
+            houseUrl: house.url,
+            direct: house.direct
+          };
+          $scope.state = "location";
+          break;
+
+        case "glyphicon-facetime-video":
+        case "glyphicon-book":
+          slideTo(model.abbr);
+          break;
+
+        default:
+          console.log("resultClick", model);
+      }
     }
 
     function locationClick(marker, eventName, model) {

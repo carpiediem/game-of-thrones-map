@@ -64,6 +64,7 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 #side h1 {
@@ -71,6 +72,10 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 2px;
+}
+
+#side h1 .glyphicon-remove {
+  cursor: pointer;
 }
 
 #side .list-group {

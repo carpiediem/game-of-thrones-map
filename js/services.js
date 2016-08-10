@@ -138,7 +138,7 @@ angular.module('quartermaester')
         icon: "glyphicon-facetime-video",
         title: episode.title,
         subtitle: "HBO episode",
-        abbr: "S" + episode.season + "E" + epNumber + ": " + episode.title,
+        abbr: "S" + episode.season + "E" + epNumber,
         click: function(){slideTo(this.abbr)}
       };
     }
@@ -213,6 +213,7 @@ angular.module('quartermaester')
               longitude: parseFloat(town.longitude)
             },
             options: {
+              // zindex: 2,  // bug prevents this form working
               icon: {path: 0, strokeOpacity: 0, scale: 3}
             }
           });
@@ -228,9 +229,8 @@ angular.module('quartermaester')
       return {
         icon: "glyphicon-map-marker",
         key: town.key,
-        title: town.name,
-        subtitle: town.region.replace(/_/g," "),
-        click: function(){panTo(this.key)}
+        title: decodeURI(town.key).replace(/_/g," "),
+        subtitle: town.region.replace(/_/g," ")
       };
     }
 
@@ -255,8 +255,7 @@ angular.module('quartermaester')
         icon: "glyphicon-user",
         key: character.key,
         title: character.name,
-        subtitle: "", //decodeURI(character.house).replace(/_/g," "),
-        click: function(){showCharacter(this.key)}
+        subtitle: "", //decodeURI(character.house).replace(/_/g," ")
       };
     }
 
@@ -292,6 +291,7 @@ angular.module('quartermaester')
         direct: "#@" + house.seatKey,
         coords: coords,
         options: {
+          // zindex: 1,   // bug prevents this form working
           icon: {
             url: house.img,
             scaledSize: house.isGreat ? {height:60, width:50} : {height:30, width:25},
@@ -305,8 +305,7 @@ angular.module('quartermaester')
       return {
         icon: "glyphicon-home",
         title: decodeURI(house.wikiKey).replace(/_/g," "),
-        subtitle: (house.seatKey=="") ? house.clue : decodeURI(house.seatKey).replace(/_/g," "),
-        click: function(){showCharacter(character.key)}
+        subtitle: (house.seatKey=="") ? house.clue : decodeURI(house.seatKey).replace(/_/g," ")
       };
     }
 
@@ -486,7 +485,7 @@ angular.module('quartermaester')
       // var listHeight = attrs.qmList ? 41*parseInt(attrs.qmList, 10) : 0;
       // console.log(winHeight, attrs.qmList, listHeight);
       // if (listHeight>winHeight) elem.css('height', winHeight - 48 + 'px');
-      elem.css('height', winHeight - 50 + 'px');
+      elem.css('height', winHeight - 55 + 'px');
     }
   };
 });
