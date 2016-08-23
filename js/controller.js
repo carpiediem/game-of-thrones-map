@@ -55,6 +55,7 @@ angular.module('quartermaester')
     $scope.resultClick = resultClick;
     $scope.refreshMap = refreshMap;
     $scope.locationDetail = null;
+    $scope.lastClick = null;
 
     // Set up promises
     uiGmapGoogleMapApi.then(onMapLoad);
@@ -89,8 +90,14 @@ angular.module('quartermaester')
       $scope.mapModels.towns = $filter('qmSlider')(qmData.towns, $scope.slider);
       $scope.mapModels.heraldry = $scope.options.houseHeraldry ? $filter('qmSlider')(qmData.heraldry, $scope.slider) : [];
       $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
-      $scope.mapModels.paths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
-      //console.log("mapModels.paths", $scope.mapModels.paths);
+      var staticPaths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
+      $scope.mapModels.paths = angular.copy(staticPaths);
+      $scope.mapModels.editablePaths = angular.copy(staticPaths).map(function(path) {
+        path.static   = false;
+        path.editable = true;
+        return path;
+      });
+      // console.log("mapModels.paths", foo, $scope.mapModels.paths);
     }
 
     function panToCharacter(newValue, oldValue) {
@@ -111,6 +118,7 @@ angular.module('quartermaester')
       if (stateName=="search") $timeout(function() {
         document.getElementById("searchInput").focus();
       });
+      if (stateName=="edit") refreshMap();
       // if (stateName=="slider-full") $timeout(function() {
       //   console.log(document.getElementById("slide-"+$scope.slider.show).getElementsByClassName("rz-pointer"));
       //   document.getElementById("slide-"+$scope.slider.show).getElementsByClassName("rz-pointer")[0].focus();
@@ -269,8 +277,12 @@ angular.module('quartermaester')
       $scope.state = "location";
     }
 
-    function mapClick() {
+    function mapClick(a, b, c, d) {
       $scope.state = "slider";
+      //console.log(a, b, c, d);
+      // console.log(c[0].latLng.lat());
+      //$scope.lastClick = JSON;
+      console.log($scope.mapModels.paths);
     }
 
     function onMapLoad(maps) {

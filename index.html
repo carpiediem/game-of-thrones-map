@@ -71,12 +71,25 @@
     </ui-gmap-markers>
 
     <!-- Character Paths -->
+    <!-- The values of the attributes seem to be ignored.  All that matters is if they are defined or not -->
     <ui-gmap-polylines
+      ng-if="state!='edit'"
       models='mapModels.paths'
-      path="'path'"
-      stroke="'stroke'"
-      static="'static'"
-      icons="'icons'"
+      path="''"
+      stroke="''"
+      static="''"
+      editable="''"
+      icons="''"
+      idkey="'key'">
+    </ui-gmap-polylines>
+    <ui-gmap-polylines
+      ng-if="state=='edit'"
+      models='mapModels.editablePaths'
+      path="''"
+      stroke="''"
+      static="''"
+      editable="''"
+      icons="''"
       idkey="'key'">
     </ui-gmap-polylines>
 
@@ -99,10 +112,13 @@
       <button class="list-group-item btn-clear" ng-click="toState('about')" ng-class="{highlight:(state=='about')}">
         <i class="glyphicon glyphicon-question-sign"></i>
       </button>
+      <!-- <button class="list-group-item btn-clear" ng-click="toState('edit')" ng-class="{highlight:(state=='edit')}">
+        <i class="glyphicon glyphicon-pencil"></i>
+      </button> -->
     </div>
   </div>
 
-  <div id="side" ng-class="{wider:(state=='about')}">
+  <div id="side" ng-class="{wider:(state=='about'||state=='edit')}">
     <!-- <p>{{state}}</p> -->
     <div id="slider" ng-show="state.substring(0,6)=='slider'">
       <h1 ng-show="state=='slider-full'">
@@ -322,6 +338,25 @@
           <a target="_blank" href="http://viewers-guide.hbo.com/game-of-thrones/season-1/episode-1/map/location/27/kings-landing">HBO Viewers' Guide</a>
         </li>
       </ul>
+    </div>
+
+    <div id="edit" ng-show="state=='edit'">
+      <h1>
+        Editor
+        <i class="glyphicon glyphicon-remove pull-right" ng-click="toState('slider')"></i>
+      </h1>
+
+      <table>
+        <tbody ng-repeat="path in mapModels.editablePaths">
+          <tr ng-repeat="point in path.path">
+            <td>{{path.key}}</td>
+            <td>{{point.location}}</td>
+            <td>{{point.latitude  | number:4}}</td>
+            <td>{{point.longitude | number:4}}</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
 
   </div>

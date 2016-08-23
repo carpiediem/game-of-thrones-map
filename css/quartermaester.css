@@ -220,7 +220,7 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   display: inline-block;
 }
 
-#about {
+#about, #edit {
   height: 500px;
   padding-right: 5px;
   overflow-y: scroll;
@@ -245,4 +245,15 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 #about ul {
   list-style-type: circle;
   list-style-position: inside;
+}
+
+#edit table {
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+}
+
+#edit td {
+  border: 1px solid black;
+  padding: 2px;
 }

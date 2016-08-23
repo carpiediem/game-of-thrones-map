@@ -379,13 +379,14 @@ angular.module('quartermaester')
       });
 
       return {
-          key: "path-" + index,
+          key: path.key,
           character: { key: matchingCharacter.key },
           path: waypoints,
           stroke: {
               color: matchingCharacter.color,
               weight: 3
           },
+          editable: false,
           static: true,
           icons: icons,
           timing: {
@@ -402,9 +403,17 @@ angular.module('quartermaester')
     }
 
     function waypointModel(waypoint) {
-      if (waypoint.location=="") return {latitude: parseFloat(waypoint.latitude), longitude: parseFloat(waypoint.longitude)};
+      if (waypoint.location=="") return {
+        latitude: parseFloat(waypoint.latitude),
+        longitude: parseFloat(waypoint.longitude),
+        location: ""
+      };
       var matchingTown = $filter('filter')(qmData.towns, {key: waypoint.location})[0];
-      return matchingTown.coords;
+      return {
+        latitude: matchingTown.coords.latitude,
+        longitude: matchingTown.coords.longitude,
+        location: waypoint.location
+      };
     }
 
 
