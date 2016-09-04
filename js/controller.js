@@ -14,7 +14,7 @@ angular.module('quartermaester')
       characterPaths: true,
       houseHeraldry: false,
       geographicRegions: false,
-      politicalAllegiances: false,
+      politicalAllegiances: true,
       characters: {}
     };
     $scope.map = {
@@ -49,6 +49,7 @@ angular.module('quartermaester')
     $scope.episodes = [];
     $scope.chapters = [];
     $scope.searchResults = [];
+    $scope.clickHistory = [];
     $scope.toState = toState;
     $scope.slideTo = slideTo;
     $scope.panTo = panTo;
@@ -97,7 +98,10 @@ angular.module('quartermaester')
         path.editable = true;
         return path;
       });
-      // console.log("mapModels.paths", foo, $scope.mapModels.paths);
+
+      $scope.mapModels.loyaltyRanges = $filter('qmSlider')(qmData.loyaltyRanges, $scope.slider);
+      console.log("mapModels.loyaltyRanges", $scope.mapModels.loyaltyRanges);
+      //console.log("mapModels.regions", $scope.mapModels.regions);
     }
 
     function panToCharacter(newValue, oldValue) {
@@ -280,9 +284,19 @@ angular.module('quartermaester')
     function mapClick(a, b, c, d) {
       $scope.state = "slider";
       //console.log(a, b, c, d);
-      // console.log(c[0].latLng.lat());
+      //console.log("lng", c[0].latLng.lng());
       //$scope.lastClick = JSON;
-      console.log($scope.mapModels.paths);
+      //console.log($scope.mapModels.paths);
+      addClickToEditor(c[0].latLng.lat(), c[0].latLng.lng())
+    }
+
+    function addClickToEditor(latitude, longitude) {
+      $scope.clickHistory.push({
+        latitude: latitude,
+        longitude: longitude
+      });
+      //console.log("history", $scope.clickHistory);
+      //$scope.$apply();
     }
 
     function onMapLoad(maps) {

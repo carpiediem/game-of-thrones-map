@@ -1,7 +1,8 @@
-key,firstChapter,firstEpisode,
-Robert_Baratheon-1,AGOT-1,S1E01,
-Robert_Baratheon-2,AGOT-10,S1E10,
-Jeor_Mormont-1,AGOT-1,S1E01,
-Jeor_Mormont-2,AGOT-10,S1E10,
-Mance_Rayder-1,AGOT-1,S1E01,
-Mance_Rayder-3,,AGOT-10,S1E10
+key,firstChapter,lastChapter,firstEpisode,lastEpisode
+Robert_Baratheon-1,AGOT-1,AGOT-46,S1E01,S1E06
+Jeor_Mormont-1,AGOT-1,ASOS-33,S1E01,S3E03
+Mance_Rayder-1,AGOT-1,ASOS-72,S1E01,S4E08
+Undeclared-1,AGOT-47,,S1E07,
+Stannis_Baratheon-1,AGOT-47,,S1E07,
+Joffrey_Baratheon-1,AGOT-47,,S1E07,
+Renly_Baratheon-1,AGOT-47,,S1E07,

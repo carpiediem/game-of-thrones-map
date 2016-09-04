@@ -69,17 +69,20 @@ angular.module('quartermaester')
       getFile('houses.csv'),
       getFile('characters.csv'),
       getFile('regions.csv'),
+      getFile('loyaltyRanges.csv'),
       getFile('towns.csv'),
       getFile('borders.csv'),
+      getFile('loyaltyRangeEdges.csv'),
       getFile('stops.csv'),
       getFile('waypoints.csv'),
       getFile('paths.csv')
     ]).spread(parseData);
   }
 
-  function parseData(books, chapters, seasons, episodes, houses, characters, regions, towns, borders, stops, waypoints, paths) {
+  function parseData(books, chapters, seasons, episodes, houses, characters, regions, loyaltyRanges, towns, borders, loyaltyRangeEdges, stops, waypoints, paths) {
     var qmData = {
       borderArrays: {},
+      lrEdgeArrays: {},
       waypointArrays: {},
       bookLookup: {}
     };
@@ -90,6 +93,17 @@ angular.module('quartermaester')
         qmData.borderArrays[borders[i].name] = [];
       qmData.borderArrays[borders[i].name].push(borders[i]);
     }
+
+    for (var i=0; i<loyaltyRangeEdges.length; i++) {
+      if (!(loyaltyRangeEdges[i].key in qmData.lrEdgeArrays))
+        qmData.lrEdgeArrays[loyaltyRangeEdges[i].key] = [];
+      qmData.lrEdgeArrays[loyaltyRangeEdges[i].key].push(loyaltyRangeEdges[i]);
+      // qmData.lrEdgeArrays[loyaltyRangeEdges[i].key].push({
+      //   latitude: parseFloat(loyaltyRangeEdges[i].latitude),
+      //   longitude: parseFloat(loyaltyRangeEdges[i].longitude)
+      // });
+    }
+    //console.log("qmData.lrEdgeArrays", qmData.lrEdgeArrays);
 
     for (var i=0; i<waypoints.length; i++) {
       if (!(waypoints[i].key in qmData.waypointArrays))
@@ -106,6 +120,7 @@ angular.module('quartermaester')
     qmData.books      = books;
     qmData.regions    = regions.map(regionModel);
     qmData.characters = characters.map(characterModel);
+    qmData.loyaltyRanges = loyaltyRanges.map(loyaltyRangeModel);
     qmData.towns      = getTownMarkers(towns, houses);
     qmData.heraldry   = houses.map(heraldryMarkerModel);
     qmData.characterMarkers = stops.map(characterMarkerModel);
@@ -318,6 +333,27 @@ angular.module('quartermaester')
         },
         stroke: {weight: 0},
         path: qmData.borderArrays[region.key]
+      };
+    }
+
+    function loyaltyRangeModel(loyaltyRange) {
+      var matchingCharacter = {color: "#eeeeee"};
+      console.log(loyaltyRange);
+      var keyMatch = /(.+)\-\d+$/.exec(loyaltyRange.key);
+      if (keyMatch[1]!="Undeclared") matchingCharacter = $filter('filter')(qmData.characters, {key: keyMatch[1]})[0];
+
+      return {
+        key: loyaltyRange.key,
+        fill: {
+          color: matchingCharacter.color,
+          opacity: 0.5
+        },
+        stroke: {weight: 0},
+        path: qmData.lrEdgeArrays[loyaltyRange.key],
+        timing: {
+          episodes: [getEpisodeId(loyaltyRange.firstEpisode), getEpisodeId(loyaltyRange.lastEpisode)],
+          chapters: [getChapterId(loyaltyRange.firstChapter), getChapterId(loyaltyRange.lastChapter)]
+        }
       };
     }
 

@@ -60,6 +60,16 @@
       idKey="'key'">
     </ui-gmap-polygons>
 
+    <!-- Loyalty Range Polygons -->
+    <ui-gmap-polygons
+      models="mapModels.loyaltyRanges"
+      path="'path'"
+      fill="'fill'"
+      stroke="'stroke'"
+      visible="options.politicalAllegiances"
+      idKey="'key'">
+    </ui-gmap-polygons>
+
     <!-- Character Markers -->
     <ui-gmap-markers
       models='mapModels.characters'
@@ -112,9 +122,9 @@
       <button class="list-group-item btn-clear" ng-click="toState('about')" ng-class="{highlight:(state=='about')}">
         <i class="glyphicon glyphicon-question-sign"></i>
       </button>
-      <!-- <button class="list-group-item btn-clear" ng-click="toState('edit')" ng-class="{highlight:(state=='edit')}">
+      <button class="list-group-item btn-clear" ng-click="toState('edit')" ng-class="{highlight:(state=='edit')}">
         <i class="glyphicon glyphicon-pencil"></i>
-      </button> -->
+      </button>
     </div>
   </div>
 
@@ -351,6 +361,19 @@
           <tr ng-repeat="point in path.path">
             <td>{{path.key}}</td>
             <td>{{point.location}}</td>
+            <td>{{point.latitude  | number:4}}</td>
+            <td>{{point.longitude | number:4}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <table>
+        <tbody>
+          <tr ng-repeat="point in clickHistory">
+            <!-- <td></td>
+            <td></td> -->
             <td>{{point.latitude  | number:4}}</td>
             <td>{{point.longitude | number:4}}</td>
           </tr>
