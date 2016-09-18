@@ -39,7 +39,6 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   border-right: 2px rgb(191, 70, 39);
 }
 
-
 #side {
   position: absolute;
   top: 0;
@@ -67,7 +66,8 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   cursor: pointer;
 }
 
-#side h1 {
+#side h1,
+#legend h1 {
   font-family: 'Cutive', serif;
   font-size: 1.5em;
   line-height: 1.5em;
@@ -78,29 +78,33 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
   cursor: pointer;
 }
 
-#side .list-group {
+.list-group {
   margin: 10px 2px 2px 2px;
 }
 
-#side .list-group a:hover,
-#side .list-group button:hover {
+.list-group a:hover,
+.list-group button:hover {
   color: black !important;
   text-decoration: none;
 }
 
-#side .list-group-item {
+#navigation .list-group button:hover {
+  color: white !important;
+}
+
+.list-group-item {
   background-color: transparent;
   border: none;
   color: white !important;
 }
 
-#side .list-group-item img {
+.list-group-item img {
   height: 20px;
   margin-left: -5px;
   margin-right: 2px;
 }
 
-#side .list-group-item a {
+.list-group-item a {
   color: white !important;
 }
 
@@ -256,4 +260,33 @@ html, body, ui-gmap-google-map, .angular-google-map, .angular-google-map-contain
 #edit td {
   border: 1px solid black;
   padding: 2px;
+}
+
+#legend {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(191, 70, 39);
+  color: white;
+  padding: 2px 8px;
+  width: 300px;
+}
+
+.legend-color {
+  display: inline-block;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+#legend .list-group {
+  margin-top: 0px;
+}
+
+#legend .list-group-item {
+  padding: 1px;
+}
+
+#legend .list-group a:hover,
+#side .list-group a:hover {
+  background-color: transparent;
 }

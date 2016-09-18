@@ -1,4 +1,5 @@
 wikiKey,seatKey,lat,lng,img,clue,isGreat,firstChapter,lastChapter,firstEpisode,lastEpisode
+Free_folk,,77.989,-124.1895,http://vignette2.wikia.nocookie.net/gameofthrones/images/c/c5/Free-Folk-Main-Shield.PNG/revision/latest/scale-to-width-down/50?cb=20160811070628,gathering in the Skirling Pass,FALSE,107,999,14,39
 Night%27s_Watch,Castle_Black,,,http://awoiaf.westeros.org/images/thumb/4/47/Minigdn.png/109px-Minigdn.png,,TRUE,,,,
 House_Stark,Winterfell,,,http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG,,TRUE,0,118,0,14
 House_Greyjoy,Winterfell,,,http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png,,TRUE,119,138,15,18
@@ -18,8 +19,8 @@ House_Baratheon_of_King%27s_Landing,King%27s_Landing,,,http://awoiaf.westeros.or
 House_Tyrell,Highgarden,,,http://awoiaf.westeros.org/images/thumb/9/99/House_Tyrell.PNG/90px-House_Tyrell.PNG,,TRUE,,,,
 House_Baratheon,Storm%27s_End,,,http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG,,TRUE,,,,
 House_Martell,Sunspear,,,http://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG,,TRUE,,,,
-House_Baratheon_of_Dragonstone,Dragonstone,,,http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG,,FALSE,0,48,0,5
-House_Baratheon_of_Dragonstone,Dragonstone,,,http://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png,,TRUE,49,260,6,99
+House_Baratheon_of_Dragonstone,Dragonstone,,,http://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/120px-Stannis_sigil_coat.png,,FALSE,0,48,0,5
+House_Baratheon_of_Dragonstone,Dragonstone,,,http://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/120px-Stannis_sigil_coat.png,,TRUE,49,260,6,99
 House_Targaryen,Meereen,,,http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG,,TRUE,214,999,99,99
 House_Cerwyn,Castle_Cerwyn,,,http://awoiaf.westeros.org/images/thumb/d/d8/House_Cerwyn.PNG/90px-House_Cerwyn.PNG,,,,,,
 House_Dustin,Barrowton,,,http://awoiaf.westeros.org/images/thumb/7/74/House_Dustin.PNG/50px-House_Dustin.PNG,,,,,,
@@ -210,8 +211,8 @@ House_Redwyne,,-47.1,-156.533,http://awoiaf.westeros.org/images/thumb/b/b1/House
 House_Rowan,Goldengrove,,,http://awoiaf.westeros.org/images/thumb/d/dc/House_Rowan.PNG/50px-House_Rowan.PNG,,,,,,
 House_Shermer,,-35.5322,-147.744,http://awoiaf.westeros.org/images/thumb/c/ca/Shermer.png/109px-Shermer.png,the Reach at Smithyton,,,,,
 House_Tarly,Horn_Hill,,,http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/50px-Tarly.png,,,,,,
-House_Tyrell_of_Brightwater_Keep,Brightwater_Keep,,,http://awoiaf.westeros.org/images/thumb/9/9c/Garlan_Tyrell_COA.png/90px-Garlan_Tyrell_COA.png,,,,,,
-House_Florent,Brightwater_Keep,,,http://awoiaf.westeros.org/images/thumb/c/c1/House_Florent.PNG/50px-House_Florent.PNG,,,,,,
+House_Tyrell_of_Brightwater_Keep,Brightwater_Keep,,,http://awoiaf.westeros.org/images/thumb/9/9c/Garlan_Tyrell_COA.png/90px-Garlan_Tyrell_COA.png,,,162,999,,
+House_Florent,Brightwater_Keep,,,http://awoiaf.westeros.org/images/thumb/c/c1/House_Florent.PNG/50px-House_Florent.PNG,,,0,161,0,99
 House_Fossoway_of_Cider_Hall,Cider_Hall,,,http://awoiaf.westeros.org/images/thumb/4/43/House_Fossoway_red.png/50px-House_Fossoway_red.png,,,,,,
 House_Fossoway_of_New_Barrel,,-17.1408,-118.828,http://awoiaf.westeros.org/images/thumb/7/77/House_Fossoway_green.png/50px-House_Fossoway_green.png,New Barrel,,,,,
 House_Varner,,-6.0531,-129.551,http://awoiaf.westeros.org/images/thumb/3/33/House_Varner.PNG/112px-House_Varner.PNG,the Reach,,,,,

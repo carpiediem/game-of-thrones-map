@@ -1,17 +1,18 @@
-key,title,name,color,
-Robert_Baratheon,King,Robert Baratheon,#F3CD18,
-Jeor_Mormont,Lord Commander,Jeor Mormont,#000000,
-Mance_Rayder,"""King Beyond the Wall""",Mance Rayder,#3F7AE4,
-Joffrey_Baratheon,King,Joffrey Baratheon,#FF2700,
-Eddard_Stark,Lord,Eddard Stark (Hostage),#505050,
-Hoster_Tully,Lord,Hoster Tully,#0606BB,
-Stannis_Baratheon,King,Stannis Baratheon,#C68D14,
-Renly_Baratheon,King,Renly Baratheon,#C6A714,
-Lord_Robb_Stark,King,Robb Stark,#606060,
-King_Robb_Stark,Lord,Robb Stark,#606060,
-Balon_Greyjoy,King,Balon Greyjoy,#C67400,
-Jon_Snow,Lord Commander,Jon Snow,#000000,
-Tommen_Baratheon,King,Tommen Baratheon,#FF2700,
-Daenerys_Targaryen,Queen,Daenerys Targaryen,#000000,
-Euron_Greyjoy,King,Euron Greyjoy,#C67400,
-Cersei_Lannister,Queen,Cersei Lannister,#B80000
+key,title,name,house,color,firstChapter,lastChapter,firstEpisode,lastEpisode
+Robert_Baratheon,King,Robert Baratheon,House_Baratheon,#F3CD18,AGOT-0,AGOT-46,S1E01,S1E06
+Jeor_Mormont,Lord Commander,Jeor Mormont,Night%27s_Watch,#000000,AGOT-0,ASOS-33,S1E01,S3E03
+Free_folk,,Free Folk,Free_folk,#3F7AE4,AGOT-0,ASOS-72,S1E01,S4E08
+Joffrey_Baratheon,King,Joffrey Baratheon,House_Baratheon_of_King%27s_Landing,#FF2700,AGOT-47,ASOS-59,S1E07,S4E01
+Stannis_Baratheon,King,Stannis Baratheon,House_Baratheon_of_Dragonstone,#C68D14,AGOT-47,TWOW-???,S1E07,S6E10
+Renly_Baratheon,King,Renly Baratheon,House_Baratheon,#C6A714,AGOT-69,ACOK-44,S1E10,S6E10
+Robb_Stark,King,Robb Stark,House_Stark,#606060,AGOT-71,ASOS-50,,
+Balon_Greyjoy,King,Balon Greyjoy,House_Greyjoy,#C67400,ACOK-46,ASOS-44,,
+Night%27s_Watch,Leaderless,Night's Watch,Night%27s_Watch,#000000,ASOS-33,ASOS-78,,
+Jon_Snow,Lord Commander,Jon Snow,Night%27s_Watch,#000000,ASOS-79,ADWD-68,,
+Tommen_Baratheon,King,Tommen Baratheon,House_Baratheon_of_King%27s_Landing,#FF2700,ASOS-60,TWOW-???,,
+Daenerys_Targaryen,Queen,Daenerys Targaryen,House_Targaryen,#000000,ASOS-71,TWOW-???,,
+Kingsmoot,Awaiting,Kingsmoot,House_Greyjoy,#C67400,ASOS-45,AFFC-18,,
+Euron_Greyjoy,King,Euron Greyjoy,House_Greyjoy,#C67400,AFFC-19,TWOW-???,,
+Aegon_Targaryen_(son_of_Rhaegar)-6,King,Aegon Targaryen,House_Targaryen,#000000,ADWD-61,TWOW-???,,
+Night%27s_Watch,Leaderless,Night's Watch,Night%27s_Watch,#000000,ADWD-69,TWOW-???,,
+Cersei_Lannister,Queen,Cersei Lannister,House_Lannister,#B80000,,,,

@@ -14,7 +14,7 @@ angular.module('quartermaester')
       characterPaths: true,
       houseHeraldry: false,
       geographicRegions: false,
-      politicalAllegiances: true,
+      politicalAllegiances: false,
       characters: {}
     };
     $scope.map = {
@@ -36,7 +36,8 @@ angular.module('quartermaester')
       smgMapType: smgMapType,
       locationClick: locationClick,
       heraldryClick: heraldryClick,
-      characterClick: characterClick
+      characterClick: characterClick,
+      loyaltyRangeClick: loyaltyRangeClick
     };
     $scope.mapModels = {
       towns: [],
@@ -44,7 +45,8 @@ angular.module('quartermaester')
       characters: [],
       paths: [],
       regions: [],
-      loyalties: []
+      politicalAllegiances: [],
+      editableLoyaltyRanges: []
     };
     $scope.episodes = [];
     $scope.chapters = [];
@@ -67,6 +69,12 @@ angular.module('quartermaester')
 
     function addToScope(d) {
       qmData = d;
+
+      for (var i=0;i<qmData.loyaltyRanges.length; i++) {
+        qmData.loyaltyRanges[i].events = {
+          click: loyaltyRangeClick
+        };
+      }
 
       // Add data from CSV files into $scope
       $scope.episodes = qmData.episodes;
@@ -91,6 +99,7 @@ angular.module('quartermaester')
       $scope.mapModels.towns = $filter('qmSlider')(qmData.towns, $scope.slider);
       $scope.mapModels.heraldry = $scope.options.houseHeraldry ? $filter('qmSlider')(qmData.heraldry, $scope.slider) : [];
       $scope.mapModels.characters = $filter('qmSlider')(qmData.characterMarkers, $scope.slider, $scope.options);
+      $scope.belligerents = $filter('qmSlider')(qmData.belligerents, $scope.slider);
       var staticPaths = $filter('qmSlider')(qmData.characterPaths, $scope.slider, $scope.options);
       $scope.mapModels.paths = angular.copy(staticPaths);
       $scope.mapModels.editablePaths = angular.copy(staticPaths).map(function(path) {
@@ -100,8 +109,11 @@ angular.module('quartermaester')
       });
 
       $scope.mapModels.loyaltyRanges = $filter('qmSlider')(qmData.loyaltyRanges, $scope.slider);
-      console.log("mapModels.loyaltyRanges", $scope.mapModels.loyaltyRanges);
-      //console.log("mapModels.regions", $scope.mapModels.regions);
+      $scope.mapModels.editableLoyaltyRanges = angular.copy($scope.mapModels.loyaltyRanges).map(function(polygon) {
+        polygon.static   = false;
+        polygon.editable = true;
+        return polygon;
+      });
     }
 
     function panToCharacter(newValue, oldValue) {
@@ -189,8 +201,6 @@ angular.module('quartermaester')
     }
 
     function panTo(input) {
-
-      console.log("panTo", input);
       var location = $filter('filter')($scope.map.locations, {key: input})[0];
       $scope.map.control.getGMap().panTo({lat: location.coords.latitude, lng: location.coords.longitude});
       $scope.locationDetail = location;
@@ -281,6 +291,19 @@ angular.module('quartermaester')
       $scope.state = "location";
     }
 
+    function loyaltyRangeClick(e, eventName, model) {
+      var keyMatch = /(.+)\-\d+\w?$/.exec(model.key);
+      var matchingBelligerant = $filter('filter')(qmData.belligerents, {key: keyMatch[1]})[0];
+      var filtered = $filter('filter')(qmData.belligerents, {key: keyMatch[1]});
+
+      $scope.locationDetail = {
+        house: matchingBelligerant.title + " " + matchingBelligerant.name,
+        houseImg: matchingBelligerant.houseImg,
+        houseUrl: matchingBelligerant.url
+      };
+      $scope.state = "location";
+    }
+
     function mapClick(a, b, c, d) {
       $scope.state = "slider";
       //console.log(a, b, c, d);
@@ -295,8 +318,6 @@ angular.module('quartermaester')
         latitude: latitude,
         longitude: longitude
       });
-      //console.log("history", $scope.clickHistory);
-      //$scope.$apply();
     }
 
     function onMapLoad(maps) {

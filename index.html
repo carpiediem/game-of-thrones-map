@@ -62,13 +62,27 @@
 
     <!-- Loyalty Range Polygons -->
     <ui-gmap-polygons
+      ng-if="state!='edit'"
       models="mapModels.loyaltyRanges"
       path="'path'"
       fill="'fill'"
       stroke="'stroke'"
       visible="options.politicalAllegiances"
+      clickable="'clickable'"
+      events="'events'"
       idKey="'key'">
     </ui-gmap-polygons>
+    <!-- <ui-gmap-polygons
+      ng-if="state=='edit'"
+      models="mapModels.editableLoyaltyRanges"
+      path="'path'"
+      fill="'fill'"
+      stroke="'stroke'"
+      static="''"
+      editable="''"
+      visible="options.politicalAllegiances"
+      idKey="'key'">
+    </ui-gmap-polygons> -->
 
     <!-- Character Markers -->
     <ui-gmap-markers
@@ -192,7 +206,7 @@
         <i class="glyphicon glyphicon-remove pull-right" ng-click="toState('slider')"></i>
       </h1>
       <div class="list-group">
-        <a ng-href="{{locationDetail.url}}" role="button" class="list-group-item btn-clear">
+        <a ng-href="{{locationDetail.url}}" role="button" class="list-group-item btn-clear" ng-if="locationDetail.name">
           <i class="glyphicon glyphicon glyphicon-map-marker"></i>
           {{locationDetail.name}}
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
@@ -202,7 +216,7 @@
           {{locationDetail.house}}
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
         </a>
-        <a ng-href="{{locationDetail.direct}}" role="button" class="list-group-item btn-clear">
+        <a ng-href="{{locationDetail.direct}}" role="button" class="list-group-item btn-clear" ng-if="locationDetail.direct">
           <i class="glyphicon glyphicon-pushpin"></i>
           Direct Link
           <i class="glyphicon glyphicon-menu-right pull-right"></i>
@@ -370,6 +384,18 @@
       <hr>
 
       <table>
+        <tbody ng-repeat="polygon in mapModels.editableLoyaltyRanges">
+          <tr ng-repeat="point in polygon.path">
+            <td>{{polygon.key}}</td>
+            <td>{{point.latitude  | number:4}}</td>
+            <td>{{point.longitude | number:4}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <table>
         <tbody>
           <tr ng-repeat="point in clickHistory">
             <!-- <td></td>
@@ -381,6 +407,21 @@
       </table>
 
     </div>
+
+  </div>
+
+  <div id="legend" ng-if="options.politicalAllegiances">
+    <h1>Ruling Sovereigns</h1>
+
+    <ul class="list-group" >
+      <li class="list-group-item" ng-repeat="belligerent in belligerents">
+        <a ng-href="{{belligerent.houseUrl}}" class="hasimg" target="_blank">
+          <img ng-src="{{belligerent.houseImg}}">
+        </a>
+        <a ng-href="{{belligerent.url}}" >{{belligerent.title}} {{belligerent.name}}</a>
+        <span class="legend-color" style="background-color: {{belligerent.color}};"></span>
+      </li>
+    </ul>
 
   </div>
 

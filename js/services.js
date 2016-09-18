@@ -75,11 +75,12 @@ angular.module('quartermaester')
       getFile('loyaltyRangeEdges.csv'),
       getFile('stops.csv'),
       getFile('waypoints.csv'),
-      getFile('paths.csv')
+      getFile('paths.csv'),
+      getFile('belligerents.csv')
     ]).spread(parseData);
   }
 
-  function parseData(books, chapters, seasons, episodes, houses, characters, regions, loyaltyRanges, towns, borders, loyaltyRangeEdges, stops, waypoints, paths) {
+  function parseData(books, chapters, seasons, episodes, houses, characters, regions, loyaltyRanges, towns, borders, loyaltyRangeEdges, stops, waypoints, paths, belligerents) {
     var qmData = {
       borderArrays: {},
       lrEdgeArrays: {},
@@ -98,12 +99,7 @@ angular.module('quartermaester')
       if (!(loyaltyRangeEdges[i].key in qmData.lrEdgeArrays))
         qmData.lrEdgeArrays[loyaltyRangeEdges[i].key] = [];
       qmData.lrEdgeArrays[loyaltyRangeEdges[i].key].push(loyaltyRangeEdges[i]);
-      // qmData.lrEdgeArrays[loyaltyRangeEdges[i].key].push({
-      //   latitude: parseFloat(loyaltyRangeEdges[i].latitude),
-      //   longitude: parseFloat(loyaltyRangeEdges[i].longitude)
-      // });
     }
-    //console.log("qmData.lrEdgeArrays", qmData.lrEdgeArrays);
 
     for (var i=0; i<waypoints.length; i++) {
       if (!(waypoints[i].key in qmData.waypointArrays))
@@ -120,12 +116,12 @@ angular.module('quartermaester')
     qmData.books      = books;
     qmData.regions    = regions.map(regionModel);
     qmData.characters = characters.map(characterModel);
+    qmData.belligerents = belligerents.map(belligerentModel);
     qmData.loyaltyRanges = loyaltyRanges.map(loyaltyRangeModel);
     qmData.towns      = getTownMarkers(towns, houses);
     qmData.heraldry   = houses.map(heraldryMarkerModel);
     qmData.characterMarkers = stops.map(characterMarkerModel);
     qmData.characterPaths = paths.map(characterPathModel);
-
 
     qmData.searchResults = [].concat(
       towns.map(townSearchModel),
@@ -337,15 +333,12 @@ angular.module('quartermaester')
     }
 
     function loyaltyRangeModel(loyaltyRange) {
-      var matchingCharacter = {color: "#eeeeee"};
-      console.log(loyaltyRange);
-      var keyMatch = /(.+)\-\d+$/.exec(loyaltyRange.key);
-      if (keyMatch[1]!="Undeclared") matchingCharacter = $filter('filter')(qmData.characters, {key: keyMatch[1]})[0];
-
+      var keyMatch = /(.+)\-\d+\w?$/.exec(loyaltyRange.key);
+      var matchingBelligerant = $filter('filter')(qmData.belligerents, {key: keyMatch[1]})[0];
       return {
         key: loyaltyRange.key,
         fill: {
-          color: matchingCharacter.color,
+          color: matchingBelligerant.color,
           opacity: 0.5
         },
         stroke: {weight: 0},
@@ -353,7 +346,8 @@ angular.module('quartermaester')
         timing: {
           episodes: [getEpisodeId(loyaltyRange.firstEpisode), getEpisodeId(loyaltyRange.lastEpisode)],
           chapters: [getChapterId(loyaltyRange.firstChapter), getChapterId(loyaltyRange.lastChapter)]
-        }
+        },
+        clickable: true
       };
     }
 
@@ -452,12 +446,35 @@ angular.module('quartermaester')
       };
     }
 
+    function belligerentModel(belligerent) {
+      var matchingHouse = $filter('filter')(houses, {wikiKey: belligerent.house})[0];
+      return {
+        key:   belligerent.key,
+        title: belligerent.title,
+        name:  belligerent.name,
+        url:   "http://awoiaf.westeros.org/index.php/" + belligerent.key,
+        houseImg: matchingHouse.img,
+        houseUrl: "http://awoiaf.westeros.org/index.php/" + belligerent.house,
+        color: belligerent.color,
+        timing: {
+          episodes: [
+            getEpisodeId(belligerent.firstEpisode),
+            getEpisodeId(belligerent.lastEpisode)
+          ],
+          chapters: [
+            getChapterId(belligerent.firstChapter),
+            getChapterId(belligerent.lastChapter)
+          ]
+        }
+      };
+    }
 
 
     function getChapterId(chapterKey) {
       //AGOT-2 to 2
       if (chapterKey=="") return -1;
       if (chapterKey=="TWOW-?") return 344;
+      if (chapterKey=="TWOW-???") return 344;
       var reMatch = /(\w{4})\-(\d+)/.exec(chapterKey);
       var precedingChapters = parseInt(qmData.bookLookup[ reMatch[1] ].precedingChapters, 10)
       return precedingChapters + parseInt(reMatch[2], 10);
@@ -525,10 +542,8 @@ angular.module('quartermaester')
   return {
     restrict: 'A',
     link: function (scope, elem, attrs) {
-      // console.log(elem, attrs);
       var winHeight = $window.innerHeight;
       // var listHeight = attrs.qmList ? 41*parseInt(attrs.qmList, 10) : 0;
-      // console.log(winHeight, attrs.qmList, listHeight);
       // if (listHeight>winHeight) elem.css('height', winHeight - 48 + 'px');
       elem.css('height', winHeight - 55 + 'px');
     }

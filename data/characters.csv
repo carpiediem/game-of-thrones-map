@@ -10,7 +10,7 @@ Benjen_Stark,Benjen Stark,U,#B0B0B0,#FFFFFF,House_Stark,,
 Jon_Snow,Jon Snow,J,#837171,#FFFFFF,House_Stark,,
 Viserys_Targaryen,Viserys Targaryen,V,#000000,#FF0000,House_Targaryen,,
 Daenerys_Targaryen,Daenerys Targaryen,D,#000000,#FF0000,House_Targaryen,,
-Aegon_Targaryen,Aegon Targaryen,A,#000000,#FF0000,House_Targaryen,ADWD-18,never
+Aegon_Targaryen_(son_of_Rhaegar),Aegon Targaryen,A,#000000,#FF0000,House_Targaryen,ADWD-18,never
 Drogon,Drogon,d,#000000,#FF0000,,AGOT-72,S1E10
 Rhaegal,Rhaegal,r,#000000,#FF0000,,AGOT-72,S1E10
 Viserion,Viserion,v,#000000,#FF0000,,AGOT-72,S1E10
@@ -28,6 +28,7 @@ Renly_Baratheon,Renly Baratheon,r,#C6A714,#000000,House_Baratheon,,
 Loras_Tyrell,Loras Tyrell,L,#006600,#FFFF00,House_Tyrell,,
 Margaery_Tyrell,Margaery Tyrell,M,#027C02,#FFFF00,House_Tyrell,,
 Olenna_Tyrell,Olenna Tyrell,O,#0D8F0D,#FFFF00,House_Tyrell,,
+Balon_Greyjoy,Balon Greyjoy,B,#FF9700,#000000,House_Greyjoy,,
 Theon_Greyjoy,Theon Greyjoy,T,#FF9700,#000000,House_Greyjoy,,
 Asha_Greyjoy,Yara/Asha Greyjoy,Y,#E68801,#000000,House_Greyjoy,,
 Euron_Greyjoy,Euron Greyjoy,E,#C67400,#000000,House_Greyjoy,,
@@ -39,6 +40,7 @@ Barristan_Selmy,Barristan Selmy,B,#A55D34,#FCFC06,House_Selmy,,
 Petyr_Baelish,Petyr Baelish,P,#006300,#FFFFFF,House_Baelish,,
 Jeor_Mormont,Jeor Mormont,J,#66C366,#000000,House_Mormont,,
 Jorah_Mormont,Jorah Mormont,J,#66C366,#000000,House_Mormont,,
+Quentyn_Martell,Quentyn Martell,Q,#AD011B,#000000,House_Martell,,
 Arianne_Martell,Arianne Martell,A,#AD011B,#000000,House_Martell,0,never
 Oberyn_Martell,Oberyn Martell,O,#96051A,#000000,House_Martell,,
 Ellaria_Sand,Ellaria Sand,E,#942938,#000000,House_Martell,,
