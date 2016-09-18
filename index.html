@@ -29,9 +29,6 @@
 
   <ui-gmap-google-map center='map.center' zoom='map.zoom' options='map.options' events='map.events' control='map.control'>
 
-    <!-- Base map tiles from Ser Mountain Goat -->
-    <ui-gmap-map-type options='map.smgMapType'></ui-gmap-map-type>
-
     <!-- Location Markers -->
     <ui-gmap-markers
       models='mapModels.towns'
@@ -106,7 +103,7 @@
       icons="''"
       idkey="'key'">
     </ui-gmap-polylines>
-    <ui-gmap-polylines
+    <!-- <ui-gmap-polylines
       ng-if="state=='edit'"
       models='mapModels.editablePaths'
       path="''"
@@ -115,7 +112,7 @@
       editable="''"
       icons="''"
       idkey="'key'">
-    </ui-gmap-polylines>
+    </ui-gmap-polylines> -->
 
   </ui-gmap-google-map>
 
@@ -136,9 +133,9 @@
       <button class="list-group-item btn-clear" ng-click="toState('about')" ng-class="{highlight:(state=='about')}">
         <i class="glyphicon glyphicon-question-sign"></i>
       </button>
-      <button class="list-group-item btn-clear" ng-click="toState('edit')" ng-class="{highlight:(state=='edit')}">
+      <!-- <button class="list-group-item btn-clear" ng-click="toState('edit')" ng-class="{highlight:(state=='edit')}">
         <i class="glyphicon glyphicon-pencil"></i>
-      </button>
+      </button> -->
     </div>
   </div>
 

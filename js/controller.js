@@ -1,6 +1,6 @@
 angular.module('quartermaester')
 
-.controller("mapCtrl", function($scope, $filter, $timeout, uiGmapGoogleMapApi, smgMapType, qmCsv) {
+.controller("mapCtrl", function($scope, $filter, $timeout, uiGmapGoogleMapApi, qmCsv) {
 
     var qmData = {};
     $scope.state = "slider";
@@ -33,7 +33,6 @@ angular.module('quartermaester')
         click: mapClick
       },
       control: {},
-      smgMapType: smgMapType,
       locationClick: locationClick,
       heraldryClick: heraldryClick,
       characterClick: characterClick,
@@ -45,7 +44,7 @@ angular.module('quartermaester')
       characters: [],
       paths: [],
       regions: [],
-      politicalAllegiances: [],
+      loyaltyRanges: [],
       editableLoyaltyRanges: []
     };
     $scope.episodes = [];
@@ -310,7 +309,14 @@ angular.module('quartermaester')
       //console.log("lng", c[0].latLng.lng());
       //$scope.lastClick = JSON;
       //console.log($scope.mapModels.paths);
-      addClickToEditor(c[0].latLng.lat(), c[0].latLng.lng())
+      addClickToEditor(c[0].latLng.lat(), c[0].latLng.lng());
+
+      // $scope.map.control.getGMap().setMapTypeId("SATELLITE");
+      // console.log($scope.map.control.getGMap());
+
+
+
+
     }
 
     function addClickToEditor(latitude, longitude) {
@@ -320,7 +326,47 @@ angular.module('quartermaester')
       });
     }
 
+    function getTileCode(a,b) {
+      //converts tile x,y into keyhole string
+      var c=Math.pow(2,b);
+      var d=a.x;
+      var e=a.y;
+      var f="t";
+      for(var g=0;g<b;g++){
+        c=c/2;
+        if(e<c){
+          if(d<c){f+="q"}
+          else{f+="r";d-=c}
+        }
+        else{
+          if(d<c){f+="t";e-=c}
+          else{f+="s";d-=c;e-=c}
+        }
+      }
+      return f;
+    }
+
     function onMapLoad(maps) {
+
+      var quartermaesterMapType = new maps.ImageMapType({
+        getTileUrl: function(coord, zoom) {
+          var tileRange = 1 << zoom;
+          if (coord.x < 0 || coord.x >= tileRange) return false;
+          if (coord.y < 0 || coord.y >= tileRange) return false;
+          return "tiles/" + getTileCode(coord, zoom) + ".jpg";
+        },
+        tileSize: new maps.Size(256, 256),
+        maxZoom: 9,
+        minZoom: 0,
+        radius: 1738000,
+        name: 'TWOIAF'
+      });
+
+      $scope.$watch("map.control", function( mapControl, emptyObj ) {
+        $scope.map.control.getGMap().mapTypes.set('quartermaester', quartermaesterMapType);
+        $scope.map.control.getGMap().setMapTypeId('quartermaester');
+      });
+
 
       // Add background to .rz-bar
       var rzbars = document.getElementsByClassName("rz-bar");

@@ -1,54 +1,5 @@
 angular.module('quartermaester')
 
-.factory('smgMapType', function() {
-
-   return {
-     getTile: getTile,
-     tileSize: {height:256, H:"px", width:256, W:"px"},
-     name: 'Planetos',
-     radius: 1738000
-   };
-
-   function getTile(coord, zoom, ownerDocument) {
-     if (isOutsideTileRange(coord,zoom)) return false;
-     var div = ownerDocument.createElement('div');
-     div.style.width = '256px';
-     div.style.height = '256px';
-     div.style.backgroundImage = "url('tiles/" + getTileCode(coord,zoom) + ".jpg')";
-     return div;
-   }
-
-   function isOutsideTileRange(coord,zoom) {
-     var tileRange = 1 << zoom;
-     if (coord.x < 0 || coord.x >= tileRange) return true;
-     if (coord.y < 0 || coord.y >= tileRange) return true;
-     return false;
-   }
-
-   function getTileCode(a,b) {
-     //converts tile x,y into keyhole string
-     var c=Math.pow(2,b);
-     var d=a.x;
-     var e=a.y;
-     var f="t";
-     for(var g=0;g<b;g++){
-       c=c/2;
-       if(e<c){
-         if(d<c){f+="q"}
-         else{f+="r";d-=c}
-       }
-       else{
-         if(d<c){f+="t";e-=c}
-         else{f+="s";d-=c;e-=c}
-       }
-     }
-     return f;
-   }
-
-
-
- })
-
  .factory('qmCsv', function($q, $http, $filter, fCsv) {
 
   var csvLocation = (window.location.protocol=="file:") ? "https://raw.githubusercontent.com/carpiediem/carpiediem.github.io/master/quartermaester/data/" : "data/";
