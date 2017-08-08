@@ -347,10 +347,12 @@ angular.module('quartermaester')
     }
 
     function characterPathModel(path, index) {
-      var reMatch = /([\w\_]+)\-\d+/.exec(path.key);
+      var reMatch = /([\w\_\(\)]+)\-\d+/.exec(path.key);
+      //console.log(reMatch[1]);
       var matchingCharacter = $filter('filter')(qmData.characters, {key: reMatch[1]})[0];
       var firstChapter = getChapterId(path.firstChapter);
       var firstEpisode = getEpisodeId(path.firstEpisode);
+      console.log(path.key, qmData.waypointArrays[path.key]);
       var waypoints = qmData.waypointArrays[path.key].map(waypointModel);
       var icons = [];
       if (path.arrows=="TRUE") icons.push({
