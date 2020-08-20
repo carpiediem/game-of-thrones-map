@@ -116,7 +116,7 @@ h4 {
   float: right;
   margin: 5px 5px 0px 0px;
   cursor: pointer;
-  background-image: url(http://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF);
+  background-image: url(https://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF);
   background-repeat: no-repeat;
 }
 
@@ -259,44 +259,44 @@ ul#townSelector {
   repeat: none;
 }
 .stark {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/50px-House_Stark.PNG');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/50px-House_Stark.PNG');
 }
 .nightswatch {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Black_flag_waving.svg');
 }
 .targaryen {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG');
 }
 .lannister {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/50px-House_Lannister.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/50px-House_Lannister.png');
 }
 .baratheon {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG');
 }
 .baratheonokl {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png');
 }
 .baratheonod {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/60px-Stannis_sigil_coat.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/60px-Stannis_sigil_coat.png');
 }
 .greyjoy {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png');
 }
 .tarth {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG');
 }
 .seaworth {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png');
 }
 .tarly {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png');
 }
 .martell {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG');
 }
 .baelish {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/6/69/Baelish%28Harrenhal%29CoA.png/50px-Baelish%28Harrenhal%29CoA.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/6/69/Baelish%28Harrenhal%29CoA.png/50px-Baelish%28Harrenhal%29CoA.png');
 }
 .duncan {
-  background-image: url('http://awoiaf.westeros.org/images/thumb/e/e4/Dunk.png/50px-Dunk.png');
+  background-image: url('https://awoiaf.westeros.org/images/thumb/e/e4/Dunk.png/50px-Dunk.png');
 }

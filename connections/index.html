@@ -3,8 +3,8 @@
   <head>
     <title>Connections Between the Novels of "A Song of Ice and Fire" and HBO's "Game of Thrones"</title>
     <meta name="description" content="An intercative timeline of each chapter and epsisode that shows where the plot fits into each telling of the story and which characters appear in each version" />
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="ASoIaF-timelines.js"></script>
     <style>
     
@@ -20,7 +20,7 @@
       #share {position:absolute; top:170px; right:110px;}
       #share a {display:inline-block; width:30px; height:30px; margin:3px;}
       #share iframe {width:80px; height:20px; border:0px;}
-      #info     {display:none !important; background-image:url('http://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF');}
+      #info     {display:none !important; background-image:url('https://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF');}
       #data     {background-image:url('data.png');}
       #link     {display:none !important; background-image:url('link.png');}
       #facebook {background-image:url('like.png');}
@@ -56,35 +56,35 @@
       .spoilerBlock h2 span {font-size:0.4em; font-style:italic;}
       .spoilerBlock .handle {position:absolute; top:0px; width:20px; height:100%; background-color:#333;}
       
-      .stark        {background-image:url('http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG')}
+      .stark        {background-image:url('https://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG')}
       .stark:hover, .stark.highlight {background-color:#808080;}
-      #daenerys     {background-image:url('http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG')}
+      #daenerys     {background-image:url('https://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG')}
       #daenerys:hover, #daenerys.highlight {background-color:#333; color:white;}
-      .lannister    {background-image:url('http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/102px-House_Lannister.png')}
+      .lannister    {background-image:url('https://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/102px-House_Lannister.png')}
       .lannister:hover, .lannister.highlight {background-color:#ffa4a4;}
-      .baratheonokl {background-image:url('http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png')}
+      .baratheonokl {background-image:url('https://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png')}
       .baratheonokl:hover, .baratheonokl.highlight {background-color:#DAA520;}
-      .baratheon    {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/104px-House_Baratheon.PNG')}
+      .baratheon    {background-image:url('https://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/104px-House_Baratheon.PNG')}
       .baratheon:hover, .baratheon.highlight {background-color:#DAA520;}
-      #stannis      {background-image:url('http://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png')}
+      #stannis      {background-image:url('https://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png')}
       #stannis:hover, #stannis.highlight {background-color:#DAA520;}
-      .greyjoy      {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png')}
+      .greyjoy      {background-image:url('https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png')}
       .greyjoy:hover, .greyjoy.highlight {background-color:#fffe8b;}
-      #brienne      {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/120px-House_Tarth.PNG')}
+      #brienne      {background-image:url('https://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/120px-House_Tarth.PNG')}
       #brienne:hover, #brienne.highlight {background-color:#FF00FF;}
-      #davos        {background-image:url('http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png')}
+      #davos        {background-image:url('https://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png')}
       #davos:hover, #davos.highlight {background-color:#AAAAAA;}
-      #samwell      {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png')}
+      #samwell      {background-image:url('https://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png')}
       #samwell:hover, #samwell.highlight {background-color:#3CB371;}
-      #petyr        {background-image:url('http://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/50px-House_Baelish.PNG')}
+      #petyr        {background-image:url('https://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/50px-House_Baelish.PNG')}
       #petyr:hover, #petyr.highlight {background-color:#3CB371;}
-      #jorah        {background-image:url('http://awoiaf.westeros.org/images/thumb/2/2d/House_Mormont.png/40px-House_Mormont.png')}
+      #jorah        {background-image:url('https://awoiaf.westeros.org/images/thumb/2/2d/House_Mormont.png/40px-House_Mormont.png')}
       #jorah:hover, #jorah.highlight {background-color:#3CB371;}
-      #barristan    {background-image:url('http://awoiaf.westeros.org/images/thumb/6/61/Selmy.png/50px-Selmy.png')}
+      #barristan    {background-image:url('https://awoiaf.westeros.org/images/thumb/6/61/Selmy.png/50px-Selmy.png')}
       #barristan:hover, #barristan.highlight {background-color:#9a471f;}
-      #lysa         {background-image:url('http://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/50px-House_Arryn.PNG')}
+      #lysa         {background-image:url('https://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/50px-House_Arryn.PNG')}
       #lysa:hover, #lysa.highlight {background-color:#0368bc;}
-      #griff        {background-image:url('http://awoiaf.westeros.org/images/thumb/0/07/House_Connington.png/50px-House_Connington.png')}
+      #griff        {background-image:url('https://awoiaf.westeros.org/images/thumb/0/07/House_Connington.png/50px-House_Connington.png')}
       #griff:hover, #griff.highlight {background-color:#980030; color:white;}
       
       #other:hover, #other.highlight {background-color:black; color:white;}
@@ -93,19 +93,19 @@
       var totalPages = 3967;
       var characterRowCount = 6;
       var wikiURLs = {
-        awoiaf: "http://awoiaf.westeros.org/index.php/",
-        toth:   "http://towerofthehand.com/books/",
-        tothTV: "http://towerofthehand.com/gameofthrones/",
-        wikia:  "http://gameofthrones.wikia.com/wiki/",
-        wiki:   "http://en.wikipedia.org/wiki/",
-        imdb:   "http://www.imdb.com/title/",
-        ign:    "http://www.ign.com/wikis/game-of-thrones/",
-        hbo:    "http://www.hbo.com/#/game-of-thrones/episodes/",
+        awoiaf: "https://awoiaf.westeros.org/index.php/",
+        toth:   "https://towerofthehand.com/books/",
+        tothTV: "https://towerofthehand.com/gameofthrones/",
+        wikia:  "https://gameofthrones.wikia.com/wiki/",
+        wiki:   "https://en.wikipedia.org/wiki/",
+        imdb:   "https://www.imdb.com/title/",
+        ign:    "https://www.ign.com/wikis/game-of-thrones/",
+        hbo:    "https://www.hbo.com/#/game-of-thrones/episodes/",
       };
       var hboPosters = [
-        "http://awoiaf.westeros.org/images/thumb/2/2c/Season_1_Poster.jpg/250px-Season_1_Poster.jpg",
-        "http://awoiaf.westeros.org/images/thumb/3/3a/Season_2_Poster.jpg/250px-Season_2_Poster.jpg",
-        "http://www.westeros.org/GoT/Graphics/Gallery/GameOfThrones_S3_Poster-Jaime_01.jpg"
+        "https://awoiaf.westeros.org/images/thumb/2/2c/Season_1_Poster.jpg/250px-Season_1_Poster.jpg",
+        "https://awoiaf.westeros.org/images/thumb/3/3a/Season_2_Poster.jpg/250px-Season_2_Poster.jpg",
+        "https://www.westeros.org/GoT/Graphics/Gallery/GameOfThrones_S3_Poster-Jaime_01.jpg"
       ];
       
       function removePX(string){
@@ -145,7 +145,7 @@
                                         $("li").removeClass("highlight");
                                         $(this).addClass("highlight");
                                         $("#title").text(chapters[$(this).index()]["title"]);
-                                        var maplink = "http://quartermaester.info/#l=" + chapters[$(this).index()]["setting"].replace(/\s/g,"_").replace(/\'/g,"%27");
+                                        var maplink = "https://quartermaester.info/#l=" + chapters[$(this).index()]["setting"].replace(/\s/g,"_").replace(/\'/g,"%27");
                                         $("#more").html("Setting: <a href='"+maplink+"'>"+chapters[$(this).index()]["setting"]+"</a><br/>Pages: "+chapters[$(this).index()]["pages"]);
                                         $("#focusImg").attr("src", books[chapters[$(this).index()].book].thumbURL).css("background","white").stop();
                                         //Update Link URL
@@ -185,7 +185,7 @@
                                   $("li").removeClass("highlight");
                                   $(this).addClass("highlight");
                                   $("#title").text(characterLookup[$(this).attr("id")].name);
-                                  $("#more").html("Home: <a href='http://quartermaester.info/#l="+houses[characterLookup[$(this).attr("id")].house].map+"'>"+houses[characterLookup[$(this).attr("id")].house].seat+"</a>");
+                                  $("#more").html("Home: <a href='https://quartermaester.info/#l="+houses[characterLookup[$(this).attr("id")].house].map+"'>"+houses[characterLookup[$(this).attr("id")].house].seat+"</a>");
                                   $("#focusImg").attr("src", houses[characterLookup[$(this).attr("id")].house].armsURL).css("background","white").stop();
                                   //Update Link URL
                                   $("#maps img").hide();
@@ -261,7 +261,7 @@
       <div id="share">
         <a id="info"     href="#" title="Learn about this page"></a>
         <a id="data"     href="https://docs.google.com/spreadsheet/ccc?key=0Ap4uvl_LaJsmdDBaRjBIWU5nMmltZUwtaHY4emkwaUE&usp=sharing" title="See all the connections in a spreadsheet"></a>
-        <a id="link"     href="http://quartermaester.info/connections" title="Link to the current view"></a>
+        <a id="link"     href="https://quartermaester.info/connections" title="Link to the current view"></a>
         
       </div>
     </div>

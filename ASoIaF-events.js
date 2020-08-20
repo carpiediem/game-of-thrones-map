@@ -422,7 +422,7 @@ $(function () {
   //Fill the townSelector list
   locations['Winterfell'].house = 'Stark';
   locations['Winterfell'].img =
-    'http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG';
+    'https://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG';
   for (i in alphaLocations) {
     var name = alphaLocations[i].replace(/\_/gi, ' ').replace(/\%27/gi, "'");
     var house =

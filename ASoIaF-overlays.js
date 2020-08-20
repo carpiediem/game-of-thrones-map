@@ -1,1622 +1,1635 @@
 chapters = [
   {
     title: 'AGOT-0: Prologue',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Prologue',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Prologue',
   }, // 0
   {
     title: 'AGOT-1: Bran I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_1',
   },
   {
     title: 'AGOT-2: Catelyn I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_2',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_2',
   },
   {
     title: 'AGOT-3: Daenerys I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_3',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_3',
   },
   {
     title: 'AGOT-4: Eddard I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_4',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_4',
   },
   {
     title: 'AGOT-5: Jon I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_5',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_5',
   },
   {
     title: 'AGOT-6: Catelyn II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_6',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_6',
   },
   {
     title: 'AGOT-7: Arya I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_7',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_7',
   },
   {
     title: 'AGOT-8: Bran II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_8',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_8',
   },
   {
     title: 'AGOT-9: Tyrion I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_9',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_9',
   },
   {
     title: 'AGOT-10: Jon II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_10',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_10',
   },
   {
     title: 'AGOT-11: Daenerys II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_11',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_11',
   },
   {
     title: 'AGOT-12: Eddard II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_12',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_12',
   },
   {
     title: 'AGOT-13: Tyrion II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_13',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_13',
   },
   {
     title: 'AGOT-14: Catelyn III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_14',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_14',
   },
   {
     title: 'AGOT-15: Sansa I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_15',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_15',
   },
   {
     title: 'AGOT-16: Eddard III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_16',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_16',
   },
   {
     title: 'AGOT-17: Bran III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_17',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_17',
   },
   {
     title: 'AGOT-18: Catelyn IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_18',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_18',
   },
   {
     title: 'AGOT-19: Jon III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_19',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_19',
   },
   {
     title: 'AGOT-20: Eddard IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_20',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_20',
   }, // 20
   {
     title: 'AGOT-21: Tyrion III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_21',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_21',
   },
   {
     title: 'AGOT-22: Arya II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_22',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_22',
   },
   {
     title: 'AGOT-23: Daenerys III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_23',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_23',
   },
   {
     title: 'AGOT-24: Bran IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_24',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_24',
   },
   {
     title: 'AGOT-25: Eddard V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_25',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_25',
   },
   {
     title: 'AGOT-26: Jon IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_26',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_26',
   },
   {
     title: 'AGOT-27: Eddard VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_27',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_27',
   },
   {
     title: 'AGOT-28: Catelyn V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_28',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_28',
   },
   {
     title: 'AGOT-29: Sansa II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_29',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_29',
   },
   {
     title: 'AGOT-30: Eddard VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_30',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_30',
   },
   {
     title: 'AGOT-31: Tyrion IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_31',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_31',
   },
   {
     title: 'AGOT-32: Arya III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_32',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_32',
   },
   {
     title: 'AGOT-33: Eddard VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_33',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_33',
   },
   {
     title: 'AGOT-34: Catelyn VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_34',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_34',
   },
   {
     title: 'AGOT-35: Eddard IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_35',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_35',
   },
   {
     title: 'AGOT-36: Daenerys IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_36',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_36',
   },
   {
     title: 'AGOT-37: Bran V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_37',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_37',
   },
   {
     title: 'AGOT-38: Tyrion V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_38',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_38',
   },
   {
     title: 'AGOT-39: Eddard X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_39',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_39',
   },
   {
     title: 'AGOT-40: Catelyn VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_40',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_40',
   }, // 40
   {
     title: 'AGOT-41: Jon V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_41',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_41',
   },
   {
     title: 'AGOT-42: Tyrion VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_42',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_42',
   },
   {
     title: 'AGOT-43: Eddard XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_43',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_43',
   },
   {
     title: 'AGOT-44: Sansa III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_44',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_44',
   },
   {
     title: 'AGOT-45: Eddard XII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_45',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_45',
   },
   {
     title: 'AGOT-46: Daenerys V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_46',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_46',
   },
   {
     title: 'AGOT-47: Eddard XIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_47',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_47',
   },
   {
     title: 'AGOT-48: Jon VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_48',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_48',
   },
   {
     title: 'AGOT-49: Eddard XIV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_49',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_49',
   },
   {
     title: 'AGOT-50: Arya IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_50',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_50',
   },
   {
     title: 'AGOT-51: Sansa IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_51',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_51',
   },
   {
     title: 'AGOT-52: Jon VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_52',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_52',
   },
   {
     title: 'AGOT-53: Bran VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_53',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_53',
   },
   {
     title: 'AGOT-54: Daenerys VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_54',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_54',
   },
   {
     title: 'AGOT-55: Catelyn VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_55',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_55',
   },
   {
     title: 'AGOT-56: Tyrion VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_56',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_56',
   },
   {
     title: 'AGOT-57: Sansa V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_57',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_57',
   },
   {
     title: 'AGOT-58: Eddard XV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_58',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_58',
   },
   {
     title: 'AGOT-59: Catelyn IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_59',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_59',
   },
   {
     title: 'AGOT-60: Jon VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_60',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_60',
   }, // 60
   {
     title: 'AGOT-61: Daenerys VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_61',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_61',
   },
   {
     title: 'AGOT-62: Tyrion VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_62',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_62',
   },
   {
     title: 'AGOT-63: Catelyn X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_63',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_63',
   },
   {
     title: 'AGOT-64: Daenerys VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_64',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_64',
   },
   {
     title: 'AGOT-65: Arya V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_65',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_65',
   },
   {
     title: 'AGOT-66: Bran VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_66',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_66',
   },
   {
     title: 'AGOT-67: Sansa VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_67',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_67',
   },
   {
     title: 'AGOT-68: Daenerys IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_68',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_68',
   },
   {
     title: 'AGOT-69: Tyrion IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_69',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_69',
   },
   {
     title: 'AGOT-70: Jon IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_70',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_70',
   },
   {
     title: 'AGOT-71: Catelyn XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_71',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_71',
   },
   {
     title: 'AGOT-72: Daenerys X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_71',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_71',
   },
   {
     title: 'ACOK-0: Prologue',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Prologue',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Prologue',
   },
   {
     title: 'ACOK-1: Arya I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_1',
   },
   {
     title: 'ACOK-2: Sansa I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_2',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_2',
   },
   {
     title: 'ACOK-3: Tyrion I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_3',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_3',
   },
   {
     title: 'ACOK-4: Bran I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_4',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_4',
   },
   {
     title: 'ACOK-5: Arya II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_5',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_5',
   },
   {
     title: 'ACOK-6: Jon I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_6',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_6',
   },
   {
     title: 'ACOK-7: Catelyn I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_7',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_7',
   }, // 80
   {
     title: 'ACOK-8: Tyrion II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_8',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_8',
   },
   {
     title: 'ACOK-9: Arya III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_9',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_9',
   },
   {
     title: 'ACOK-10: Davos I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_10',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_10',
   },
   {
     title: 'ACOK-11: Theon I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_11',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_11',
   },
   {
     title: 'ACOK-12: Daenerys I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_12',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_12',
   },
   {
     title: 'ACOK-13: Jon II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_13',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_13',
   },
   {
     title: 'ACOK-14: Arya IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_14',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_14',
   },
   {
     title: 'ACOK-15: Tyrion III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_15',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_15',
   },
   {
     title: 'ACOK-16: Bran II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_16',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_16',
   },
   {
     title: 'ACOK-17: Tyrion IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_17',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_17',
   },
   {
     title: 'ACOK-18: Sansa II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_18',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_18',
   },
   {
     title: 'ACOK-19: Arya V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_19',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_19',
   },
   {
     title: 'ACOK-20: Tyrion V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_20',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_20',
   },
   {
     title: 'ACOK-21: Bran III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_21',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_21',
   },
   {
     title: 'ACOK-22: Catelyn II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_22',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_22',
   },
   {
     title: 'ACOK-23: Jon III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_23',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_23',
   },
   {
     title: 'ACOK-24: Theon II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_24',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_24',
   },
   {
     title: 'ACOK-25: Tyrion VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_25',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_25',
   },
   {
     title: 'ACOK-26: Arya VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_26',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_26',
   },
   {
     title: 'ACOK-27: Daenerys II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_27',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_27',
   }, // 100
   {
     title: 'ACOK-28: Bran IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_28',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_28',
   },
   {
     title: 'ACOK-29: Tyrion VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_29',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_29',
   },
   {
     title: 'ACOK-30: Arya VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_30',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_30',
   },
   {
     title: 'ACOK-31: Catelyn III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_31',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_31',
   },
   {
     title: 'ACOK-32: Sansa III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_32',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_32',
   },
   {
     title: 'ACOK-33: Catelyn IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_33',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_33',
   },
   {
     title: 'ACOK-34: Jon IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_34',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_34',
   },
   {
     title: 'ACOK-35: Bran V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_35',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_35',
   },
   {
     title: 'ACOK-36: Tyrion VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_36',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_36',
   },
   {
     title: 'ACOK-37: Theon III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_37',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_37',
   },
   {
     title: 'ACOK-38: Arya VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_38',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_38',
   },
   {
     title: 'ACOK-39: Catelyn V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_39',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_39',
   },
   {
     title: 'ACOK-40: Daenerys III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_40',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_40',
   },
   {
     title: 'ACOK-41: Tyrion IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_41',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_41',
   },
   {
     title: 'ACOK-42: Davos II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_42',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_42',
   },
   {
     title: 'ACOK-43: Jon V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_43',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_43',
   },
   {
     title: 'ACOK-44: Tyrion X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_44',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_44',
   },
   {
     title: 'ACOK-45: Catelyn VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_45',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_45',
   },
   {
     title: 'ACOK-46: Bran VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_46',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_46',
   },
   {
     title: 'ACOK-47: Arya IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_47',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_47',
   }, // 120
   {
     title: 'ACOK-48: Daenerys IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_48',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_48',
   },
   {
     title: 'ACOK-49: Tyrion XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_49',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_49',
   },
   {
     title: 'ACOK-50: Theon IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_50',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_50',
   },
   {
     title: 'ACOK-51: Jon VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_51',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_51',
   },
   {
     title: 'ACOK-52: Sansa IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_52',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_52',
   },
   {
     title: 'ACOK-53: Jon VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_53',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_53',
   },
   {
     title: 'ACOK-54: Tyrion XII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_54',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_54',
   },
   {
     title: 'ACOK-55: Catelyn VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_55',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_55',
   },
   {
     title: 'ACOK-56: Theon V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_56',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_56',
   },
   {
     title: 'ACOK-57: Sansa V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_57',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_57',
   },
   {
     title: 'ACOK-58: Davos III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_58',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_58',
   },
   {
     title: 'ACOK-59: Tyrion XIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_59',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_59',
   },
   {
     title: 'ACOK-60: Sansa VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_60',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_60',
   },
   {
     title: 'ACOK-61: Tyrion XIV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_61',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_61',
   },
   {
     title: 'ACOK-62: Sansa VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_62',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_62',
   },
   {
     title: 'ACOK-63: Daenerys V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_63',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_63',
   },
   {
     title: 'ACOK-64: Arya X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_64',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_64',
   },
   {
     title: 'ACOK-65: Sansa VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_65',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_65',
   },
   {
     title: 'ACOK-66: Theon VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_66',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_66',
   },
   {
     title: 'ACOK-67: Tyrion XV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_67',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_67',
   }, // 140
   {
     title: 'ACOK-68: Jon VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_68',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_68',
   },
   {
     title: 'ACOK-69: Bran VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_69',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_69',
   },
   {
     title: 'ASOS-0: Prologue',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Prologue',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Prologue',
   },
   {
     title: 'ASOS-1: Jaime I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1',
   },
   {
     title: 'ASOS-2: Catelyn I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_2',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_2',
   },
   {
     title: 'ASOS-3: Arya I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_3',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_3',
   },
   {
     title: 'ASOS-4: Tyrion I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_4',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_4',
   },
   {
     title: 'ASOS-5: Davos I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_5',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_5',
   },
   {
     title: 'ASOS-6: Sansa I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_6',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_6',
   },
   {
     title: 'ASOS-7: Jon I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_7',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_7',
   },
   {
     title: 'ASOS-8: Daenerys I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_8',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_8',
   },
   {
     title: 'ASOS-9: Bran I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_9',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_9',
   },
   {
     title: 'ASOS-10: Davos II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_10',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_10',
   },
   {
     title: 'ASOS-11: Jaime II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_11',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_11',
   },
   {
     title: 'ASOS-12: Tyrion II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_12',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_12',
   },
   {
     title: 'ASOS-13: Arya II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_13',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_13',
   },
   {
     title: 'ASOS-14: Catelyn II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_14',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_14',
   },
   {
     title: 'ASOS-15: Jon II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_15',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_15',
   },
   {
     title: 'ASOS-16: Sansa II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_16',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_16',
   },
   {
     title: 'ASOS-17: Arya III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_17',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_17',
   }, // 160
   {
     title: 'ASOS-18: Samwell I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_18',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_18',
   },
   {
     title: 'ASOS-19: Tyrion III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_19',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_19',
   },
   {
     title: 'ASOS-20: Catelyn III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_20',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_20',
   },
   {
     title: 'ASOS-21: Jaime III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_21',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_21',
   },
   {
     title: 'ASOS-22: Arya IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_22',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_22',
   },
   {
     title: 'ASOS-23: Daenerys II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_23',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_23',
   },
   {
     title: 'ASOS-24: Bran II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_24',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_24',
   },
   {
     title: 'ASOS-25: Davos III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_25',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_25',
   },
   {
     title: 'ASOS-26: Jon III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_26',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_26',
   },
   {
     title: 'ASOS-27: Daenerys III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_27',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_27',
   },
   {
     title: 'ASOS-28: Sansa III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_28',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_28',
   },
   {
     title: 'ASOS-29: Arya V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_29',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_29',
   },
   {
     title: 'ASOS-30: Jon IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_30',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_30',
   },
   {
     title: 'ASOS-31: Jaime IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_31',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_31',
   },
   {
     title: 'ASOS-32: Tyrion IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_32',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_32',
   },
   {
     title: 'ASOS-33: Samwell II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_33',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_33',
   },
   {
     title: 'ASOS-34: Arya VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_34',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_34',
   },
   {
     title: 'ASOS-35: Catelyn IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_35',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_35',
   },
   {
     title: 'ASOS-36: Davos IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_36',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_36',
   },
   {
     title: 'ASOS-37: Jaime V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_37',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_37',
   }, // 180
   {
     title: 'ASOS-38: Tyrion V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_38',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_38',
   },
   {
     title: 'ASOS-39: Arya VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_39',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_39',
   },
   {
     title: 'ASOS-40: Bran III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_40',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_40',
   },
   {
     title: 'ASOS-41: Jon V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_41',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_41',
   },
   {
     title: 'ASOS-42: Daenerys IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_42',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_42',
   },
   {
     title: 'ASOS-43: Arya VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_43',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_43',
   },
   {
     title: 'ASOS-44: Jaime VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_44',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_44',
   },
   {
     title: 'ASOS-45: Catelyn V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_45',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_45',
   },
   {
     title: 'ASOS-46: Samwell III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_46',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_46',
   },
   {
     title: 'ASOS-47: Arya IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_47',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_47',
   },
   {
     title: 'ASOS-48: Jon VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_48',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_48',
   },
   {
     title: 'ASOS-49: Catelyn VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_49',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_49',
   },
   {
     title: 'ASOS-50: Arya X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_50',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_50',
   },
   {
     title: 'ASOS-51: Catelyn VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_51',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_51',
   },
   {
     title: 'ASOS-52: Arya XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_52',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_52',
   },
   {
     title: 'ASOS-53: Tyrion VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_53',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_53',
   },
   {
     title: 'ASOS-54: Davos V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_54',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_54',
   },
   {
     title: 'ASOS-55: Jon VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_55',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_55',
   },
   {
     title: 'ASOS-56: Bran IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_56',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_56',
   },
   {
     title: 'ASOS-57: Daenerys V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_57',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_57',
   }, // 200
   {
     title: 'ASOS-58: Tyrion VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_58',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_58',
   },
   {
     title: 'ASOS-59: Sansa IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_59',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_59',
   },
   {
     title: 'ASOS-60: Tyrion VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_60',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_60',
   },
   {
     title: 'ASOS-61: Sansa V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_61',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_61',
   },
   {
     title: 'ASOS-62: Jaime VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_62',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_62',
   },
   {
     title: 'ASOS-63: Davos VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_63',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_63',
   },
   {
     title: 'ASOS-64: Jon VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_64',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_64',
   },
   {
     title: 'ASOS-65: Arya XII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_65',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_65',
   },
   {
     title: 'ASOS-66: Tyrion IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_66',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_66',
   },
   {
     title: 'ASOS-67: Jaime VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_67',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_67',
   },
   {
     title: 'ASOS-68: Sansa VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_68',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_68',
   },
   {
     title: 'ASOS-69: Jon IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_69',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_69',
   },
   {
     title: 'ASOS-70: Tyrion X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_70',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_70',
   },
   {
     title: 'ASOS-71: Daenerys VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_71',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_71',
   },
   {
     title: 'ASOS-72: Jaime IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_72',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_72',
   },
   {
     title: 'ASOS-73: Jon X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_73',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_73',
   },
   {
     title: 'ASOS-74: Arya XIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_74',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_74',
   },
   {
     title: 'ASOS-75: Samwell IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_75',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_75',
   },
   {
     title: 'ASOS-76: Jon XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_76',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_76',
   },
   {
     title: 'ASOS-77: Tyrion XI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_77',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_77',
   }, // 220
   {
     title: 'ASOS-78: Samwell V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_78',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_78',
   },
   {
     title: 'ASOS-79: Jon XII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_79',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_79',
   },
   {
     title: 'ASOS-80: Sansa VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_80',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_80',
   },
   {
     title: 'ASOS-81: Epilogue',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Epilogue',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Epilogue',
   },
   {
     title: 'AFFC-0: Prologue',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Prologue',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Prologue',
   },
   {
     title: 'AFFC-1: The Prophet',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_1',
   },
   {
     title: 'AFFC-2: The Captain Of Guards',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_2',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_2',
   },
   {
     title: 'AFFC-3: Cersei I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_3',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_3',
   },
   {
     title: 'AFFC-4: Brienne I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_4',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_4',
   },
   {
     title: 'AFFC-5: Samwell I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_5',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_5',
   },
   {
     title: 'AFFC-6: Arya I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_6',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_6',
   },
   {
     title: 'AFFC-7: Cersei II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_7',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_7',
   },
   {
     title: 'AFFC-8: Jaime I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_8',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_8',
   },
   {
     title: 'AFFC-9: Brienne II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_9',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_9',
   },
   {
     title: 'AFFC-10: Sansa I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_10',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_10',
   },
   {
     title: "AFFC-11: Kraken's Daughter",
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_11',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_11',
   },
   {
     title: 'AFFC-12: Cersei III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_12',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_12',
   },
   {
     title: 'AFFC-13: The Soiled Knight',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_13',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_13',
   },
   {
     title: 'AFFC-14: Brienne III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_14',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_14',
   },
   {
     title: 'AFFC-15: Samwell II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_15',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_15',
   }, // 240
   {
     title: 'AFFC-16: Jaime II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_16',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_16',
   },
   {
     title: 'AFFC-17: Cersei IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_17',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_17',
   },
   {
     title: 'AFFC-18: The Iron Captain',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_18',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_18',
   },
   {
     title: 'AFFC-19: The Drowned Man',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_19',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_19',
   },
   {
     title: 'AFFC-20: Brienne IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_20',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_20',
   },
   {
     title: 'AFFC-21: The Queenmaker',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_21',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_21',
   },
   {
     title: 'AFFC-22: Arya II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_22',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_22',
   },
   {
     title: 'AFFC-23: Alayne I',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_23',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_23',
   },
   {
     title: 'AFFC-24: Cersei V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_24',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_24',
   },
   {
     title: 'AFFC-25: Brienne V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_25',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_25',
   },
   {
     title: 'AFFC-26: Samwell III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_26',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_26',
   },
   {
     title: 'AFFC-27: Jaime III',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_27',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_27',
   },
   {
     title: 'AFFC-28: Cersei VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_28',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_28',
   },
   {
     title: 'AFFC-29: The Reaver',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_29',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_29',
   },
   {
     title: 'AFFC-30: Jaime IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_30',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_30',
   },
   {
     title: 'AFFC-31: Brienne VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_31',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_31',
   },
   {
     title: 'AFFC-32: Cersei VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_32',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_32',
   },
   {
     title: 'AFFC-33: Jaime V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_33',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_33',
   },
   {
     title: 'AFFC-34: Cat Of The Canals',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_34',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_34',
   },
   {
     title: 'AFFC-35: Samwell IV',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_35',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_35',
   }, // 260
   {
     title: 'AFFC-36: Cersei VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_36',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_36',
   },
   {
     title: 'AFFC-37: Brienne VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_37',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_37',
   },
   {
     title: 'AFFC-38: Jaime VI',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_38',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_38',
   },
   {
     title: 'AFFC-39: Cersei IX',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_39',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_39',
   },
   {
     title: 'AFFC-40: Princess in the Tower',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_40',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_40',
   },
   {
     title: 'AFFC-41: Alayne II',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_41',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_41',
   },
   {
     title: 'AFFC-42: Brienne VIII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_42',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_42',
   },
   {
     title: 'AFFC-43: Cersei X',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_43',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_43',
   },
   {
     title: 'AFFC-44: Jaime VII',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_44',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_44',
   },
   {
     title: 'AFFC-45: Samwell V',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_45',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_45',
   },
   {
     title: 'ADWD-0: Prologue',
-    url: 'http://awoiaf.westeros.org/index.php/Prologue_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Prologue_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-1: Tyrion I',
-    url: 'http://awoiaf.westeros.org/index.php/Tyrion_I_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Tyrion_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-2: Daenerys I',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_I_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-3: Jon I',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-4: Bran I',
-    url: 'http://awoiaf.westeros.org/index.php/Bran_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Bran_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-5: Tyrion II',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_II_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_II_(A_Dance_with_Dragons)',
   },
   {
     title: "ADWD-6: The Merchant's Man",
     url:
-      'http://awoiaf.westeros.org/index.php/The_Merchant%27s_Man_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Merchant%27s_Man_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-7: Jon II',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_II_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-8: Tyrion III',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_III_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-9: Davos I',
-    url: 'http://awoiaf.westeros.org/index.php/Davos_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Davos_I_(A_Dance_with_Dragons)',
   }, // 280
   {
     title: 'ADWD-10: Jon III',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_III_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-11: Daenerys II',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_II_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-12: Reek I',
-    url: 'http://awoiaf.westeros.org/index.php/Reek_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Reek_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-13: Bran II',
-    url: 'http://awoiaf.westeros.org/index.php/Bran_II_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Bran_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-14: Tyrion IV',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_IV_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_IV_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-15: Davos II',
-    url: 'http://awoiaf.westeros.org/index.php/Davos_II_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Davos_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-16: Daenerys III',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_III_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-17: Jon IV',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_IV_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_IV_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-18: Tyrion V',
-    url: 'http://awoiaf.westeros.org/index.php/Tyrion_V_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Tyrion_V_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-19: Davos III',
     url:
-      'http://awoiaf.westeros.org/index.php/Davos_III_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Davos_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-20: Reek II',
-    url: 'http://awoiaf.westeros.org/index.php/Reek_II_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Reek_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-21: Jon V',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_V_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_V_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-22: Tyrion VI',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_VI_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_VI_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-23: Daenerys IV',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_IV_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_IV_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-24: The Lost Lord',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Lost_Lord_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Lost_Lord_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-25: The Windblown',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Windblown_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Windblown_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-26: The Wayward Bride',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Wayward_Bride_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Wayward_Bride_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-27: Tyrion VII',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_VII_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_VII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-28: Jon VI',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_VI_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_VI_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-29: Davos IV',
-    url: 'http://awoiaf.westeros.org/index.php/Davos_IV_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Davos_IV_(A_Dance_with_Dragons)',
   }, // 300
   {
     title: 'ADWD-30: Daenerys V',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_V_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_V_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-31: Melisandre I',
     url:
-      'http://awoiaf.westeros.org/index.php/Melisandre_I_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Melisandre_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-32: Reek III',
-    url: 'http://awoiaf.westeros.org/index.php/Reek_III_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Reek_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-33: Tyrion VIII',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_VIII_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_VIII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-34: Bran III',
-    url: 'http://awoiaf.westeros.org/index.php/Bran_III_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Bran_III_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-35: Jon VII',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_VII_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_VII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-36: Daenerys VI',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_VI_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_VI_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-37: Prince of Winterfell',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Prince_of_Winterfell_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Prince_of_Winterfell_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-38: The Watcher',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Watcher_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Watcher_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-39: Jon VIII',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_VIII_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Jon_VIII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-40: Tyrion IX',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_IX_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_IX_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-41: The Turncloak',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Turncloak_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Turncloak_(A_Dance_with_Dragons)',
   },
   {
     title: "ADWD-42: The King's Prize",
     url:
-      "http://awoiaf.westeros.org/index.php/The_King's_Prize_(A_Dance_with_Dragons)",
+      "https://awoiaf.westeros.org/index.php/The_King's_Prize_(A_Dance_with_Dragons)",
   },
   {
     title: 'ADWD-43: Daenerys VII',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_VII_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_VII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-44: Jon IX',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_IX_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_IX_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-45: The Blind Girl',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Blind_Girl_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Blind_Girl_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-46: A Ghost In Winterfell',
     url:
-      'http://awoiaf.westeros.org/index.php/A_Ghost_in_Winterfell_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/A_Ghost_in_Winterfell_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-47: Tyrion X',
-    url: 'http://awoiaf.westeros.org/index.php/Tyrion_X_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Tyrion_X_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-48: Jaime I',
-    url: 'http://awoiaf.westeros.org/index.php/Jaime_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jaime_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-49: Jon X',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_X_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_X_(A_Dance_with_Dragons)',
   }, // 320
   {
     title: 'ADWD-50: Daenerys VIII',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_VIII_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_VIII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-51: Theon I',
-    url: 'http://awoiaf.westeros.org/index.php/Theon_I_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Theon_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-52: Daenerys IX',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_IX_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_IX_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-53: Jon XI',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_XI_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_XI_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-54: Cersei I',
-    url: 'http://awoiaf.westeros.org/index.php/Cersei_I_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Cersei_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-55: The Queensguard',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Queensguard_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Queensguard_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-56: The Iron Suitor',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Iron_Suitor_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Iron_Suitor_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-57: Tyrion XI',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_XI_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_XI_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-58: Jon XII',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_XII_(A_Dance_with_Dragons)',
+    url: 'https://awoiaf.westeros.org/index.php/Jon_XII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-59: Discarded Knight',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Discarded_Knight_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Discarded_Knight_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-60: The Spurned Suitor',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Spurned_Suitor_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Spurned_Suitor_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-61: The Griffin Reborn',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Griffin_Reborn_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Griffin_Reborn_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-62: The Sacrifice',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Sacrifice_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Sacrifice_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-63: Victarion I',
     url:
-      'http://awoiaf.westeros.org/index.php/Victarion_I_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Victarion_I_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-64: The Ugly Little Girl',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Ugly_Little_Girl_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Ugly_Little_Girl_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-65: Cersei II',
     url:
-      'http://awoiaf.westeros.org/index.php/Cersei_II_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Cersei_II_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-66: Tyrion XII',
     url:
-      'http://awoiaf.westeros.org/index.php/Tyrion_XII_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Tyrion_XII_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-67: The Kingbreaker',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Kingbreaker_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Kingbreaker_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-68: The Dragontamer',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Dragontamer_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Dragontamer_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-69: Jon XIII',
-    url: 'http://awoiaf.westeros.org/index.php/Jon_XIII_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Jon_XIII_(A_Dance_with_Dragons)',
   }, // 340
   {
     title: "ADWD-70: The Queen's Hand",
     url:
-      'http://awoiaf.westeros.org/index.php/The_Queen%27s_Hand_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/The_Queen%27s_Hand_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-71: Daenerys X',
     url:
-      'http://awoiaf.westeros.org/index.php/Daenerys_X_(A_Dance_with_Dragons)',
+      'https://awoiaf.westeros.org/index.php/Daenerys_X_(A_Dance_with_Dragons)',
   },
   {
     title: 'ADWD-72: Epilogue',
-    url: 'http://awoiaf.westeros.org/index.php/Epilogue_(A_Dance_with_Dragons)',
+    url:
+      'https://awoiaf.westeros.org/index.php/Epilogue_(A_Dance_with_Dragons)',
   },
   {
     title: 'TWOW-?: Theon I',
-    url: 'http://awoiaf.westeros.org/index.php/Theon_I_(The_Winds_of_Winter)',
+    url: 'https://awoiaf.westeros.org/index.php/Theon_I_(The_Winds_of_Winter)',
   }, //344
 ];
 
 var episodes = [
   {
     title: 'S1E01: Winter Is Coming',
-    url: 'http://awoiaf.westeros.org/index.php/Winter_Is_Coming',
+    url: 'https://awoiaf.westeros.org/index.php/Winter_Is_Coming',
   },
   {
     title: 'S1E02: The Kingsroad',
-    url: 'http://awoiaf.westeros.org/index.php/The_Kingsroad',
+    url: 'https://awoiaf.westeros.org/index.php/The_Kingsroad',
   },
   {
     title: 'S1E03: Lord Snow',
-    url: 'http://awoiaf.westeros.org/index.php/Lord_Snow',
+    url: 'https://awoiaf.westeros.org/index.php/Lord_Snow',
   },
   {
     title: 'S1E04: Cripples, Bastards, & Broken Things',
     url:
-      'http://awoiaf.westeros.org/index.php/Cripples,_Bastards,_and_Broken_Things',
+      'https://awoiaf.westeros.org/index.php/Cripples,_Bastards,_and_Broken_Things',
   },
   {
     title: 'S1E05: The Wolf and the Lion',
-    url: 'http://awoiaf.westeros.org/index.php/The_Wolf_and_the_Lion',
+    url: 'https://awoiaf.westeros.org/index.php/The_Wolf_and_the_Lion',
   },
   {
     title: 'S1E06: A Golden Crown',
-    url: 'http://awoiaf.westeros.org/index.php/A_Golden_Crown',
+    url: 'https://awoiaf.westeros.org/index.php/A_Golden_Crown',
   },
   {
     title: 'S1E07: You Win or You Die',
-    url: 'http://awoiaf.westeros.org/index.php/You_Win_or_You_Die',
+    url: 'https://awoiaf.westeros.org/index.php/You_Win_or_You_Die',
   },
   {
     title: 'S1E08: The Pointy End',
-    url: 'http://awoiaf.westeros.org/index.php/The_Pointy_End',
+    url: 'https://awoiaf.westeros.org/index.php/The_Pointy_End',
   },
   {
     title: 'S1E09: Baelor',
-    url: 'http://awoiaf.westeros.org/index.php/Baelor',
+    url: 'https://awoiaf.westeros.org/index.php/Baelor',
   },
   {
     title: 'S1E10: Fire and Blood',
     url:
-      'http://awoiaf.westeros.org/index.php/Fire_and_Blood_(Game_of_Thrones)',
+      'https://awoiaf.westeros.org/index.php/Fire_and_Blood_(Game_of_Thrones)',
   },
   {
     title: 'S2E01: The North Remembers',
-    url: 'http://awoiaf.westeros.org/index.php/The_North_Remembers_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_North_Remembers_(TV)',
   },
   {
     title: 'S2E02: The Night Lands',
-    url: 'http://awoiaf.westeros.org/index.php/The_Night_Lands_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_Night_Lands_(TV)',
   },
   {
     title: 'S2E03: What Is Dead May Never Die',
-    url: 'http://awoiaf.westeros.org/index.php/What_Is_Dead_May_Never_Die_(TV)',
+    url:
+      'https://awoiaf.westeros.org/index.php/What_Is_Dead_May_Never_Die_(TV)',
   },
   {
     title: 'S2E04: Garden of Bones',
-    url: 'http://awoiaf.westeros.org/index.php/Garden_of_Bones_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Garden_of_Bones_(TV)',
   },
   {
     title: 'S2E05: The Ghost of Harrenhal',
-    url: 'http://awoiaf.westeros.org/index.php/The_Ghost_of_Harrenhal_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_Ghost_of_Harrenhal_(TV)',
   },
   {
     title: 'S2E06: The Old Gods and the New',
-    url: 'http://awoiaf.westeros.org/index.php/The_Old_Gods_and_the_New_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_Old_Gods_and_the_New_(TV)',
   },
   {
     title: 'S2E07: A Man Without Honor',
-    url: 'http://awoiaf.westeros.org/index.php/A_Man_Without_Honor_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/A_Man_Without_Honor_(TV)',
   },
   {
     title: 'S2E08: The Prince of Winterfell',
-    url: 'http://awoiaf.westeros.org/index.php/The_Prince_of_Winterfell_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_Prince_of_Winterfell_(TV)',
   },
   {
     title: 'S2E09: Blackwater',
-    url: 'http://awoiaf.westeros.org/index.php/Blackwater_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Blackwater_(TV)',
   },
   {
     title: 'S2E10: Valar Morghulis',
-    url: 'http://awoiaf.westeros.org/index.php/Valar_Morghulis_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Valar_Morghulis_(TV)',
   },
   {
     title: 'S3E01: Valar Dohaeris',
-    url: 'http://awoiaf.westeros.org/index.php/Valar_Dohaeris_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Valar_Dohaeris_(TV)',
   },
   {
     title: 'S3E02: Dark Wings, Dark Words',
-    url: 'http://awoiaf.westeros.org/index.php/Dark_Wings,_Dark_Words',
+    url: 'https://awoiaf.westeros.org/index.php/Dark_Wings,_Dark_Words',
   },
   {
     title: 'S3E03: Walk of Punishment',
-    url: 'http://awoiaf.westeros.org/index.php/Walk_of_Punishment',
+    url: 'https://awoiaf.westeros.org/index.php/Walk_of_Punishment',
   },
   {
     title: 'S3E04: And Now His Watch is Ended',
-    url: 'http://awoiaf.westeros.org/index.php/And_Now_His_Watch_Is_Ended',
+    url: 'https://awoiaf.westeros.org/index.php/And_Now_His_Watch_Is_Ended',
   },
   {
     title: 'S3E05: Kissed by Fire',
-    url: 'http://awoiaf.westeros.org/index.php/Kissed_by_Fire',
+    url: 'https://awoiaf.westeros.org/index.php/Kissed_by_Fire',
   },
   {
     title: 'S3E06: The Climb',
-    url: 'http://awoiaf.westeros.org/index.php/The_Climb',
+    url: 'https://awoiaf.westeros.org/index.php/The_Climb',
   },
   {
     title: 'S3E07: The Bear and the Maiden Fair',
     url:
-      'http://awoiaf.westeros.org/index.php/The_Bear_and_the_Maiden_Fair_(TV)',
+      'https://awoiaf.westeros.org/index.php/The_Bear_and_the_Maiden_Fair_(TV)',
   },
   {
     title: 'S3E08: Second Sons',
-    url: 'http://awoiaf.westeros.org/index.php/Second_Sons_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Second_Sons_(TV)',
   },
   {
     title: 'S3E09: The Rains of Castamere',
-    url: 'http://awoiaf.westeros.org/index.php/The_Rains_of_Castamere_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/The_Rains_of_Castamere_(TV)',
   },
   {
     title: 'S3E10: Mhysa',
-    url: 'http://awoiaf.westeros.org/index.php/Mhysa_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Mhysa_(TV)',
   },
   {
     title: 'S4E01: Two Swords',
-    url: 'http://awoiaf.westeros.org/index.php/Two_Swords',
+    url: 'https://awoiaf.westeros.org/index.php/Two_Swords',
   },
   {
     title: 'S4E02: The Lion and the Rose',
-    url: 'http://awoiaf.westeros.org/index.php/The_Lion_and_the_Rose',
+    url: 'https://awoiaf.westeros.org/index.php/The_Lion_and_the_Rose',
   },
   {
     title: 'S4E03: Breaker of Chains',
-    url: 'http://awoiaf.westeros.org/index.php/Breaker_of_Chains',
+    url: 'https://awoiaf.westeros.org/index.php/Breaker_of_Chains',
   },
   {
     title: 'S4E04: Oathkeeper',
-    url: 'http://awoiaf.westeros.org/index.php/Oathkeeper_(TV)',
+    url: 'https://awoiaf.westeros.org/index.php/Oathkeeper_(TV)',
   },
   {
     title: 'S4E05: First of His Name',
-    url: 'http://awoiaf.westeros.org/index.php/First_of_His_Name',
+    url: 'https://awoiaf.westeros.org/index.php/First_of_His_Name',
   },
   {
     title: 'S4E06: The Laws of Gods and Men',
-    url: 'http://awoiaf.westeros.org/index.php/The_Laws_of_Gods_and_Men',
+    url: 'https://awoiaf.westeros.org/index.php/The_Laws_of_Gods_and_Men',
   },
   {
     title: 'S4E07: Mockingbird',
-    url: 'http://en.wikipedia.org/wiki/Mockingbird_(Game_of_Thrones)',
+    url: 'https://en.wikipedia.org/wiki/Mockingbird_(Game_of_Thrones)',
   },
   {
     title: 'S4E08: The Mountain and the Viper',
-    url: 'http://en.wikipedia.org/wiki/The_Mountain_and_the_Viper',
+    url: 'https://en.wikipedia.org/wiki/The_Mountain_and_the_Viper',
   },
   {
     title: 'S4E09: The Watchers on the Wall',
-    url: 'http://en.wikipedia.org/wiki/The_Watchers_on_the_Wall',
+    url: 'https://en.wikipedia.org/wiki/The_Watchers_on_the_Wall',
   },
   {
     title: 'S4E10: The Children',
-    url: 'http://en.wikipedia.org/wiki/The_Children_(Game_of_Thrones)',
+    url: 'https://en.wikipedia.org/wiki/The_Children_(Game_of_Thrones)',
   },
   {
     title: 'S5E01: The Wars to Come',
-    url: 'http://en.wikipedia.org/wiki/The_Wars_to_Come',
+    url: 'https://en.wikipedia.org/wiki/The_Wars_to_Come',
   },
   {
     title: 'S5E02: The House of Black and White',
-    url: 'http://en.wikipedia.org/wiki/The_House_of_Black_and_White',
+    url: 'https://en.wikipedia.org/wiki/The_House_of_Black_and_White',
   },
   {
     title: 'S5E03: High Sparrow',
-    url: 'http://en.wikipedia.org/wiki/High_Sparrow',
+    url: 'https://en.wikipedia.org/wiki/High_Sparrow',
   },
   {
     title: 'S5E04: The Sons of the Harpy',
-    url: 'http://en.wikipedia.org/wiki/Sons_of_the_Harpy',
+    url: 'https://en.wikipedia.org/wiki/Sons_of_the_Harpy',
   },
   {
     title: 'S5E05: Kill the Boy',
-    url: 'http://en.wikipedia.org/wiki/Kill_the_Boy',
+    url: 'https://en.wikipedia.org/wiki/Kill_the_Boy',
   },
   {
     title: 'S5E06: Unbowed, Unbent, Unbroken',
-    url: 'http://en.wikipedia.org/wiki/Unbowed,_Unbent,_Unbroken',
+    url: 'https://en.wikipedia.org/wiki/Unbowed,_Unbent,_Unbroken',
   },
   {
     title: 'S5E07: The Gift',
-    url: 'http://en.wikipedia.org/wiki/The_Gift_(Game_of_Thrones)',
+    url: 'https://en.wikipedia.org/wiki/The_Gift_(Game_of_Thrones)',
   },
-  { title: 'S5E08: Hardhome', url: 'http://en.wikipedia.org/wiki/Hardhome' },
+  { title: 'S5E08: Hardhome', url: 'https://en.wikipedia.org/wiki/Hardhome' },
   {
     title: 'S5E09: The Dance of Dragons',
     url: 'https://en.wikipedia.org/wiki/The_Dance_of_Dragons',
@@ -1670,31 +1683,31 @@ var episodes = [
 novellas = [
   {
     title: 'Princess & Queen: p703',
-    url: 'http://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
+    url: 'https://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
   },
   {
     title: 'Princess & Queen: p709',
-    url: 'http://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
+    url: 'https://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
   },
   {
     title: 'Princess & Queen: p716',
-    url: 'http://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
+    url: 'https://awoiaf.westeros.org/index.php/The_Princess_and_the_Queen',
   },
   {
     title: 'The Hedge Knight (209AL)',
-    url: 'http://awoiaf.westeros.org/index.php/The_Hedge_Knight',
+    url: 'https://awoiaf.westeros.org/index.php/The_Hedge_Knight',
   },
   {
     title: 'The Sworn Sword (210AL)',
-    url: 'http://awoiaf.westeros.org/index.php/The_Sworn_Sword',
+    url: 'https://awoiaf.westeros.org/index.php/The_Sworn_Sword',
   },
   {
     title: 'The Mystery Knight (212AL)',
-    url: 'http://awoiaf.westeros.org/index.php/The_Mystery_Knight',
+    url: 'https://awoiaf.westeros.org/index.php/The_Mystery_Knight',
   },
 ];
 
-//For locations, if no url attribute is specified, it will be set to http://awoiaf.westeros.org/index.php/[key]
+//For locations, if no url attribute is specified, it will be set to https://awoiaf.westeros.org/index.php/[key]
 locations = {
   //Numbered locations
   'Westwatch-by-the-Bridge': {
@@ -1791,13 +1804,13 @@ locations = {
     lat: 76.1744979490871,
     lng: -99.5361328125,
     title: '19: Eastwatch-by-the-Sea',
-    url: 'http://awoiaf.westeros.org/index.php/Eastwatch-by-the-Sea',
+    url: 'https://awoiaf.westeros.org/index.php/Eastwatch-by-the-Sea',
   },
   BWB_Hideout: {
     lat: 25.24469595130604,
     lng: -117.8173828125,
     title: '20: Brotherhood Without Banners hideout',
-    url: 'http://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_42',
+    url: 'https://awoiaf.westeros.org/index.php/A_Feast_for_Crows-Chapter_42',
   },
   Inn_of_the_Kneeling_Man: {
     lat: 25.00597265623918,
@@ -1813,7 +1826,7 @@ locations = {
     lat: 23.40276490540795,
     lng: -126.2548828125,
     title: '23: Inn (They Lay with Lions)',
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1',
   },
   Unnamed_Village: {
     lat: 22.59372606392931,
@@ -1824,7 +1837,7 @@ locations = {
     lat: 21.94304553343818,
     lng: -123.2666015625,
     title: "25: Lord Lychester's Keep",
-    url: 'http://awoiaf.westeros.org/index.php/House_Lychester',
+    url: 'https://awoiaf.westeros.org/index.php/House_Lychester',
   },
   Lady_of_the_Leaves: {
     lat: 20.42701281425738,
@@ -1841,7 +1854,7 @@ locations = {
     lng: -123.046875,
     title: "28: Lord Goodbrook's Village",
     url:
-      'http://awoiaf.westeros.org/index.php/House_Goodbrook#A_Song_of_Ice_and_Fire',
+      'https://awoiaf.westeros.org/index.php/House_Goodbrook#A_Song_of_Ice_and_Fire',
   },
   Pennytree: {
     lat: 20.2209657795223,
@@ -1891,7 +1904,7 @@ locations = {
   Execution_Holdfast: {
     lat: 66.5482634621744,
     lng: -122.6220703125,
-    url: 'http://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_1',
+    url: 'https://awoiaf.westeros.org/index.php/A_Game_of_Thrones-Chapter_1',
   },
   'Crofters%27_village': { lat: 66.58321725728173, lng: -125.15625 },
   Donella_Manderly: { lat: 65.09064558256851, lng: -107.8564453125 },
@@ -1914,14 +1927,14 @@ locations = {
   Palisade_Village: {
     lat: 28.03319784767637,
     lng: -111.9873046875,
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_65',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_65',
   },
   //The Iron Islands
   Castle_Goodbrother: {
     lat: 31.93351676190369,
     lng: -153.427734375,
     url:
-      'http://awoiaf.westeros.org/index.php/House_Goodbrother_of_Shatterstone',
+      'https://awoiaf.westeros.org/index.php/House_Goodbrother_of_Shatterstone',
   },
   'Nagga%27s_Hill': { lat: 31.37239910488052, lng: -154.2626953125 },
   Ten_Towers: { lat: 31.37239910488052, lng: -144.462890625 },
@@ -1955,23 +1968,23 @@ locations = {
   Hollow_Hill: {
     lat: 11.2861607687526,
     lng: -128.115234375,
-    url: 'http://awoiaf.westeros.org/index.php/Brotherhood_Without_Banners',
+    url: 'https://awoiaf.westeros.org/index.php/Brotherhood_Without_Banners',
   },
   Stoney_Sept: { lat: 9.817329187067783, lng: -125.654296875 },
   Robbed_Sept: {
     lat: 13.02596592633353,
     lng: -126.708984375,
-    url: 'http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_39',
+    url: 'https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_39',
   },
   Gods_Eye_Holdfast: {
     lat: 11.00590445965946,
     lng: -114.7998046875,
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_14',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_14',
   },
   Gods_Eye_Village: {
     lat: 13.15437605541852,
     lng: -111.5478515625,
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_19',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_19',
   },
   //The Westerlands
   Banefort: { lat: 24.60706913770968, lng: -147.36328125 },
@@ -2003,7 +2016,7 @@ locations = {
   Ivy_Inn: {
     lat: 10.22843726615594,
     lng: -108.1201171875,
-    url: 'http://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_5',
+    url: 'https://awoiaf.westeros.org/index.php/A_Clash_of_Kings-Chapter_5',
   },
   'Sow%27s_Horn': { lat: 10.83330598364249, lng: -106.7138671875 },
   Duskendale: { lat: 8.624472107633936, lng: -98.8037109375 },
@@ -2115,12 +2128,12 @@ locations = {
   Dead_City1: {
     lat: -76.94048839176438,
     lng: 134.8095703125,
-    url: 'http://awoiaf.westeros.org/index.php/Red_Waste#Geography',
+    url: 'https://awoiaf.westeros.org/index.php/Red_Waste#Geography',
   },
   Dead_City2: {
     lat: -77.85109964137914,
     lng: 125.0537109375,
-    url: 'http://awoiaf.westeros.org/index.php/Red_Waste#Geography',
+    url: 'https://awoiaf.westeros.org/index.php/Red_Waste#Geography',
   },
   Qarth: { lat: -81.36788549290205, lng: 161.396484375 },
   //Sothoryos & The Summer Islands
@@ -2364,7 +2377,7 @@ nobility = [
     seatKey: 'Winterfell',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG',
     isGreat: true,
     chapters: [0, 118],
     episodes: [0, 14],
@@ -2374,7 +2387,7 @@ nobility = [
     seatKey: 'Winterfell',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
     isGreat: true,
     chapters: [119, 138],
     episodes: [15, 18],
@@ -2384,7 +2397,7 @@ nobility = [
     seatKey: 'Dreadfort',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
+      'https://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
     isGreat: false,
     chapters: [0, 195],
   },
@@ -2393,7 +2406,7 @@ nobility = [
     seatKey: 'Dreadfort',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
+      'https://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
     isGreat: true,
     chapters: [196, 307],
     episodes: [19, 41],
@@ -2403,7 +2416,7 @@ nobility = [
     seatKey: 'Winterfell',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
+      'https://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
     isGreat: true,
     chapters: [308, 999],
     episodes: [42, 57],
@@ -2413,7 +2426,7 @@ nobility = [
     seatKey: 'Dreadfort',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
+      'https://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/50px-Bolton.png',
     isGreat: false,
     chapters: [308, 999],
     episodes: [42, 99],
@@ -2423,7 +2436,7 @@ nobility = [
     seatKey: 'Winterfell',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/90px-House_Stark.PNG',
     isGreat: true,
     chapters: [999, 999],
     episodes: [58, 99],
@@ -2433,7 +2446,7 @@ nobility = [
     seatKey: 'Riverrun',
     imgRatio: 120 / 112,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG',
     isGreat: true,
     chapters: [0, 137],
   }, //Tullys have lost control of Riverlands, but continue to hold Riverrun until AFFC-44: Jaime VII
@@ -2442,7 +2455,7 @@ nobility = [
     seatKey: 'Riverrun',
     imgRatio: 120 / 112,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/23/House_Tully.PNG/112px-House_Tully.PNG',
     isGreat: false,
     chapters: [138, 268],
     episodes: [99, 99],
@@ -2452,7 +2465,7 @@ nobility = [
     seatKey: 'Harrenhal',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/90px-House_Baelish.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/13/House_Baelish.PNG/90px-House_Baelish.PNG',
     isGreat: true,
     chapters: [138, 999],
     episodes: [99, 99],
@@ -2462,7 +2475,7 @@ nobility = [
     seatKey: 'Eyrie',
     imgRatio: 120 / 112,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/112px-House_Arryn.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/be/House_Arryn.PNG/112px-House_Arryn.PNG',
     isGreat: true,
   },
   {
@@ -2470,7 +2483,7 @@ nobility = [
     seatKey: 'Pyke',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
     isGreat: true,
   },
   {
@@ -2478,7 +2491,7 @@ nobility = [
     seatKey: 'Casterly_Rock',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/102px-House_Lannister.png',
+      'https://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/102px-House_Lannister.png',
     isGreat: true,
   },
   {
@@ -2486,7 +2499,7 @@ nobility = [
     seatKey: 'King%27s_Landing',
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
     isGreat: true,
     chapters: [0, 48],
     episodes: [0, 5],
@@ -2496,7 +2509,7 @@ nobility = [
     seatKey: 'King%27s_Landing',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png',
     isGreat: true,
     chapters: [49, 999],
     episodes: [6, 99],
@@ -2506,7 +2519,7 @@ nobility = [
     seatKey: 'Highgarden',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/99/House_Tyrell.PNG/90px-House_Tyrell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/99/House_Tyrell.PNG/90px-House_Tyrell.PNG',
     isGreat: true,
   },
   {
@@ -2514,7 +2527,7 @@ nobility = [
     seatKey: 'Storm%27s_End',
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
     isGreat: true,
   },
   {
@@ -2522,7 +2535,7 @@ nobility = [
     seatKey: 'Sunspear',
     imgRatio: 119 / 92,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG',
     isGreat: true,
   },
   {
@@ -2530,7 +2543,7 @@ nobility = [
     seatKey: 'Dragonstone',
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG',
     isGreat: false,
     chapters: [0, 48],
     episodes: [0, 5],
@@ -2540,7 +2553,7 @@ nobility = [
     seatKey: 'Dragonstone',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png',
+      'https://awoiaf.westeros.org/images/thumb/6/61/Baratheon_DS.png/102px-Baratheon_DS.png',
     isGreat: true,
     chapters: [49, 260],
     episodes: [6, 99],
@@ -2550,7 +2563,7 @@ nobility = [
     seatKey: 'Meereen',
     imgRatio: 120 / 92,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG',
+      'https://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG',
     isGreat: true,
     chapters: [214, 999],
     episodes: [99, 99],
@@ -2562,49 +2575,49 @@ nobility = [
     seatKey: 'Castle_Cerwyn',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d8/House_Cerwyn.PNG/90px-House_Cerwyn.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d8/House_Cerwyn.PNG/90px-House_Cerwyn.PNG',
   },
   {
     wikiKey: 'House_Dustin',
     seatKey: 'Barrowton',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/74/House_Dustin.PNG/50px-House_Dustin.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/74/House_Dustin.PNG/50px-House_Dustin.PNG',
   },
   {
     wikiKey: 'House_Flint_of_Widow%27s_Watch',
     seatKey: 'Widow%27s_Watch',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e8/Flint_Widows_Watch.png/109px-Flint_Widows_Watch.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e8/Flint_Widows_Watch.png/109px-Flint_Widows_Watch.png',
   },
   {
     wikiKey: 'House_Hornwood',
     seatKey: 'Hornwood',
     imgRatio: 119 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/01/House_Hornwood.PNG/50px-House_Hornwood.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/01/House_Hornwood.PNG/50px-House_Hornwood.PNG',
   },
   {
     wikiKey: 'House_Karstark',
     seatKey: 'Karhold',
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5f/House_Karstark.PNG/104px-House_Karstark.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/5f/House_Karstark.PNG/104px-House_Karstark.PNG',
   },
   {
     wikiKey: 'House_Locke',
     seatKey: 'Oldcastle',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/9e/House_Locke.PNG/109px-House_Locke.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/9e/House_Locke.PNG/109px-House_Locke.PNG',
   },
   {
     wikiKey: 'House_Manderly',
     seatKey: 'White_Harbor',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/83/House_Manderly.PNG/50px-House_Manderly.PNG',
+      'https://awoiaf.westeros.org/images/thumb/8/83/House_Manderly.PNG/50px-House_Manderly.PNG',
   },
   {
     wikiKey: 'House_Mormont',
@@ -2612,14 +2625,14 @@ nobility = [
     lng: -138.9257,
     imgRatio: 119 / 95,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c9/House_Mormont.PNG/95px-House_Mormont.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/c9/House_Mormont.PNG/95px-House_Mormont.PNG',
   },
   {
     wikiKey: 'House_Reed',
     seatKey: 'Greywater_Watch',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/6e/House_Reed.PNG/70px-House_Reed.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/6e/House_Reed.PNG/70px-House_Reed.PNG',
   },
   {
     wikiKey: 'House_Ryswell',
@@ -2627,7 +2640,7 @@ nobility = [
     lng: -150.5712,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7f/House_Ryswell.PNG/109px-House_Ryswell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/7f/House_Ryswell.PNG/109px-House_Ryswell.PNG',
     clue: 'the extensive area between the Barrowlands and the Stony Shore',
   },
   {
@@ -2635,14 +2648,14 @@ nobility = [
     seatKey: 'Last_Hearth',
     imgRatio: 119 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/14/Umber.png/102px-Umber.png',
+      'https://awoiaf.westeros.org/images/thumb/1/14/Umber.png/102px-Umber.png',
   },
   {
     wikiKey: 'House_Glover',
     seatKey: 'Deepwood_Motte',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3d/House_Glover.PNG/50px-House_Glover.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3d/House_Glover.PNG/50px-House_Glover.PNG',
     chapters: [0, 109],
     episodes: [0, 13],
   }, //Captured by Asha Greyjoy in ACOK-37 Theon III
@@ -2651,7 +2664,7 @@ nobility = [
     seatKey: 'Deepwood_Motte',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
     chapters: [110, 296],
     episodes: [14, 50],
   },
@@ -2660,7 +2673,7 @@ nobility = [
     seatKey: 'Deepwood_Motte',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3d/House_Glover.PNG/50px-House_Glover.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3d/House_Glover.PNG/50px-House_Glover.PNG',
     chapters: [297, 999],
     episodes: [51, 99],
   }, //Recaptured by Stannis Baratheon in ADWD-26 & Glovers/Boltons in S6E2
@@ -2669,7 +2682,7 @@ nobility = [
     seatKey: 'Torrhen%27s_Square',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/fe/House_Tallhart.PNG/103px-House_Tallhart.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/fe/House_Tallhart.PNG/103px-House_Tallhart.PNG',
     chapters: [0, 118],
     episodes: [0, 13],
   }, //Captured by Dagmer Cleftjaw in ACOK-46 Bran VI
@@ -2678,7 +2691,7 @@ nobility = [
     seatKey: 'Torrhen%27s_Square',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
     chapters: [119, 124],
     episodes: [14, 50],
   },
@@ -2687,7 +2700,7 @@ nobility = [
     seatKey: 'Torrhen%27s_Square',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/fe/House_Tallhart.PNG/103px-House_Tallhart.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/fe/House_Tallhart.PNG/103px-House_Tallhart.PNG',
     chapters: [125, 999],
     episodes: [51, 99],
   }, //Recaptured by Rodrick Cassel?
@@ -2696,7 +2709,7 @@ nobility = [
     seatKey: 'Moat_Cailin',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png',
     chapters: [97, 291],
     episodes: [14, 37],
   },
@@ -2704,7 +2717,7 @@ nobility = [
     seatKey: 'Flint%27s_Finger',
     imgRatio: 120 / 107,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5d/House_Flint_of_Flint%27s_Finger.PNG/250px-House_Flint_of_Flint%27s_Finger.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/5d/House_Flint_of_Flint%27s_Finger.PNG/250px-House_Flint_of_Flint%27s_Finger.PNG',
     wikiKey: 'House_Flint_of_Flint%27s_Finger',
   },
   {
@@ -2713,7 +2726,7 @@ nobility = [
     lng: -89.2675,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f2/House_Crowl.PNG/90px-House_Crowl.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f2/House_Crowl.PNG/90px-House_Crowl.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2722,7 +2735,7 @@ nobility = [
     lng: -83.0273,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/63/Magnar.png/93px-Magnar.png',
+      'https://awoiaf.westeros.org/images/thumb/6/63/Magnar.png/93px-Magnar.png',
     clue: 'mountain clan',
   },
   {
@@ -2731,7 +2744,7 @@ nobility = [
     lng: -84.873,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a8/Stane.png/93px-Stane.png',
+      'https://awoiaf.westeros.org/images/thumb/a/a8/Stane.png/93px-Stane.png',
     clue: 'mountain clan',
   },
   {
@@ -2740,7 +2753,7 @@ nobility = [
     lng: -126.7089,
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f4/House_Burley.PNG/250px-House_Burley.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f4/House_Burley.PNG/250px-House_Burley.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2749,7 +2762,7 @@ nobility = [
     lng: -121.1718,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/0f/House_Harclay.PNG/50px-House_Harclay.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/0f/House_Harclay.PNG/50px-House_Harclay.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2758,7 +2771,7 @@ nobility = [
     lng: -118.623,
     imgRatio: 120 / 111,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b6/House_Knott.PNG/111px-House_Knott.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/b6/House_Knott.PNG/111px-House_Knott.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2767,7 +2780,7 @@ nobility = [
     lng: -124.5117,
     imgRatio: 120 / 110,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d4/House_Liddle.PNG/110px-House_Liddle.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d4/House_Liddle.PNG/110px-House_Liddle.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2776,7 +2789,7 @@ nobility = [
     lng: -123.6328,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e8/House_Norrey.PNG/50px-House_Norrey.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e8/House_Norrey.PNG/50px-House_Norrey.PNG',
     clue: 'mountain clan',
   },
   {
@@ -2785,7 +2798,7 @@ nobility = [
     lng: -114.1699,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e0/House_Wull.PNG/50px-House_Wull.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e0/House_Wull.PNG/50px-House_Wull.PNG',
     clue: 'mountain clan',
   },
 
@@ -2795,21 +2808,21 @@ nobility = [
     seatKey: 'Strongsong',
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/20/Belmore.PNG/50px-Belmore.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/20/Belmore.PNG/50px-Belmore.PNG',
   },
   {
     wikiKey: 'House_Coldwater',
     seatKey: 'Coldwater_Burn',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/57/House_Coldwater.PNG/90px-House_Coldwater.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/57/House_Coldwater.PNG/90px-House_Coldwater.PNG',
   },
   {
     wikiKey: 'House_Corbray',
     seatKey: 'Heart%27s_Home',
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e0/Corbray.png/93px-Corbray.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e0/Corbray.png/93px-Corbray.png',
   },
   {
     wikiKey: 'House_Donniger',
@@ -2817,7 +2830,7 @@ nobility = [
     lng: -98.54,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/16/Donniger.png/109px-Donniger.png',
+      'https://awoiaf.westeros.org/images/thumb/1/16/Donniger.png/109px-Donniger.png',
     clue: 'the Vale',
   },
   {
@@ -2826,7 +2839,7 @@ nobility = [
     lng: -95.9033,
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/8a/House_Egen.PNG/104px-House_Egen.PNG',
+      'https://awoiaf.westeros.org/images/thumb/8/8a/House_Egen.PNG/104px-House_Egen.PNG',
     clue: 'the Vale',
   },
   {
@@ -2835,7 +2848,7 @@ nobility = [
     lng: -84.5507,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/51/Elesham.png/109px-Elesham.png',
+      'https://awoiaf.westeros.org/images/thumb/5/51/Elesham.png/109px-Elesham.png',
     clue: 'The Paps',
   },
   {
@@ -2843,7 +2856,7 @@ nobility = [
     seatKey: 'Gulltown',
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/91/Grafton.png/93px-Grafton.png',
+      'https://awoiaf.westeros.org/images/thumb/9/91/Grafton.png/93px-Grafton.png',
   },
   {
     wikiKey: 'House_Hardyng',
@@ -2851,7 +2864,7 @@ nobility = [
     lng: -94.4091,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7e/House_Hardyng.PNG/90px-House_Hardyng.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/7e/House_Hardyng.PNG/90px-House_Hardyng.PNG',
     clue: 'the Vale',
   },
   {
@@ -2860,7 +2873,7 @@ nobility = [
     lng: -105.4174,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f7/Hersy.png/109px-Hersy.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f7/Hersy.png/109px-Hersy.png',
     clue: 'the Vale',
   },
   {
@@ -2868,21 +2881,21 @@ nobility = [
     seatKey: 'Longbow_Hall',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f0/House_Hunter.PNG/109px-House_Hunter.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f0/House_Hunter.PNG/109px-House_Hunter.PNG',
   },
   {
     wikiKey: 'House_Lynderly',
     seatKey: 'Snakewood',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/66/Lynderly.png/50px-Lynderly.png',
+      'https://awoiaf.westeros.org/images/thumb/6/66/Lynderly.png/50px-Lynderly.png',
   },
   {
     wikiKey: 'House_Melcolm',
     seatKey: 'Old_Anchor',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e9/House_Melcolm.PNG/109px-House_Melcolm.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e9/House_Melcolm.PNG/109px-House_Melcolm.PNG',
   },
   {
     wikiKey: 'House_Moore',
@@ -2890,7 +2903,7 @@ nobility = [
     lng: -92.0361,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e9/House_Moore.PNG/109px-House_Moore.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e9/House_Moore.PNG/109px-House_Moore.PNG',
     clue: 'the Vale',
   },
   {
@@ -2899,7 +2912,7 @@ nobility = [
     lng: -95.8813,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/24/Pryor.PNG/109px-Pryor.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/24/Pryor.PNG/109px-Pryor.PNG',
     clue: 'The Pebble',
   },
   {
@@ -2907,21 +2920,21 @@ nobility = [
     seatKey: 'Redfort',
     imgRatio: 120 / 108,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e0/House_Redfort.png/108px-House_Redfort.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e0/House_Redfort.png/108px-House_Redfort.png',
   },
   {
     wikiKey: 'House_Royce',
     seatKey: 'Runestone',
     imgRatio: 55 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/ed/Royce.png/50px-Royce.png',
+      'https://awoiaf.westeros.org/images/thumb/e/ed/Royce.png/50px-Royce.png',
   },
   {
     wikiKey: 'House_Royce_of_the_Gates_of_the_Moon',
     seatKey: 'Eyrie',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/cf/House_Royce_of_the_Gates_of_the_Moon.png/109px-House_Royce_of_the_Gates_of_the_Moon.png',
+      'https://awoiaf.westeros.org/images/thumb/c/cf/House_Royce_of_the_Gates_of_the_Moon.png/109px-House_Royce_of_the_Gates_of_the_Moon.png',
   },
   {
     wikiKey: 'House_Ruthermont',
@@ -2929,7 +2942,7 @@ nobility = [
     lng: -89.1357,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/01/Ruthermont.png/109px-Ruthermont.png',
+      'https://awoiaf.westeros.org/images/thumb/0/01/Ruthermont.png/109px-Ruthermont.png',
     clue: 'the Vale',
   },
   {
@@ -2938,7 +2951,7 @@ nobility = [
     lng: -83.6865,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/8c/Upcliff.png/250px-Upcliff.png',
+      'https://awoiaf.westeros.org/images/thumb/8/8c/Upcliff.png/250px-Upcliff.png',
     clue: 'the Vale',
   },
   {
@@ -2946,7 +2959,7 @@ nobility = [
     seatKey: 'Ironoaks',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b6/House_Waynwood.PNG/109px-House_Waynwood.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/b6/House_Waynwood.PNG/109px-House_Waynwood.PNG',
   },
   {
     wikiKey: 'House_Wydman',
@@ -2954,7 +2967,7 @@ nobility = [
     lng: -89.663,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/bc/Wydman.png/109px-Wydman.png',
+      'https://awoiaf.westeros.org/images/thumb/b/bc/Wydman.png/109px-Wydman.png',
     clue: 'the Vale',
   },
   {
@@ -2963,7 +2976,7 @@ nobility = [
     lng: -108.2958,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/39/Borell.png/109px-Borell.png',
+      'https://awoiaf.westeros.org/images/thumb/3/39/Borell.png/109px-Borell.png',
     clue: 'the Vale',
   },
   {
@@ -2971,21 +2984,21 @@ nobility = [
     seatKey: 'Sisterton',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/45/Sunderland.png/109px-Sunderland.png',
+      'https://awoiaf.westeros.org/images/thumb/4/45/Sunderland.png/109px-Sunderland.png',
   },
   {
     wikiKey: 'House_Baelish',
     seatKey: 'House_Baelish',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b9/OldBaelish.png/103px-OldBaelish.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b9/OldBaelish.png/103px-OldBaelish.png',
   },
   {
     wikiKey: 'House_Waxley',
     seatKey: 'Wickenden',
     imgRatio: 64 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/dc/Waxley_large.png/50px-Waxley_large.png',
+      'https://awoiaf.westeros.org/images/thumb/d/dc/Waxley_large.png/50px-Waxley_large.png',
   },
 
   //Landed Nobility - The Iron Islands
@@ -2995,7 +3008,7 @@ nobility = [
     lng: -149.165,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/50/Blacktyde.PNG/101px-Blacktyde.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/50/Blacktyde.PNG/101px-Blacktyde.PNG',
     clue: 'Blacktide Island',
   },
   {
@@ -3004,7 +3017,7 @@ nobility = [
     lng: -151.9555,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f7/Botley.png/90px-Botley.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f7/Botley.png/90px-Botley.png',
     clue: 'Pyke Island',
   },
   {
@@ -3013,7 +3026,7 @@ nobility = [
     lng: -154.4824,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f9/Drumm.png/50px-Drumm.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f9/Drumm.png/50px-Drumm.png',
     clue: 'Old Wyk Island',
   },
   {
@@ -3022,7 +3035,7 @@ nobility = [
     lng: -154.4824,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5d/Farwynd.png/109px-Farwynd.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5d/Farwynd.png/109px-Farwynd.png',
     clue: 'Great Wyk Island',
   },
   {
@@ -3030,14 +3043,14 @@ nobility = [
     seatKey: 'Hammerhorn',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7b/House_Goodbrother.png/102px-House_Goodbrother.png',
+      'https://awoiaf.westeros.org/images/thumb/7/7b/House_Goodbrother.png/102px-House_Goodbrother.png',
   },
   {
     wikiKey: 'House_Harlaw',
     seatKey: 'Ten_Towers',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/32/House_Harlaw.PNG/100px-House_Harlaw.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/32/House_Harlaw.PNG/100px-House_Harlaw.PNG',
   },
   {
     wikiKey: 'House_Kenning',
@@ -3045,7 +3058,7 @@ nobility = [
     lng: -145.957,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c3/Kenning.png/50px-Kenning.png',
+      'https://awoiaf.westeros.org/images/thumb/c/c3/Kenning.png/50px-Kenning.png',
     clue: 'Harlaw Island',
   },
   {
@@ -3053,14 +3066,14 @@ nobility = [
     seatKey: 'Pebbleton',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/86/Merlyn.png/109px-Merlyn.png',
+      'https://awoiaf.westeros.org/images/thumb/8/86/Merlyn.png/109px-Merlyn.png',
   },
   {
     wikiKey: 'House_Myre',
     lat: 30.9399,
     lng: -147.4072,
     imgRatio: 120 / 93,
-    img: 'http://awoiaf.westeros.org/images/thumb/2/2a/Myre.png/50px-Myre.png',
+    img: 'https://awoiaf.westeros.org/images/thumb/2/2a/Myre.png/50px-Myre.png',
     clue: 'Harlaw Island',
   },
   {
@@ -3069,7 +3082,7 @@ nobility = [
     lng: -148.6376,
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/49/Orkwood.png/50px-Orkwood.png',
+      'https://awoiaf.westeros.org/images/thumb/4/49/Orkwood.png/50px-Orkwood.png',
     clue: 'Orkmont Island',
   },
   {
@@ -3078,7 +3091,7 @@ nobility = [
     lng: -155.0097,
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/27/Saltcliffe.png/50px-Saltcliffe.png',
+      'https://awoiaf.westeros.org/images/thumb/2/27/Saltcliffe.png/50px-Saltcliffe.png',
     clue: 'Saltcliffe Island',
   },
   {
@@ -3087,7 +3100,7 @@ nobility = [
     lng: -156.5478,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3d/House_Sparr.PNG/90px-House_Sparr.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3d/House_Sparr.PNG/90px-House_Sparr.PNG',
     clue: 'Great Wyk Island',
   },
   {
@@ -3096,7 +3109,7 @@ nobility = [
     lng: -153.6914,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/9f/Stonehouse.png/93px-Stonehouse.png',
+      'https://awoiaf.westeros.org/images/thumb/9/9f/Stonehouse.png/93px-Stonehouse.png',
     clue: 'Old Wyk Island',
   },
   {
@@ -3105,7 +3118,7 @@ nobility = [
     lng: -144.9902,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/9b/Stonetree.png/93px-Stonetree.png',
+      'https://awoiaf.westeros.org/images/thumb/9/9b/Stonetree.png/93px-Stonetree.png',
     clue: 'Harlaw Island',
   },
   {
@@ -3114,7 +3127,7 @@ nobility = [
     lng: -154.0429,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/34/House_Sunderly.png/109px-House_Sunderly.png',
+      'https://awoiaf.westeros.org/images/thumb/3/34/House_Sunderly.png/109px-House_Sunderly.png',
     clue: 'Saltcliffe Island',
   },
   {
@@ -3123,7 +3136,7 @@ nobility = [
     lng: -150.747,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e0/Tawney.png/109px-Tawney.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e0/Tawney.png/109px-Tawney.png',
     clue: 'Orkmont Island',
   },
   {
@@ -3132,7 +3145,7 @@ nobility = [
     lng: -143.9355,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/17/House_Volmark.png/109px-House_Volmark.png',
+      'https://awoiaf.westeros.org/images/thumb/1/17/House_Volmark.png/109px-House_Volmark.png',
     clue: 'Harlaw Island',
   },
   {
@@ -3141,7 +3154,7 @@ nobility = [
     lng: -152.7246,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/ba/Wynch.png/90px-Wynch.png',
+      'https://awoiaf.westeros.org/images/thumb/b/ba/Wynch.png/90px-Wynch.png',
     clue: 'Pyke Island',
   },
 
@@ -3151,14 +3164,14 @@ nobility = [
     seatKey: 'Raventree_Hall',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/36/House_Blackwood.png/50px-House_Blackwood.png',
+      'https://awoiaf.westeros.org/images/thumb/3/36/House_Blackwood.png/50px-House_Blackwood.png',
   },
   {
     wikiKey: 'House_Bracken',
     seatKey: 'Stone_Hedge',
     imgRatio: 120 / 120,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/53/Bracken_sigil_coat.png/50px-Bracken_sigil_coat.png',
+      'https://awoiaf.westeros.org/images/thumb/5/53/Bracken_sigil_coat.png/50px-Bracken_sigil_coat.png',
   },
   {
     wikiKey: 'House_Butterwell',
@@ -3166,7 +3179,7 @@ nobility = [
     lng: -107.2851,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a1/House_Butterwell.png/109px-House_Butterwell.png',
+      'https://awoiaf.westeros.org/images/thumb/a/a1/House_Butterwell.png/109px-House_Butterwell.png',
     clue: 'the Riverlands',
   },
   {
@@ -3175,7 +3188,7 @@ nobility = [
     lng: -123.8525,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c1/Charlton.png/109px-Charlton.png',
+      'https://awoiaf.westeros.org/images/thumb/c/c1/Charlton.png/109px-Charlton.png',
     clue: 'the Riverlands',
   },
   {
@@ -3183,14 +3196,14 @@ nobility = [
     seatKey: 'Twins',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png',
+      'https://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png',
   },
   {
     wikiKey: 'House_Frey_of_Riverrun',
     seatKey: 'Riverrun',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png',
+      'https://awoiaf.westeros.org/images/thumb/3/3b/House_Frey.png/109px-House_Frey.png',
     chapters: [269, 999],
   },
   {
@@ -3198,7 +3211,7 @@ nobility = [
     seatKey: 'Goodbrook_Village',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/95/House_Goodbrook.PNG/103px-House_Goodbrook.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/95/House_Goodbrook.PNG/103px-House_Goodbrook.PNG',
   },
   {
     wikiKey: 'House_Grell',
@@ -3206,7 +3219,7 @@ nobility = [
     lng: -133.7841,
     imgRatio: 54 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b7/House_Grell.PNG/50px-House_Grell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/b7/House_Grell.PNG/50px-House_Grell.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3214,7 +3227,7 @@ nobility = [
     seatKey: 'Saltpans',
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/09/Hawick.png/50px-Hawick.png',
+      'https://awoiaf.westeros.org/images/thumb/0/09/Hawick.png/50px-Hawick.png',
   },
   {
     wikiKey: 'House_Keath',
@@ -3222,7 +3235,7 @@ nobility = [
     lng: -120.249,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c7/Keath.png/93px-Keath.png',
+      'https://awoiaf.westeros.org/images/thumb/c/c7/Keath.png/93px-Keath.png',
     clue: 'the Riverlands',
   },
   {
@@ -3231,7 +3244,7 @@ nobility = [
     lng: -116.7333,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e7/House_Lolliston.PNG/250px-House_Lolliston.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e7/House_Lolliston.PNG/250px-House_Lolliston.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3239,35 +3252,35 @@ nobility = [
     seatKey: 'Lychester_Keep',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/ca/House_Lychester.PNG/90px-House_Lychester.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/ca/House_Lychester.PNG/90px-House_Lychester.PNG',
   },
   {
     wikiKey: 'House_Mallister',
     seatKey: 'Seagard',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e5/House_Mallister.png/90px-House_Mallister.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e5/House_Mallister.png/90px-House_Mallister.png',
   },
   {
     wikiKey: 'House_Mooton',
     seatKey: 'Maidenpool',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/74/House_Mooton.PNG/50px-House_Mooton.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/74/House_Mooton.PNG/50px-House_Mooton.PNG',
   },
   {
     wikiKey: 'House_Piper',
     seatKey: 'Pinkmaiden_Castle',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/30/House_Piper.png/103px-House_Piper.png',
+      'https://awoiaf.westeros.org/images/thumb/3/30/House_Piper.png/103px-House_Piper.png',
   },
   {
     wikiKey: 'House_Roote',
     seatKey: 'Lord_Harroway%27s_Town',
     imgRatio: 120 / 107,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d1/Roote.png/50px-Roote.png',
+      'https://awoiaf.westeros.org/images/thumb/d/d1/Roote.png/50px-Roote.png',
   },
   {
     wikiKey: 'House_Ryger',
@@ -3275,7 +3288,7 @@ nobility = [
     lng: -116.6455,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/71/House_Ryger.PNG/90px-House_Ryger.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/71/House_Ryger.PNG/90px-House_Ryger.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3284,7 +3297,7 @@ nobility = [
     lng: -124.5556,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/bf/Shawney.png/93px-Shawney.png',
+      'https://awoiaf.westeros.org/images/thumb/b/bf/Shawney.png/93px-Shawney.png',
     clue: 'the Riverlands',
   },
   {
@@ -3292,7 +3305,7 @@ nobility = [
     seatKey: 'Acorn_Hall',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f2/Smallwood.png/50px-Smallwood.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f2/Smallwood.png/50px-Smallwood.png',
   },
   {
     wikiKey: 'House_Terrick',
@@ -3300,7 +3313,7 @@ nobility = [
     lng: -133.9599,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/0b/House_Terrick.PNG/250px-House_Terrick.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/0b/House_Terrick.PNG/250px-House_Terrick.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3309,7 +3322,7 @@ nobility = [
     lng: -119.2822,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/69/House_Vance_of_Artranta.PNG/50px-House_Vance_of_Artranta.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/69/House_Vance_of_Artranta.PNG/50px-House_Vance_of_Artranta.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3317,7 +3330,7 @@ nobility = [
     seatKey: 'Wayfarer%27s_Rest',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/01/House_Vance_of_Wayfarer%27s_rest.PNG/50px-House_Vance_of_Wayfarer%27s_rest.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/01/House_Vance_of_Wayfarer%27s_rest.PNG/50px-House_Vance_of_Wayfarer%27s_rest.PNG',
   },
   {
     wikiKey: 'House_Vypren',
@@ -3325,7 +3338,7 @@ nobility = [
     lng: -134.0478,
     imgRatio: 120 / 106,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b5/Vyprin.png/50px-Vyprin.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b5/Vyprin.png/50px-Vyprin.png',
     clue: 'the Riverlands',
   },
   {
@@ -3334,7 +3347,7 @@ nobility = [
     lng: -121.3037,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/df/House_Wayn.PNG/109px-House_Wayn.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/df/House_Wayn.PNG/109px-House_Wayn.PNG',
     clue: 'the Riverlands',
   },
   {
@@ -3342,7 +3355,7 @@ nobility = [
     seatKey: 'Darry',
     imgRatio: 55 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/22/House_Darry.png/50px-House_Darry.png',
+      'https://awoiaf.westeros.org/images/thumb/2/22/House_Darry.png/50px-House_Darry.png',
     chapters: [0, 999],
   },
   {
@@ -3350,7 +3363,7 @@ nobility = [
     seatKey: 'Harrenhal',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/77/Harroway.png/109px-Harroway.png',
+      'https://awoiaf.westeros.org/images/thumb/7/77/Harroway.png/109px-Harroway.png',
     chapters: [0, 137],
   },
   {
@@ -3358,7 +3371,7 @@ nobility = [
     seatKey: 'Harrenhal',
     imgRatio: 120 / 110,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/6d/House_Whent.png/50px-House_Whent.png',
+      'https://awoiaf.westeros.org/images/thumb/6/6d/House_Whent.png/50px-House_Whent.png',
     chapters: [0, 79],
     episodes: [0, 0],
   },
@@ -3367,7 +3380,7 @@ nobility = [
     seatKey: 'Harrenhal',
     imgRatio: 120 / 110,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/ea/House_Slynt.PNG/110px-House_Slynt.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/ea/House_Slynt.PNG/110px-House_Slynt.PNG',
     chapters: [57, 80],
     episodes: [0, 0],
   },
@@ -3379,7 +3392,7 @@ nobility = [
     lng: -148.4619,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/88/Algood.png/93px-Algood.png',
+      'https://awoiaf.westeros.org/images/thumb/8/88/Algood.png/93px-Algood.png',
     clue: 'the Westerlands',
   },
   {
@@ -3387,7 +3400,7 @@ nobility = [
     seatKey: 'Banefort',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/ac/Banefort.png/50px-Banefort.png',
+      'https://awoiaf.westeros.org/images/thumb/a/ac/Banefort.png/50px-Banefort.png',
   },
   {
     wikiKey: 'House_Bettley',
@@ -3395,7 +3408,7 @@ nobility = [
     lng: -129.5654,
     imgRatio: 120 / 108,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/6b/Bettley.png/50px-Bettley.png',
+      'https://awoiaf.westeros.org/images/thumb/6/6b/Bettley.png/50px-Bettley.png',
     clue: 'the Westerlands',
   },
   {
@@ -3403,7 +3416,7 @@ nobility = [
     seatKey: 'Hornvale',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/93/House_Brax.PNG/90px-House_Brax.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/93/House_Brax.PNG/90px-House_Brax.PNG',
   },
   {
     wikiKey: 'House_Broom',
@@ -3411,7 +3424,7 @@ nobility = [
     lng: -149.165,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/House_Broom.png/90px-House_Broom.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/House_Broom.png/90px-House_Broom.png',
     clue: 'the Westerlands',
   },
   {
@@ -3419,7 +3432,7 @@ nobility = [
     seatKey: 'Crakehall',
     imgRatio: 120 / 104,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e4/House_Crakehall.PNG/104px-House_Crakehall.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e4/House_Crakehall.PNG/104px-House_Crakehall.PNG',
   },
   {
     wikiKey: 'House_Doggett',
@@ -3427,7 +3440,7 @@ nobility = [
     lng: -143.3642,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/75/House_Doggett.PNG/250px-House_Doggett.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/75/House_Doggett.PNG/250px-House_Doggett.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3435,7 +3448,7 @@ nobility = [
     lat: 19.9733,
     lng: -139.0576,
     imgRatio: 120 / 93,
-    img: 'http://awoiaf.westeros.org/images/thumb/c/cf/Drox.png/93px-Drox.png',
+    img: 'https://awoiaf.westeros.org/images/thumb/c/cf/Drox.png/93px-Drox.png',
     clue: 'the Westerlands',
   },
   {
@@ -3444,7 +3457,7 @@ nobility = [
     lng: -142.8369,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/27/House_Estren.PNG/90px-House_Estren.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/27/House_Estren.PNG/90px-House_Estren.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3453,7 +3466,7 @@ nobility = [
     lng: -141.958,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/fe/Falwell.png/109px-Falwell.png',
+      'https://awoiaf.westeros.org/images/thumb/f/fe/Falwell.png/109px-Falwell.png',
     clue: 'the Westerlands',
   },
   {
@@ -3461,7 +3474,7 @@ nobility = [
     seatKey: 'Faircastle',
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/83/Farman.png/50px-Farman.png',
+      'https://awoiaf.westeros.org/images/thumb/8/83/Farman.png/50px-Farman.png',
   },
   {
     wikiKey: 'House_Ferren',
@@ -3469,7 +3482,7 @@ nobility = [
     lng: -140.0244,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/52/Ferren.png/250px-Ferren.png',
+      'https://awoiaf.westeros.org/images/thumb/5/52/Ferren.png/250px-Ferren.png',
     clue: 'the Westerlands',
   },
   {
@@ -3478,7 +3491,7 @@ nobility = [
     lng: -133.4326,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/50px-House_Foote.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/50px-House_Foote.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3487,7 +3500,7 @@ nobility = [
     lng: -150.7031,
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b7/House_Garner.PNG/101px-House_Garner.PNG',
+      'https://awoiaf.westeros.org/images/thumb/b/b7/House_Garner.PNG/101px-House_Garner.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3496,7 +3509,7 @@ nobility = [
     lng: -134.2675,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/6c/Hamell.PNG/250px-Hamell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/6c/Hamell.PNG/250px-Hamell.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3505,7 +3518,7 @@ nobility = [
     lng: -154.746,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/4d/House_Jast.PNG/90px-House_Jast.PNG',
+      'https://awoiaf.westeros.org/images/thumb/4/4d/House_Jast.PNG/90px-House_Jast.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3513,28 +3526,28 @@ nobility = [
     seatKey: 'Kayce',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/4b/House_Kenning.PNG/50px-House_Kenning.PNG',
+      'https://awoiaf.westeros.org/images/thumb/4/4b/House_Kenning.PNG/50px-House_Kenning.PNG',
   }, //Timing?
   {
     wikiKey: 'House_Lefford',
     seatKey: 'Golden_Tooth',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/71/House_Lefford.PNG/109px-House_Lefford.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/71/House_Lefford.PNG/109px-House_Lefford.PNG',
   },
   {
     wikiKey: 'House_Lydden',
     seatKey: 'Deep_Den',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/ec/House_Lydden.PNG/50px-House_Lydden.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/ec/House_Lydden.PNG/50px-House_Lydden.PNG',
   },
   {
     wikiKey: 'House_Marbrand',
     seatKey: 'Ashemark',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/98/Marbrand.png/90px-Marbrand.png',
+      'https://awoiaf.westeros.org/images/thumb/9/98/Marbrand.png/90px-Marbrand.png',
   },
   {
     wikiKey: 'House_Moreland',
@@ -3542,7 +3555,7 @@ nobility = [
     lng: -139.5849,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/94/House_Moreland.PNG/90px-House_Moreland.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/94/House_Moreland.PNG/90px-House_Moreland.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3551,7 +3564,7 @@ nobility = [
     lng: -151.9335,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/91/House_Myatt.PNG/90px-House_Myatt.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/91/House_Myatt.PNG/90px-House_Myatt.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3560,7 +3573,7 @@ nobility = [
     lng: -147.7147,
     imgRatio: 120 / 87,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/bb/House_Payne.png/50px-House_Payne.png',
+      'https://awoiaf.westeros.org/images/thumb/b/bb/House_Payne.png/50px-House_Payne.png',
     clue: 'the Westerlands',
   },
   {
@@ -3569,7 +3582,7 @@ nobility = [
     lng: -145.9569,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e9/House_Peckledon.PNG/50px-House_Peckledon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e9/House_Peckledon.PNG/50px-House_Peckledon.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3578,7 +3591,7 @@ nobility = [
     lng: -149.0331,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7e/House_Plumm.PNG/50px-House_Plumm.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/7e/House_Plumm.PNG/50px-House_Plumm.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3586,28 +3599,28 @@ nobility = [
     seatKey: 'Feastfires',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e8/House_Prester.PNG/90px-House_Prester.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e8/House_Prester.PNG/90px-House_Prester.PNG',
   },
   {
     wikiKey: 'House_Sarsfield',
     seatKey: 'Sarsfield',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3b/House_Sarsfield.PNG/102px-House_Sarsfield.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3b/House_Sarsfield.PNG/102px-House_Sarsfield.PNG',
   },
   {
     wikiKey: 'House_Serrett',
     seatKey: 'Silverhill',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3e/House_Serrett.PNG/90px-House_Serrett.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3e/House_Serrett.PNG/90px-House_Serrett.PNG',
   },
   {
     wikiKey: 'House_Spicer',
     seatKey: 'Castamere',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d7/House_Spicer.PNG/109px-House_Spicer.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d7/House_Spicer.PNG/109px-House_Spicer.PNG',
   },
   {
     wikiKey: 'House_Stackspear',
@@ -3615,7 +3628,7 @@ nobility = [
     lng: -145.4296,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/2b/House_Stackspear.PNG/50px-House_Stackspear.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/2b/House_Stackspear.PNG/50px-House_Stackspear.PNG',
     clue: 'the Westerlands',
   },
   {
@@ -3624,7 +3637,7 @@ nobility = [
     lng: -142.8808,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/ff/Turnberry.png/50px-Turnberry.png',
+      'https://awoiaf.westeros.org/images/thumb/f/ff/Turnberry.png/50px-Turnberry.png',
     clue: 'the Westerlands',
   },
   {
@@ -3632,7 +3645,7 @@ nobility = [
     seatKey: 'The_Crag',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/df/House_Westerling.PNG/50px-House_Westerling.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/df/House_Westerling.PNG/50px-House_Westerling.PNG',
   },
   {
     wikiKey: 'House_Yarwyck',
@@ -3640,7 +3653,7 @@ nobility = [
     lng: -150.8788,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/fa/Yarwyck.png/50px-Yarwyck.png',
+      'https://awoiaf.westeros.org/images/thumb/f/fa/Yarwyck.png/50px-Yarwyck.png',
     clue: 'the Westerlands',
   },
   {
@@ -3648,14 +3661,14 @@ nobility = [
     seatKey: 'Clegane%27s_Keep',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/83/House_Clegane.png/109px-House_Clegane.png',
+      'https://awoiaf.westeros.org/images/thumb/8/83/House_Clegane.png/109px-House_Clegane.png',
   },
   {
     wikiKey: 'House_Swyft',
     seatKey: 'Cornfield',
     imgRatio: 59 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/68/House_Swyft.PNG/50px-House_Swyft.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/68/House_Swyft.PNG/50px-House_Swyft.PNG',
   },
 
   //Landed Nobility - The Crownlands
@@ -3665,14 +3678,14 @@ nobility = [
     lng: -109.0429,
     imgRatio: 120 / 98,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e8/House_Blount.PNG/50px-House_Blount.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e8/House_Blount.PNG/50px-House_Blount.PNG',
   },
   {
     wikiKey: 'House_Buckwell',
     seatKey: 'Antlers',
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/63/House_Buckwell.PNG/105px-House_Buckwell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/63/House_Buckwell.PNG/105px-House_Buckwell.PNG',
   },
   {
     wikiKey: 'House_Byrch',
@@ -3680,7 +3693,7 @@ nobility = [
     lng: -99.1992,
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/84/House_Byrch.PNG/101px-House_Byrch.PNG',
+      'https://awoiaf.westeros.org/images/thumb/8/84/House_Byrch.PNG/101px-House_Byrch.PNG',
   },
   {
     wikiKey: 'House_Chyttering',
@@ -3688,7 +3701,7 @@ nobility = [
     lng: -96.6503,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/30/House_Chyttering.PNG/109px-House_Chyttering.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/30/House_Chyttering.PNG/109px-House_Chyttering.PNG',
   },
   {
     wikiKey: 'House_Bywater',
@@ -3696,7 +3709,7 @@ nobility = [
     lng: -90.9375,
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1f/Bywater.PNG/50px-Bywater.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/1f/Bywater.PNG/50px-Bywater.PNG',
   },
   {
     wikiKey: 'House_Chelsted',
@@ -3704,7 +3717,7 @@ nobility = [
     lng: -101.8359,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/26/House_Chelsted.PNG/50px-House_Chelsted.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/26/House_Chelsted.PNG/50px-House_Chelsted.PNG',
   },
   {
     wikiKey: 'House_Cressey',
@@ -3712,7 +3725,7 @@ nobility = [
     lng: -99.1406,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/18/House_Cressy.PNG/109px-House_Cressy.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/18/House_Cressy.PNG/109px-House_Cressy.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3721,7 +3734,7 @@ nobility = [
     lng: -101.25,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/04/Edgerton.png/120px-Edgerton.png',
+      'https://awoiaf.westeros.org/images/thumb/0/04/Edgerton.png/120px-Edgerton.png',
     clue: 'the Crownlands',
   },
   {
@@ -3730,7 +3743,7 @@ nobility = [
     lng: -104.2382,
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/6f/House_Farring.PNG/50px-House_Farring.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/6f/House_Farring.PNG/50px-House_Farring.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3739,7 +3752,7 @@ nobility = [
     lng: -101.8652,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/24/Follard.png/109px-Follard.png',
+      'https://awoiaf.westeros.org/images/thumb/2/24/Follard.png/109px-Follard.png',
     clue: 'the Crownlands',
   },
   {
@@ -3748,7 +3761,7 @@ nobility = [
     lng: -106.5234,
     imgRatio: 120 / 99,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/db/House_Gaunt.PNG/99px-House_Gaunt.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/db/House_Gaunt.PNG/99px-House_Gaunt.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3757,7 +3770,7 @@ nobility = [
     lng: -105.5566,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/83/House_Harte.PNG/50px-House_Harte.PNG',
+      'https://awoiaf.westeros.org/images/thumb/8/83/House_Harte.PNG/50px-House_Harte.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3765,7 +3778,7 @@ nobility = [
     seatKey: 'Hayford',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7c/Hayford.PNG/109px-Hayford.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/7c/Hayford.PNG/109px-Hayford.PNG',
   },
   {
     wikiKey: 'House_Langward',
@@ -3773,7 +3786,7 @@ nobility = [
     lng: -108.7207,
     imgRatio: 120 / 107,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c6/Langward.png/107px-Langward.png',
+      'https://awoiaf.westeros.org/images/thumb/c/c6/Langward.png/107px-Langward.png',
     clue: 'the Crownlands',
   },
   {
@@ -3782,7 +3795,7 @@ nobility = [
     lng: -99.9316,
     imgRatio: 120 / 101,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/df/House_Mallery.PNG/101px-House_Mallery.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/df/House_Mallery.PNG/101px-House_Mallery.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3791,7 +3804,7 @@ nobility = [
     lng: -97.6464,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/ef/House_Manning.PNG/90px-House_Manning.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/ef/House_Manning.PNG/90px-House_Manning.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3799,7 +3812,7 @@ nobility = [
     seatKey: 'Stonedance',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b3/House_Massey.png/109px-House_Massey.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b3/House_Massey.png/109px-House_Massey.png',
   },
   {
     wikiKey: 'House_Pyle',
@@ -3807,7 +3820,7 @@ nobility = [
     lng: -100.1953,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d4/House_Pyle.PNG/109px-House_Pyle.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d4/House_Pyle.PNG/109px-House_Pyle.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3816,7 +3829,7 @@ nobility = [
     lng: -99.4189,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/39/House_Rollingford.PNG/101px-House_Rollingford.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/39/House_Rollingford.PNG/101px-House_Rollingford.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3824,28 +3837,28 @@ nobility = [
     seatKey: 'Rosby',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3f/House_Rosby.PNG/109px-House_Rosby.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3f/House_Rosby.PNG/109px-House_Rosby.PNG',
   },
   {
     wikiKey: 'House_Rykker',
     seatKey: 'Duskendale',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f5/House_Rykker.PNG/109px-House_Rykker.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f5/House_Rykker.PNG/109px-House_Rykker.PNG',
   },
   {
     wikiKey: 'House_Staunton',
     seatKey: 'Rook%27s_Rest',
     imgRatio: 120 / 108,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/aa/House_Staunton.PNG/108px-House_Staunton.PNG',
+      'https://awoiaf.westeros.org/images/thumb/a/aa/House_Staunton.PNG/108px-House_Staunton.PNG',
   },
   {
     wikiKey: 'House_Stokeworth',
     seatKey: 'Stokeworth',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/8f/Stokeworth.png/50px-Stokeworth.png',
+      'https://awoiaf.westeros.org/images/thumb/8/8f/Stokeworth.png/50px-Stokeworth.png',
   },
   {
     wikiKey: 'House_Thorne',
@@ -3853,7 +3866,7 @@ nobility = [
     lng: -98.1005,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/24/Thorne.png/50px-Thorne.png',
+      'https://awoiaf.westeros.org/images/thumb/2/24/Thorne.png/50px-Thorne.png',
     clue: 'the Crownlands',
   },
   {
@@ -3862,7 +3875,7 @@ nobility = [
     lng: -96.8701,
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/22/House_Wendwater.PNG/250px-House_Wendwater.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/22/House_Wendwater.PNG/250px-House_Wendwater.PNG',
     clue: 'the Crownlands',
   },
   {
@@ -3870,7 +3883,7 @@ nobility = [
     seatKey: 'Sharp_Point',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e7/BarEmmon.png/109px-BarEmmon.png',
+      'https://awoiaf.westeros.org/images/thumb/e/e7/BarEmmon.png/109px-BarEmmon.png',
   },
   {
     wikiKey: 'House_Celtigar',
@@ -3878,7 +3891,7 @@ nobility = [
     lng: -82.5439,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/60/Celtigar.png/50px-Celtigar.png',
+      'https://awoiaf.westeros.org/images/thumb/6/60/Celtigar.png/50px-Celtigar.png',
   },
   {
     wikiKey: 'House_Rambton',
@@ -3886,7 +3899,7 @@ nobility = [
     lng: -89.0039,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1c/House_Rambton.PNG/109px-House_Rambton.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/1c/House_Rambton.PNG/109px-House_Rambton.PNG',
     clue: 'Sweetport Sound',
   },
   {
@@ -3895,7 +3908,7 @@ nobility = [
     lng: -88.2128,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a6/Sunglass.png/50px-Sunglass.png',
+      'https://awoiaf.westeros.org/images/thumb/a/a6/Sunglass.png/50px-Sunglass.png',
     clue: 'Sweetport Sound',
   },
   {
@@ -3904,7 +3917,7 @@ nobility = [
     lng: -88.1103,
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/House_Velaryon.PNG/103px-House_Velaryon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/House_Velaryon.PNG/103px-House_Velaryon.PNG',
     clue: 'Driftmark',
   },
   {
@@ -3913,7 +3926,7 @@ nobility = [
     lng: -83.4667,
     imgRatio: 6 / 5,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1c/House_Brune.PNG/100px-House_Brune.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/1c/House_Brune.PNG/100px-House_Brune.PNG',
     clue: 'Crackclaw Point at Brownhollow',
   },
   {
@@ -3921,7 +3934,7 @@ nobility = [
     seatKey: 'Dyre_Den',
     imgRatio: 6 / 5,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
   },
 
   //Landed Nobility - The Reach
@@ -3931,7 +3944,7 @@ nobility = [
     lng: -111.2695,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/13/House_Appleton.png/109px-House_Appleton.png',
+      'https://awoiaf.westeros.org/images/thumb/1/13/House_Appleton.png/109px-House_Appleton.png',
     clue: 'the Reach',
   },
   {
@@ -3940,7 +3953,7 @@ nobility = [
     lng: -143.3496,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/9f/Ambrose.png/50px-Ambrose.png',
+      'https://awoiaf.westeros.org/images/thumb/9/9f/Ambrose.png/50px-Ambrose.png',
     clue: 'the Reach',
   },
   {
@@ -3948,35 +3961,35 @@ nobility = [
     seatKey: 'Ashford',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/74/House_Ashford.PNG/102px-House_Ashford.PNG',
+      'https://awoiaf.westeros.org/images/thumb/7/74/House_Ashford.PNG/102px-House_Ashford.PNG',
   },
   {
     wikiKey: 'House_Beesbury',
     seatKey: 'Honeyholt',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/80/Beesburymotto.png/100px-Beesburymotto.png',
+      'https://awoiaf.westeros.org/images/thumb/8/80/Beesburymotto.png/100px-Beesburymotto.png',
   },
   {
     wikiKey: 'House_Blackbar',
     seatKey: 'Bandallon',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/08/House_Blackbar.PNG/90px-House_Blackbar.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/08/House_Blackbar.PNG/90px-House_Blackbar.PNG',
   },
   {
     wikiKey: 'House_Bulwer',
     seatKey: 'Blackcrown',
     imgRatio: 120 / 95,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d7/House_Bulwer.PNG/95px-House_Bulwer.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/d7/House_Bulwer.PNG/95px-House_Bulwer.PNG',
   },
   {
     wikiKey: 'House_Caswell',
     seatKey: 'Bitterbridge',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/10/House_Caswell.png/109px-House_Caswell.png',
+      'https://awoiaf.westeros.org/images/thumb/1/10/House_Caswell.png/109px-House_Caswell.png',
   },
   {
     wikiKey: 'House_Cockshaw',
@@ -3984,7 +3997,7 @@ nobility = [
     lng: -121.8164,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/Cockshaw.png/50px-Cockshaw.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/Cockshaw.png/50px-Cockshaw.png',
     clue: 'the Reach',
   },
   {
@@ -3993,7 +4006,7 @@ nobility = [
     lng: -152.7539,
     imgRatio: 120 / 89,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b0/Cordwayner.png/250px-Cordwayner.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b0/Cordwayner.png/250px-Cordwayner.png',
     clue: 'the Reach at Hammerhal',
   },
   {
@@ -4001,63 +4014,63 @@ nobility = [
     seatKey: 'Three_Towers',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/57/House_Costayne.PNG/109px-House_Costayne.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/57/House_Costayne.PNG/109px-House_Costayne.PNG',
   },
   {
     wikiKey: 'House_Crane',
     seatKey: 'Red_Lake',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/14/House_Crane.PNG/109px-House_Crane.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/14/House_Crane.PNG/109px-House_Crane.PNG',
   },
   {
     wikiKey: 'House_Cuy',
     seatKey: 'Sunflower_Hall',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/57/House_Cuy.PNG/50px-House_Cuy.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/57/House_Cuy.PNG/50px-House_Cuy.PNG',
   },
   {
     wikiKey: 'House_Footly',
     seatKey: 'Tumbleton',
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a0/Footly.png/50px-Footly.png',
+      'https://awoiaf.westeros.org/images/thumb/a/a0/Footly.png/50px-Footly.png',
   },
   {
     wikiKey: 'House_Hightower',
     seatKey: 'Oldtown',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7c/House_Hightower.png/90px-House_Hightower.png',
+      'https://awoiaf.westeros.org/images/thumb/7/7c/House_Hightower.png/90px-House_Hightower.png',
   },
   {
     wikiKey: 'House_Meadows',
     seatKey: 'Grassy_Vale',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f5/Meadows.png/109px-Meadows.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f5/Meadows.png/109px-Meadows.png',
   },
   {
     wikiKey: 'House_Merryweather',
     seatKey: 'Longtable',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5a/House_Merryweather.PNG/50px-House_Merryweather.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/5a/House_Merryweather.PNG/50px-House_Merryweather.PNG',
   },
   {
     wikiKey: 'House_Mullendore',
     seatKey: 'Uplands',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/94/Mullendore.png/50px-Mullendore.png',
+      'https://awoiaf.westeros.org/images/thumb/9/94/Mullendore.png/50px-Mullendore.png',
   },
   {
     wikiKey: 'House_Oakheart',
     seatKey: 'Old_Oak',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/0f/House_Oakheart.png/90px-House_Oakheart.png',
+      'https://awoiaf.westeros.org/images/thumb/0/0f/House_Oakheart.png/90px-House_Oakheart.png',
   },
   {
     wikiKey: 'House_Peake',
@@ -4065,7 +4078,7 @@ nobility = [
     lng: -142.1191,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f1/House_Peake.PNG/50px-House_Peake.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f1/House_Peake.PNG/50px-House_Peake.PNG',
     clue: 'the Reach at Starpike',
   },
   {
@@ -4074,7 +4087,7 @@ nobility = [
     lng: -156.5332,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b1/House_Redwyne2.png/109px-House_Redwyne2.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b1/House_Redwyne2.png/109px-House_Redwyne2.png',
     clue: 'the Arbor',
   },
   {
@@ -4082,7 +4095,7 @@ nobility = [
     seatKey: 'Goldengrove',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/dc/House_Rowan.PNG/50px-House_Rowan.PNG',
+      'https://awoiaf.westeros.org/images/thumb/d/dc/House_Rowan.PNG/50px-House_Rowan.PNG',
   },
   {
     wikiKey: 'House_Shermer',
@@ -4090,7 +4103,7 @@ nobility = [
     lng: -147.7441,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/ca/Shermer.png/109px-Shermer.png',
+      'https://awoiaf.westeros.org/images/thumb/c/ca/Shermer.png/109px-Shermer.png',
     clue: 'the Reach at Smithyton',
   },
   {
@@ -4098,27 +4111,27 @@ nobility = [
     seatKey: 'Horn_Hill',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/50px-Tarly.png',
+      'https://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/50px-Tarly.png',
   },
   {
     wikiKey: 'House_Tyrell_of_Brightwater_Keep',
     seatKey: 'Brightwater_Keep',
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/9c/Garlan_Tyrell_COA.png/90px-Garlan_Tyrell_COA.png',
+      'https://awoiaf.westeros.org/images/thumb/9/9c/Garlan_Tyrell_COA.png/90px-Garlan_Tyrell_COA.png',
   },
   {
     wikiKey: 'House_Florent',
     seatKey: 'Brightwater_Keep',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c1/House_Florent.PNG/50px-House_Florent.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/c1/House_Florent.PNG/50px-House_Florent.PNG',
   },
   {
     wikiKey: 'House_Fossoway_of_Cider_Hall',
     seatKey: 'Cider_Hall',
     imgRatio: 55 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/43/House_Fossoway_red.png/50px-House_Fossoway_red.png',
+      'https://awoiaf.westeros.org/images/thumb/4/43/House_Fossoway_red.png/50px-House_Fossoway_red.png',
   },
   {
     wikiKey: 'House_Fossoway_of_New_Barrel',
@@ -4126,7 +4139,7 @@ nobility = [
     lng: -118.8281,
     imgRatio: 55 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/77/House_Fossoway_green.png/50px-House_Fossoway_green.png',
+      'https://awoiaf.westeros.org/images/thumb/7/77/House_Fossoway_green.png/50px-House_Fossoway_green.png',
     clue: 'New Barrel',
   },
   {
@@ -4135,7 +4148,7 @@ nobility = [
     lng: -129.5507,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/33/House_Varner.PNG/112px-House_Varner.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/33/House_Varner.PNG/112px-House_Varner.PNG',
     clue: 'the Reach',
   },
   {
@@ -4144,7 +4157,7 @@ nobility = [
     lng: -146.25,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/cd/House_Vyrwel.PNG/100px-House_Vyrwel.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/cd/House_Vyrwel.PNG/100px-House_Vyrwel.PNG',
     clue: 'the Reach at Darkdell',
   },
   {
@@ -4153,7 +4166,7 @@ nobility = [
     lng: -151.6113,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/06/Chester.png/109px-Chester.png',
+      'https://awoiaf.westeros.org/images/thumb/0/06/Chester.png/109px-Chester.png',
     chapters: [0, 253],
   }, //Greenshield
   {
@@ -4162,7 +4175,7 @@ nobility = [
     lng: -151.6113,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/17/House_Volmark.png/109px-House_Volmark.png',
+      'https://awoiaf.westeros.org/images/thumb/1/17/House_Volmark.png/109px-House_Volmark.png',
     chapters: [254, 999],
   }, //Given to Maron Volmark in AFFC-29
   {
@@ -4171,7 +4184,7 @@ nobility = [
     lng: -149.0625,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/7d/Grimm.png/50px-Grimm.png',
+      'https://awoiaf.westeros.org/images/thumb/7/7d/Grimm.png/50px-Grimm.png',
     chapters: [0, 253],
   }, //Greyshield
   {
@@ -4180,7 +4193,7 @@ nobility = [
     lng: -149.0625,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/bb/Harris_Harlaw.png/109px-Harris_Harlaw.png',
+      'https://awoiaf.westeros.org/images/thumb/b/bb/Harris_Harlaw.png/109px-Harris_Harlaw.png',
     chapters: [254, 999],
   }, //Given to Harras Harlaw in AFFC-29
   {
@@ -4188,7 +4201,7 @@ nobility = [
     seatKey: 'Lord_Hewett%27s_Town',
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/2c/Hewett.png/50px-Hewett.png',
+      'https://awoiaf.westeros.org/images/thumb/2/2c/Hewett.png/50px-Hewett.png',
     chapters: [0, 253],
   }, //Oakenshield
   {
@@ -4196,7 +4209,7 @@ nobility = [
     seatKey: 'Lord_Hewett%27s_Town',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
     chapters: [254, 999],
   }, //Given to Nute the Barber in AFFC-29
   {
@@ -4205,7 +4218,7 @@ nobility = [
     lng: -150.249,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/ed/House_Serry.PNG/50px-House_Serry.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/ed/House_Serry.PNG/50px-House_Serry.PNG',
     chapters: [0, 253],
   }, //Southshield
   {
@@ -4214,7 +4227,7 @@ nobility = [
     lng: -150.249,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
     chapters: [254, 999],
   }, //Given to Andrik the Unsmilling in AFFC-29
 
@@ -4224,14 +4237,14 @@ nobility = [
     seatKey: 'Blackhaven',
     imgRatio: 64 / 55,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1d/Dondarrion.png/55px-Dondarrion.png',
+      'https://awoiaf.westeros.org/images/thumb/1/1d/Dondarrion.png/55px-Dondarrion.png',
   },
   {
     wikiKey: 'House_Caron',
     seatKey: 'Nightsong',
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/64/House_Caron.png/105px-House_Caron.png',
+      'https://awoiaf.westeros.org/images/thumb/6/64/House_Caron.png/105px-House_Caron.png',
     chapters: [0, 137],
   },
   {
@@ -4239,7 +4252,7 @@ nobility = [
     seatKey: 'Nightsong',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/90px-House_Foote.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/0c/House_Foote.PNG/90px-House_Foote.PNG',
     chapters: [138, 999],
   }, //Given to Philip Foot in ACOK-65
   {
@@ -4247,7 +4260,7 @@ nobility = [
     seatKey: 'Stonehelm',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a9/House_Swann.PNG/50px-House_Swann.PNG',
+      'https://awoiaf.westeros.org/images/thumb/a/a9/House_Swann.PNG/50px-House_Swann.PNG',
   },
   {
     wikiKey: 'House_Bolling',
@@ -4255,7 +4268,7 @@ nobility = [
     lng: -104.5019,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/66/House_Bolling.PNG/109px-House_Bolling.PNG',
+      'https://awoiaf.westeros.org/images/thumb/6/66/House_Bolling.PNG/109px-House_Bolling.PNG',
     clue: 'the Stormlands',
   },
   {
@@ -4263,42 +4276,42 @@ nobility = [
     seatKey: 'Bronzegate',
     imgRatio: 67 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/81/House_Buckler.png/50px-House_Buckler.png',
+      'https://awoiaf.westeros.org/images/thumb/8/81/House_Buckler.png/50px-House_Buckler.png',
   },
   {
     wikiKey: 'House_Cafferen',
     seatKey: 'Fawnton',
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/94/Cafferen.png/250px-Cafferen.png',
+      'https://awoiaf.westeros.org/images/thumb/9/94/Cafferen.png/250px-Cafferen.png',
   },
   {
     wikiKey: 'House_Connington',
     seatKey: 'Griffin%27s_Roost',
     imgRatio: 52 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/07/House_Connington.png/50px-House_Connington.png',
+      'https://awoiaf.westeros.org/images/thumb/0/07/House_Connington.png/50px-House_Connington.png',
   },
   {
     wikiKey: 'House_Errol',
     seatKey: 'Haystack_Hall',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/88/Errol.png/50px-Errol.png',
+      'https://awoiaf.westeros.org/images/thumb/8/88/Errol.png/50px-Errol.png',
   },
   {
     wikiKey: 'House_Estermont',
     seatKey: 'Greenstone',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5a/House_Estermont.PNG/50px-House_Estermont.PNG',
+      'https://awoiaf.westeros.org/images/thumb/5/5a/House_Estermont.PNG/50px-House_Estermont.PNG',
   },
   {
     wikiKey: 'House_Fell',
     seatKey: 'Felwood',
     imgRatio: 55 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/34/House_Fell.PNG/50px-House_Fell.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/34/House_Fell.PNG/50px-House_Fell.PNG',
   },
   {
     wikiKey: 'House_Gower',
@@ -4306,7 +4319,7 @@ nobility = [
     lng: -102.041,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/4/4b/Gower.PNG/50px-Gower.PNG',
+      'https://awoiaf.westeros.org/images/thumb/4/4b/Gower.PNG/50px-Gower.PNG',
     clue: 'the Stormlands',
   },
   {
@@ -4314,7 +4327,7 @@ nobility = [
     seatKey: 'Grandview',
     imgRatio: 120 / 102,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/82/House_Grandison.PNG/102px-House_Grandison.PNG',
+      'https://awoiaf.westeros.org/images/thumb/8/82/House_Grandison.PNG/102px-House_Grandison.PNG',
   },
   {
     wikiKey: 'House_Hasty',
@@ -4322,7 +4335,7 @@ nobility = [
     lng: -87.1875,
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/98/House_Hasty.PNG/100px-House_Hasty.PNG',
+      'https://awoiaf.westeros.org/images/thumb/9/98/House_Hasty.PNG/100px-House_Hasty.PNG',
     clue: 'the Stormlands',
   },
   {
@@ -4331,7 +4344,7 @@ nobility = [
     lng: -107.2265,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/65/Herston.png/90px-Herston.png',
+      'https://awoiaf.westeros.org/images/thumb/6/65/Herston.png/90px-Herston.png',
     clue: 'the Stormlands',
   },
   {
@@ -4340,7 +4353,7 @@ nobility = [
     lng: -99.6679,
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/14/Horpe.png/50px-Horpe.png',
+      'https://awoiaf.westeros.org/images/thumb/1/14/Horpe.png/50px-Horpe.png',
     clue: 'the Stormlands',
   },
   {
@@ -4349,7 +4362,7 @@ nobility = [
     lng: -93.955,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c7/Kellington.png/109px-Kellington.png',
+      'https://awoiaf.westeros.org/images/thumb/c/c7/Kellington.png/109px-Kellington.png',
     clue: 'the Stormlands',
   },
   {
@@ -4358,7 +4371,7 @@ nobility = [
     lng: -87.2753,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/ce/House_Lonmouth.PNG/109px-House_Lonmouth.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/ce/House_Lonmouth.PNG/109px-House_Lonmouth.PNG',
     clue: 'the Stormlands',
   },
   {
@@ -4366,14 +4379,14 @@ nobility = [
     seatKey: 'Mistwood',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/01/House_Mertyns.PNG/90px-House_Mertyns.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/01/House_Mertyns.PNG/90px-House_Mertyns.PNG',
   },
   {
     wikiKey: 'House_Morrigen',
     seatKey: 'Crow%27s_Nest',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/e/e5/House_Morrigen.PNG/109px-House_Morrigen.PNG',
+      'https://awoiaf.westeros.org/images/thumb/e/e5/House_Morrigen.PNG/109px-House_Morrigen.PNG',
   },
   {
     wikiKey: 'House_Musgood',
@@ -4381,7 +4394,7 @@ nobility = [
     lng: -91.3183,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5e/Musgood.png/109px-Musgood.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5e/Musgood.png/109px-Musgood.png',
     clue: 'the Stormlands',
   },
   {
@@ -4390,7 +4403,7 @@ nobility = [
     lng: -89.3847,
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/ce/Peasebury.png/50px-Peasebury.png',
+      'https://awoiaf.westeros.org/images/thumb/c/ce/Peasebury.png/50px-Peasebury.png',
     clue: 'the Stormlands, in Poddingfield',
   },
   {
@@ -4398,7 +4411,7 @@ nobility = [
     seatKey: 'Parchments',
     imgRatio: 120 / 92,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1b/House_Penrose.PNG/92px-House_Penrose.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/1b/House_Penrose.PNG/92px-House_Penrose.PNG',
   },
   {
     wikiKey: 'House_Rogers',
@@ -4406,7 +4419,7 @@ nobility = [
     lng: -90.1757,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/67/House_Rogers.png/109px-House_Rogers.png',
+      'https://awoiaf.westeros.org/images/thumb/6/67/House_Rogers.png/109px-House_Rogers.png',
     clue: 'the Stormlands, in Amberly',
   },
   {
@@ -4414,7 +4427,7 @@ nobility = [
     seatKey: 'Harvest_Hall',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/6/61/Selmy.png/50px-Selmy.png',
+      'https://awoiaf.westeros.org/images/thumb/6/61/Selmy.png/50px-Selmy.png',
   },
   {
     wikiKey: 'House_Staedmon',
@@ -4422,7 +4435,7 @@ nobility = [
     lng: -98.0859,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/2c/House_Steadmon.PNG/109px-House_Steadmon.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/2c/House_Steadmon.PNG/109px-House_Steadmon.PNG',
     clue: 'the Stormlands, in Broad Arch',
   },
   {
@@ -4431,7 +4444,7 @@ nobility = [
     lng: -85.166,
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/a/a2/Swygert.png/109px-Swygert.png',
+      'https://awoiaf.westeros.org/images/thumb/a/a2/Swygert.png/109px-Swygert.png',
     clue: 'the Stormlands',
   },
   {
@@ -4439,7 +4452,7 @@ nobility = [
     seatKey: 'Evenfall_Hall',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG',
+      'https://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG',
   },
   {
     wikiKey: 'House_Trant',
@@ -4447,7 +4460,7 @@ nobility = [
     lng: -93.4277,
     imgRatio: 63 / 50,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5d/House_Trant.png/50px-House_Trant.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5d/House_Trant.png/50px-House_Trant.png',
     clue: 'the Stormlands, in Gallowsgrey',
   },
   {
@@ -4456,7 +4469,7 @@ nobility = [
     lng: -106.3476,
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/8/82/House_Tudbury.png/120px-House_Tudbury.png',
+      'https://awoiaf.westeros.org/images/thumb/8/82/House_Tudbury.png/120px-House_Tudbury.png',
     clue: 'the Stormlands',
   },
   {
@@ -4465,7 +4478,7 @@ nobility = [
     lng: -95.5371,
     imgRatio: 120 / 93,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/95/Wagstaff.png/93px-Wagstaff.png',
+      'https://awoiaf.westeros.org/images/thumb/9/95/Wagstaff.png/93px-Wagstaff.png',
     clue: 'the Stormlands',
   },
   {
@@ -4474,7 +4487,7 @@ nobility = [
     lng: -108.457,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1d/House_Wensington.PNG/90px-House_Wensington.PNG',
+      'https://awoiaf.westeros.org/images/thumb/1/1d/House_Wensington.PNG/90px-House_Wensington.PNG',
     clue: 'the Stormlands',
   },
   {
@@ -4482,7 +4495,7 @@ nobility = [
     seatKey: 'Rain_House',
     imgRatio: 120 / 109,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/20/Wylde.png/109px-Wylde.png',
+      'https://awoiaf.westeros.org/images/thumb/2/20/Wylde.png/109px-Wylde.png',
   },
   {
     wikiKey: 'House_Seaworth',
@@ -4490,7 +4503,7 @@ nobility = [
     lng: -83.3203,
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png',
+      'https://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png',
     clue: 'Cape Wrath',
   },
 
@@ -4500,97 +4513,98 @@ nobility = [
     seatKey: 'Godsgrace',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/25/House_Allyrion.PNG/120px-House_Allyrion.PNG',
+      'https://awoiaf.westeros.org/images/thumb/2/25/House_Allyrion.PNG/120px-House_Allyrion.PNG',
   },
   {
     wikiKey: 'House_Blackmont',
     seatKey: 'Blackmont',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/f9/Blackmont.png/120px-Blackmont.png',
+      'https://awoiaf.westeros.org/images/thumb/f/f9/Blackmont.png/120px-Blackmont.png',
   },
   {
     wikiKey: 'House_Dalt',
     seatKey: 'Lemonwood',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/f/fb/DaltCoA.png/50px-DaltCoA.png',
+      'https://awoiaf.westeros.org/images/thumb/f/fb/DaltCoA.png/50px-DaltCoA.png',
   },
   {
     wikiKey: 'House_Dayne',
     seatKey: 'Starfall',
     imgRatio: 1,
-    img: 'http://wiki.westeros.gr/images/b/b7/Dayne_coat_sigil.png',
+    img:
+      'https://awoiaf.westeros.org/images/thumb/9/95/House_Dayne.svg/120px-House_Dayne.svg.png',
   },
   {
     wikiKey: 'House_Dayne_of_High_Hermitage',
     seatKey: 'High_Hermitage',
     imgRatio: 6 / 5,
     img:
-      'http://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
+      'https://awoiaf.westeros.org/images/thumb/5/5c/Coats_of_arms_of_None.png/100px-Coats_of_arms_of_None.png',
   },
   {
     wikiKey: 'House_Fowler',
     seatKey: 'Skyreach',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/06/House_Fowler.png/90px-House_Fowler.png',
+      'https://awoiaf.westeros.org/images/thumb/0/06/House_Fowler.png/90px-House_Fowler.png',
   },
   {
     wikiKey: 'House_Gargalen',
     seatKey: 'Salt_Shore',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/7/75/House_Gargalen.png/120px-House_Gargalen.png',
+      'https://awoiaf.westeros.org/images/thumb/7/75/House_Gargalen.png/120px-House_Gargalen.png',
   },
   {
     wikiKey: 'House_Jordayne',
     seatKey: 'Tor',
     imgRatio: 120 / 100,
     img:
-      'http://awoiaf.westeros.org/images/thumb/0/00/House_Jordayne.PNG/100px-House_Jordayne.PNG',
+      'https://awoiaf.westeros.org/images/thumb/0/00/House_Jordayne.PNG/100px-House_Jordayne.PNG',
   },
   {
     wikiKey: 'House_Manwoody',
     seatKey: 'Kingsgrave',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/c5/House_Manwoody.PNG/120px-House_Manwoody.PNG',
+      'https://awoiaf.westeros.org/images/thumb/c/c5/House_Manwoody.PNG/120px-House_Manwoody.PNG',
   },
   {
     wikiKey: 'House_Qorgyle',
     seatKey: 'Sandstone',
     imgRatio: 120 / 90,
     img:
-      'http://awoiaf.westeros.org/images/thumb/2/28/Qorgyle.png/90px-Qorgyle.png',
+      'https://awoiaf.westeros.org/images/thumb/2/28/Qorgyle.png/90px-Qorgyle.png',
   },
   {
     wikiKey: 'House_Toland',
     seatKey: 'Ghost_Hill',
     imgRatio: 120 / 119,
     img:
-      'http://awoiaf.westeros.org/images/thumb/c/cd/Toland.png/119px-Toland.png',
+      'https://awoiaf.westeros.org/images/thumb/c/cd/Toland.png/119px-Toland.png',
   },
   {
     wikiKey: 'House_Uller',
     seatKey: 'Hellholt',
     imgRatio: 120 / 105,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/14/House_Uller.png/105px-House_Uller.png',
+      'https://awoiaf.westeros.org/images/thumb/1/14/House_Uller.png/105px-House_Uller.png',
   },
   {
     wikiKey: 'House_Vaith',
     seatKey: 'Vaith',
     imgRatio: 120 / 103,
     img:
-      'http://awoiaf.westeros.org/images/thumb/3/3e/House_Vaith.PNG/103px-House_Vaith.PNG',
+      'https://awoiaf.westeros.org/images/thumb/3/3e/House_Vaith.PNG/103px-House_Vaith.PNG',
   },
   {
     wikiKey: 'House_Wyl',
     seatKey: 'Wyl_(Dorne)',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/1/1f/WylCoA.png/120px-WylCoA.png',
+      'https://awoiaf.westeros.org/images/thumb/1/1f/WylCoA.png/120px-WylCoA.png',
     clue: 'the Boneway',
   },
   {
@@ -4598,7 +4612,7 @@ nobility = [
     seatKey: 'Yronwood',
     imgRatio: 1,
     img:
-      'http://awoiaf.westeros.org/images/thumb/b/b9/Yronwood.png/120px-Yronwood.png',
+      'https://awoiaf.westeros.org/images/thumb/b/b9/Yronwood.png/120px-Yronwood.png',
   },
 ];
 

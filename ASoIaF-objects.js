@@ -38,7 +38,7 @@ function isOutsideTileRange(coord, zoom) {
 
 //Transparent markers placed on top of each city, town, castle, & ruin
 function markLocation(map, key, locationOptions) {
-  //Sample input-> They_Lay_With_Lions: {lat:23.4027, lng:-126.2548, title:"23: Inn (They Lay with Lions)", url:"http://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1"},
+  //Sample input-> They_Lay_With_Lions: {lat:23.4027, lng:-126.2548, title:"23: Inn (They Lay with Lions)", url:"https://awoiaf.westeros.org/index.php/A_Storm_of_Swords-Chapter_1"},
   if (
     typeof locationOptions.lat != 'number' ||
     typeof locationOptions.lng != 'number'
@@ -54,7 +54,7 @@ function markLocation(map, key, locationOptions) {
   var url =
     typeof locationOptions.url != 'undefined'
       ? locationOptions.url
-      : 'http://awoiaf.westeros.org/index.php/' + key;
+      : 'https://awoiaf.westeros.org/index.php/' + key;
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(locationOptions.lat, locationOptions.lng),
     title: title,
@@ -85,7 +85,7 @@ function createPolygon(map, regionOptions) {
       'Region ' + regionOptions.key + ' was missing a coords attribute.'
     );
 
-  var url = 'http://awoiaf.westeros.org/index.php/' + regionOptions.key;
+  var url = 'https://awoiaf.westeros.org/index.php/' + regionOptions.key;
   var polygon = new google.maps.Polygon({
     paths: regionOptions.coords,
     fillColor: regionOptions.color,
@@ -102,7 +102,7 @@ function createPolygon(map, regionOptions) {
 
 //Coats of arms for every known noble family (some locations were guessed)
 function markNobility(map, nobilityOptions) {
-  //Sample input-> {wikiKey:"House_Bolton", seatKey:"Dreadfort", imgRatio:(120/102), img:"http://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/102px-Bolton.png", isGreat:true, chapters:[196,999]}  (seatKey may be replaced with lat & lng)
+  //Sample input-> {wikiKey:"House_Bolton", seatKey:"Dreadfort", imgRatio:(120/102), img:"https://awoiaf.westeros.org/images/thumb/7/76/Bolton.png/102px-Bolton.png", isGreat:true, chapters:[196,999]}  (seatKey may be replaced with lat & lng)
   if (typeof nobilityOptions.img != 'string')
     return console.log(
       nobilityOptions.wikiKey +
@@ -162,7 +162,7 @@ function markNobility(map, nobilityOptions) {
   if (typeof nobilityOptions.wikiKey == 'string')
     google.maps.event.addListener(marker, 'click', function (event) {
       window.open(
-        'http://awoiaf.westeros.org/index.php/' + nobilityOptions.wikiKey,
+        'https://awoiaf.westeros.org/index.php/' + nobilityOptions.wikiKey,
         '_blank'
       );
     });
@@ -190,7 +190,7 @@ function markPathSegment(map, overlayOptions) {
         break;
       default:
         var icon =
-          'http://chart.googleapis.com/chart?chst=d_map_xpin_letter&chld=pin' +
+          'https://chart.googleapis.com/chart?chst=d_map_xpin_letter&chld=pin' +
           overlayOptions.icon; //or d_map_pin_letter_withshadow
     }
 
