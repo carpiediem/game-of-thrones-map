@@ -1,72 +1,302 @@
-html {height:100%}
-body {height:100%; margin:0; padding:0;}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-#footer {width:100%; height:60px; position:fixed; bottom:20px; margin-left:-234px; z-index:1; background:transparent; border:none;}
-#banner {width:468px; height:60px; margin-left:50%; background:rgba(30,115,190, 1);}
+#footer {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  margin-left: -234px;
+  z-index: 1;
+  background: transparent;
+  border: none;
+}
+#banner {
+  width: 468px;
+  height: 60px;
+  margin-left: 50%;
+  background: rgba(30, 115, 190, 1);
+}
 
+#shade {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1001;
+  background: rgb(25, 25, 25);
+  background: rgba(25, 25, 25, 0.5);
+}
+#lightbox {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  min-width: 580px;
+  width: 60%;
+  height: 70%;
+  padding: 16px;
+  border: 16px solid rgb(214, 162, 65);
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  font-family: sans-serif;
+}
+#closeButton {
+  width: 40px;
+  height: 40px;
+  margin: -20px -16px 0px 0px;
+  float: right;
+  background: red;
+  color: white;
+  text-align: center;
+  font: bold 2em sans-serif;
+  cursor: pointer;
+}
+#subtitle {
+  width: 180px;
+  margin: -25px 0px 0px 410px;
+  padding: 10px 0px;
+  background: red;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+}
+#header,
+#menuButton,
+label.handheldMenu,
+#handheldToggles,
+#handheldCloseButton {
+  display: none;
+}
 
-#shade       {display: none; position: absolute; top: 0%;  left: 0%;  z-index:1001; background:rgb(25,25,25); background:rgba(25,25,25,.5);}
-#lightbox    {display: none; position: absolute; top: 10%; left: 15%; min-width:580px; width: 60%; height: 70%; padding: 16px; border: 16px solid rgb(214, 162, 65); background-color: white; z-index:1002; overflow:auto; font-family:sans-serif;}
-#closeButton {width:40px; height:40px; margin:-20px -16px 0px 0px; float:right; background:red; color:white; text-align:center; font:bold 2em sans-serif; cursor:pointer;}
-#subtitle    {width:180px; margin:-25px 0px 0px 410px; padding:10px 0px; background:red; color:white; font-size:1.2em; text-align:center; transform: rotate(-7deg); -webkit-transform: rotate(-7deg); -o-transform: rotate(-7deg); -moz-transform: rotate(-7deg);}
-#header, #menuButton, label.handheldMenu, #handheldToggles, #handheldCloseButton  {display:none;}
+#page,
+#content,
+#map_canvas {
+  height: 100%;
+  padding: 0px;
+  border: 0px;
+}
+#filter {
+  position: fixed;
+  top: 30px;
+  bottom: 125px;
+  right: 5px;
+  z-index: 1;
+  width: 200px;
+  overflow: hidden;
+  background: rgba(214, 162, 65, 0.9);
+  font-family: Arial;
+  text-shadow: 0px 0px;
+}
+#toggles {
+  position: fixed;
+  top: 225px;
+  bottom: 125px;
+  width: 200px;
+  overflow-y: auto;
+  z-index: -1;
+}
+h4 {
+  margin-bottom: 5px;
+}
+#infoLink {
+  width: 30px;
+  height: 24px;
+  float: right;
+  margin: 5px 5px 0px 0px;
+  cursor: pointer;
+  background-image: url(http://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF);
+  background-repeat: no-repeat;
+}
 
-#page, #content, #map_canvas  {height:100%; padding:0px; border:0px;}
-#filter   {position:fixed; top:30px; bottom:125px; right:5px; z-index:1; width:200px; overflow:hidden; background:rgba(214, 162, 65, 0.9); font-family:Arial; text-shadow:0px 0px;}
-#toggles {position:fixed; top:225px; bottom:125px; width:200px; overflow-y:auto; z-index:-1;}
-h4 {margin-bottom:5px;}
-#infoLink {width:30px; height:24px; float:right; margin:5px 5px 0px 0px; cursor:pointer; background-image:url(http://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF); background-repeat:no-repeat;}
+input.ui-slider-input {
+  display: none !important;
+}
+#epGroup {
+  display: none;
+}
+#slideUp {
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+  background-image: url(arrow-right.png);
+  background-repeat: no-repeat;
+}
+#slideDown {
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+  background-image: url(arrow-left.png);
+  background-repeat: no-repeat;
+}
+#chapTitle,
+#epTitle {
+  height: 25px;
+  font-size: 0.75em;
+  margin: 12px 0px 0px 12px;
+}
+#filter a,
+#filter a:visited {
+  color: inherit;
+  font-weight: normal;
+}
+div.ui-slider {
+  margin-top: 0px;
+}
+div.ui-slider-track {
+  margin: 0px 15px;
+}
 
-input.ui-slider-input {display:none !important;}
-#epGroup {display: none;}
-#slideUp   {width:10px; height:10px; float:right;  margin:10px 0px 0px 0px; cursor:pointer; background-image:url(arrow-right.png); background-repeat:no-repeat;}
-#slideDown {width:10px; height:10px; float:left;   margin:10px 0px 0px 0px; cursor:pointer; background-image:url(arrow-left.png);  background-repeat:no-repeat;}
-#chapTitle,  #epTitle  {height:25px; font-size:0.75em; margin:12px 0px 0px 12px;}
-#filter a, #filter a:visited {color:inherit; font-weight:normal;}
-div.ui-slider {margin-top:0px;}
-div.ui-slider-track {margin:0px 15px;}
+#sliderType div.ui-controlgroup-controls {
+  width: 100%;
+}
+#sliderType div.ui-radio {
+  width: 50%;
+} /* 33% soon  */
+div.ui-radio span.ui-btn-inner {
+  padding: 5px 0px !important;
+}
+#filter label,
+span.ui-btn-text {
+  font-size: 0.75em;
+}
 
-#sliderType div.ui-controlgroup-controls {width:100%;}
-#sliderType div.ui-radio {width:50%;} /* 33% soon  */
-div.ui-radio span.ui-btn-inner {padding:5px 0px !important;}
-#filter label, span.ui-btn-text  {font-size:0.75em;}
+form.ui-listview-filter {
+  width: 190px;
+  margin: 0px 5px;
+}
+form.ui-listview-filter input {
+  font-size: 0.8em;
+}
+ul#townSelector {
+  width: 130px;
+  margin: 0px 45px;
+}
 
-form.ui-listview-filter {width:190px; margin:0px 5px;}
-form.ui-listview-filter input {font-size:0.8em;}
-ul#townSelector {width:130px; margin:0px 45px;}
+#legend {
+  display: none;
+  font-size: 0.75em;
+}
+#legend tr td {
+  min-width: 16px;
+}
+#gift td:first-child {
+  background-color: #000000;
+}
+#north td:first-child {
+  background-color: #808080;
+}
+#rivers td:first-child {
+  background-color: #caffff;
+}
+#vale td:first-child {
+  background-color: #0368bc;
+}
+#islands td:first-child {
+  background-color: #fffe8b;
+}
+#west td:first-child {
+  background-color: #ffa4a4;
+}
+#crown td:first-child {
+  background-color: #feac77;
+}
+#reach td:first-child {
+  background-color: #c8ff75;
+}
+#storm td:first-child {
+  background-color: #ffffca;
+}
+#dorne td:first-child {
+  background-color: #ffe2b7;
+}
 
-#legend {display:none; font-size:0.75em;}
-#legend tr td {min-width:16px;}
-#gift    td:first-child {background-color: #000000;}
-#north   td:first-child {background-color: #808080;}
-#rivers  td:first-child {background-color: #caffff;}
-#vale    td:first-child {background-color: #0368bc;}
-#islands td:first-child {background-color: #fffe8b;}
-#west    td:first-child {background-color: #ffa4a4;}
-#crown   td:first-child {background-color: #feac77;}
-#reach   td:first-child {background-color: #c8ff75;}
-#storm   td:first-child {background-color: #ffffca;}
-#dorne   td:first-child {background-color: #ffe2b7;}
+#textToggles {
+  margin-top: 0px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+#textToggles span {
+  font-size: 0.6em;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#showMarkerOnly {
+  display: none;
+}
+#filter ul li {
+  list-style: none;
+  margin-left: -40px;
+}
+#characters-novellas {
+  display: none;
+}
 
-#textToggles {margin-top:0px; margin-bottom:-10px; text-align:center;}
-#textToggles span {font-size:0.6em; color:blue; text-decoration:underline; cursor:pointer;}
-#showMarkerOnly {display:none;}
-#filter ul li {list-style:none; margin-left:-40px;}
-#characters-novellas {display:none;}
-
-.aegonListItem {display:none;}
-.icon {display:inline-block;height:16px;width:16px;background-size:16px 16px;repeat:none;}
-.stark        {background-image:url('http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/50px-House_Stark.PNG')}
-.nightswatch  {background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Black_flag_waving.svg')}
-.targaryen    {background-image:url('http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG')}
-.lannister    {background-image:url('http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/50px-House_Lannister.png')}
-.baratheon    {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG')}
-.baratheonokl {background-image:url('http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png')}
-.baratheonod  {background-image:url('http://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/60px-Stannis_sigil_coat.png')}
-.greyjoy      {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png')}
-.tarth        {background-image:url('http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG')}
-.seaworth     {background-image:url('http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png')}
-.tarly        {background-image:url('http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png')}
-.martell      {background-image:url('http://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG')}
-.baelish      {background-image:url('http://awoiaf.westeros.org/images/thumb/6/69/Baelish%28Harrenhal%29CoA.png/50px-Baelish%28Harrenhal%29CoA.png')}
-.duncan   {background-image:url('http://awoiaf.westeros.org/images/thumb/e/e4/Dunk.png/50px-Dunk.png')}
+.aegonListItem {
+  display: none;
+}
+.icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 16px 16px;
+  repeat: none;
+}
+.stark {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/5/51/House_Stark.PNG/50px-House_Stark.PNG');
+}
+.nightswatch {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Black_flag_waving.svg');
+}
+.targaryen {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/4/43/House_Targaryen.PNG/92px-House_Targaryen.PNG');
+}
+.lannister {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/8/88/House_Lannister.png/50px-House_Lannister.png');
+}
+.baratheon {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/d/d1/House_Baratheon.PNG/50px-House_Baratheon.PNG');
+}
+.baratheonokl {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/5/5d/Joffrey_sigil_coat.png/120px-Joffrey_sigil_coat.png');
+}
+.baratheonod {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/2/2e/Stannis_sigil_coat.png/60px-Stannis_sigil_coat.png');
+}
+.greyjoy {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/f/f3/Greyjoy_coat_sigil.png/120px-Greyjoy_coat_sigil.png');
+}
+.tarth {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/f/f3/House_Tarth.PNG/40px-House_Tarth.PNG');
+}
+.seaworth {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/9/99/Seaworth.png/90px-Seaworth.png');
+}
+.tarly {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/d/d8/Tarly.png/100px-Tarly.png');
+}
+.martell {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/b/ba/House_Martell.PNG/92px-House_Martell.PNG');
+}
+.baelish {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/6/69/Baelish%28Harrenhal%29CoA.png/50px-Baelish%28Harrenhal%29CoA.png');
+}
+.duncan {
+  background-image: url('http://awoiaf.westeros.org/images/thumb/e/e4/Dunk.png/50px-Dunk.png');
+}
