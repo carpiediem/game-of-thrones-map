@@ -178,6 +178,28 @@ function markNobility(map, nobilityOptions) {
   return marker;
 }
 
+//Builds a teardrop map pin with a letter, as an inline SVG data URI
+//(replaces the discontinued chart.googleapis.com Dynamic Icons API)
+function buildPinIcon(letter, colorHex) {
+  var r = parseInt(colorHex.substring(0, 2), 16);
+  var g = parseInt(colorHex.substring(2, 4), 16);
+  var b = parseInt(colorHex.substring(4, 6), 16);
+  var luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  var textColor = luminance > 0.6 ? '#000000' : '#FFFFFF';
+  var svg =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="37" viewBox="0 0 24 37">' +
+    '<path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 25 12 25s12-16 12-25C24 5.4 18.6 0 12 0z" fill="#' +
+    colorHex +
+    '" stroke="#000000" stroke-width="1.5"/>' +
+    '<text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="' +
+    textColor +
+    '">' +
+    letter +
+    '</text>' +
+    '</svg>';
+  return 'data:image/svg+xml,' + encodeURIComponent(svg);
+}
+
 //Teardrop markers & lines marking the path of each major character
 function markPathSegment(map, overlayOptions) {
   if (typeof overlayOptions.icon == 'string') {
@@ -189,9 +211,8 @@ function markPathSegment(map, overlayOptions) {
         var icon = 'question-mark.gif';
         break;
       default:
-        var icon =
-          'https://chart.googleapis.com/chart?chst=d_map_xpin_letter&chld=pin' +
-          overlayOptions.icon; //or d_map_pin_letter_withshadow
+        var pinParts = overlayOptions.icon.replace(/^_s(left|right)/, '').split('|');
+        var icon = buildPinIcon(pinParts[1], pinParts[2]);
     }
 
     switch (overlayOptions.icon.substring(0, 3)) {
