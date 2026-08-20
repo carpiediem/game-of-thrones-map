@@ -116,7 +116,7 @@ h4 {
   float: right;
   margin: 5px 5px 0px 0px;
   cursor: pointer;
-  background-image: url(https://chart.googleapis.com/chart?chst=d_simple_text_icon_left&chld=|14|000|info|24|f00|FFF);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23f00'/%3E%3Ctext x='12' y='13' text-anchor='middle' dominant-baseline='central' font-family='Georgia, serif' font-size='14' font-style='italic' fill='%23fff'%3Ei%3C/text%3E%3C/svg%3E");
   background-repeat: no-repeat;
 }
 
