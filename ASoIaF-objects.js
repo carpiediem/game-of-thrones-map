@@ -212,16 +212,10 @@ function markPathSegment(map, overlayOptions) {
         break;
       default:
         var pinParts = overlayOptions.icon.replace(/^_s(left|right)/, '').split('|');
-        var icon = buildPinIcon(pinParts[1], pinParts[2]);
-    }
-
-    switch (overlayOptions.icon.substring(0, 3)) {
-      case '_sl':
-        icon = { url: icon, anchor: new google.maps.Point(23, 33) };
-        break;
-      case '_sr':
-        icon = { url: icon, anchor: new google.maps.Point(0, 33) };
-        break;
+        var icon = {
+          url: buildPinIcon(pinParts[1], pinParts[2]),
+          anchor: new google.maps.Point(12, 37),
+        };
     }
 
     if (typeof overlayOptions.key == 'string') {
