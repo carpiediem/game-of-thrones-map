@@ -498,10 +498,15 @@ $(function () {
   });
 
   //Mobile Interface
-  $('#menuButton, #returnToMap, .ui-li a, #lightboxLink').click(function () {
-    $('#map_canvas, #menuButton, #filter').toggle();
-    ga('send', 'event', 'navigation', 'toggle', 'mobileMenu');
-  });
+  var isMobile = window.matchMedia("only screen and (max-device-width: 480px)").matches;
+  
+  if (isMobile) {
+    $('#menuButton, #returnToMap, .ui-li a, #lightboxLink').click(function () {
+      $('#map_canvas, #menuButton, #filter').toggle();
+      ga('send', 'event', 'navigation', 'toggle', 'mobileMenu');
+    });
+  }
+  
   $('#showCharacterPaths, #closeCharList').click(function () {
     $('#handheldToggles, #filter').toggle();
     ga('send', 'event', 'navigation', 'toggle', 'mobileCharacters');
